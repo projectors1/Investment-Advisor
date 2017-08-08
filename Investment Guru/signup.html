@@ -9,9 +9,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" type="text/css" href="css/login_css.css">
+  <link rel="stylesheet" type="text/css" href="css/signup_css.css">
   <title>Investment Guru</title>
   <link rel="icon" href="img/logo.png">
+
+  <script type="text/javascript">
+        $('#chbx_terms').click(function(){
+            if($(this).attr('checked') == false){
+                 $('#btn_signup').attr("disabled","disabled");   
+            } else {
+                $('#btn_signup').removeAttr('disabled');
+            }
+        });
+  </script>
 </head>
 
 <body>
@@ -49,7 +59,7 @@
           <form method="POST">
             <div class="card-login">
               <div class="card-header">
-                <h4 class="card-title">Login</h4>
+                <h4 class="card-title">Sign up</h4>
                 <div class="social-login">
                   <a class="btn btn-icon">
                     <i class="fa fa-facebook-square fa-2x"></i>
@@ -66,7 +76,7 @@
               <div class="card-form">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="material-icons">face</i></span>
-                  <input id="msg" type="text" class="form-control" name="name" placeholder="Name">
+                  <input id="user-name" type="text" class="form-control" name="name" placeholder="Name">
                 </div>
 
                 <div class="input-group">
@@ -78,19 +88,24 @@
                   <span class="input-group-addon"><i class="material-icons">lock_outline</i></span>
                   <input id="password" type="password" class="form-control" name="password" placeholder="Password">
                 </div>
+
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="material-icons">lock_outline</i></span>
+                  <input id="confirm-password" type="password" class="form-control" name="password" placeholder="Confirm Password">
+                </div>
               </div>
 
               <div class="card-button">
-                <div class="row checkbox switch-container">
+                <div class="row checkbox switch-container" >
                   <label class="col-md-2 switch">
-                    <input type="checkbox">
+                    <input type="checkbox"  id="chbx_terms">
                     <span class="slider round"></span>
                   </label>
-                  <label class="col-md-9" style="color:#888888">Stay signed in</label>
+                  <label class="col-md-9" style="color:#888888">Agree to terms and conditions</label>
                 </div>
 
                 <div class="input-group">
-                  <button href="#" type="button" class="btn btn-transparent">LOGIN</button>
+                  <button href="#" type="button" class="btn btn-transparent" id="btn_signup">SIGN UP</button>
                 </div>
               </div>
             </div>
