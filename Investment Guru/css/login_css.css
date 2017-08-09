@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {
+body,h4{
   text-decoration : none;
   font-family     : "Open-sans",  sans-serif;
   font-weight     : 300;
@@ -6,7 +6,7 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 body {
-  background-color : #EEEEEE;
+  background-image : url("../img/hero.jpg");
 }
 
 #brand {
@@ -107,7 +107,7 @@ body {
   position         : relative;
   margin-top       : -40px;
   margin-right     : 10px;
-  margin-bottom    : 40px;
+  margin-bottom    : 20px;
   margin-left      : 10px;
   padding          : 15px;
   border-radius    : 4px;
@@ -120,7 +120,7 @@ body {
   margin    : 20px 0px;
   color         : #FFFFFF;
   text-align    : center;
-  font-size     : 24px;
+  font-size     : 20px;
 }
 
 .card-button,
@@ -133,12 +133,17 @@ body {
   margin-top: 30px;
 }
 
-.card-form {
-  margin-top : 30px;
-}
-
 .content-section {
   padding-top:20vh;
+}
+
+.division {
+    float: none;
+    margin: 0 auto 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .fa-icons {
@@ -192,7 +197,7 @@ input[type=text]:focus {
 }
 
 #login-h:hover,
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav > .active > a{
   color            : #FFFFFF;
   background-color : #e74c3c;
 }
@@ -200,6 +205,22 @@ input[type=text]:focus {
 #login-h {
   margin-right : 2px;
   color        : #e74c3c;
+}
+
+.line {
+    border-top: 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+    margin: 0px 20px;
+}
+
+.line.l {
+  left: 0;
+}
+
+.line.r {
+  right: 0;
 }
 
 .social-login {
