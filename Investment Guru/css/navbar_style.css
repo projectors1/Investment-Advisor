@@ -1,23 +1,24 @@
 body {
   text-decoration : none;
-  font-family     : "Open-sans",  sans-serif;
+  font-family     : "Open-sans",
+                    sans-serif;
   font-weight     : 300;
   font-stretch    : normal;
 }
 
 #brand {
-    color     : #e74c3c;
-    font-size : 20px;
-  }
+  color     : #e74c3c;
+  font-size : 20px;
+}
 
 .btn-sign {
-    padding          : 5px;
-    border           : none;
-    border-radius    : 0;
-    background-color : #e74c3c;
-    text-align       : center;
-    transition       : all 0.5s;
-  }
+  padding          : 5px;
+  border           : none;
+  border-radius    : 0;
+  background-color : #e74c3c;
+  text-align       : center;
+  transition       : all 0.5s;
+}
 
 .btn-sign,
 .navbar-default .navbar-nav>li>a {
@@ -31,59 +32,59 @@ body {
 }
 
 #btn-signup span {
-    display    : inline-block;
-    position   : relative;
-    transition : 0.5s;
-  }
-  
-#btn-signup span:after {
-    content    : '\00bb';
-    position   : absolute;
-    top        : 0;
-    right      : -20px;
-    opacity    : 0;
-    font-size  : 20px;
-    transition : 0.5s;
+  display    : inline-block;
+  position   : relative;
+  transition : 0.5s;
 }
-  
- #btn-signup:hover span {
-    padding-right : 25px;
-  }
-  
-  #btn-signup:hover span:after {
-    right   : 0;
-    opacity : 1;
-  }
+
+#btn-signup span:after {
+  content    : '\00bb';
+  position   : absolute;
+  top        : 0;
+  right      : -20px;
+  opacity    : 0;
+  font-size  : 20px;
+  transition : 0.5s;
+}
+
+#btn-signup:hover span {
+  padding-right : 25px;
+}
+
+#btn-signup:hover span:after {
+  right   : 0;
+  opacity : 1;
+}
 
 .fa-icons {
-    vertical-align : middle;
-  }
+  vertical-align : middle;
+}
 
 .navbar-inverse {
-    min-height       : 60px;
-    border           : none;
-    border-radius    : 1px;
-    background-color : #232731;
-  }
-  
-  .navbar-brand,
-  .navbar-inverse .navbar-nav>li>a {
-    padding-top    : 0px;
-    padding-bottom : 0px;
-    line-height    : 60px;
-  }
-  
-  .navbar-inverse .navbar-nav>li>a {
-    margin         : 0 10px;
-    padding        : 0 10px;
-    color          : #FFFFFF;
-    text-transform : uppercase;
-    transition     : 0.4s;
-  }
+  min-height       : 60px;
+  border           : none;
+  border-radius    : 1px;
+  background-color : #232731;
+}
+
+.navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+  padding-top    : 0px;
+  padding-bottom : 0px;
+  line-height    : 60px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  margin         : 0 10px;
+  padding        : 0 10px;
+  color          : #FFFFFF;
+  text-transform : uppercase;
+  transition     : 0.4s;
+}
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: rgba(0,0,0,0.1);
-  box-shadow: inset 0px -2px 0px 0px #e74c3c;
+  background-color : rgba(0,0,0,0.1);
+  box-shadow       : inset 0px -2px 0px 0px #e74c3c;
 }
 
 #login-h {
