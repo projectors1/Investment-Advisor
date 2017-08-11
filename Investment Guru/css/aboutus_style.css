@@ -1,0 +1,41 @@
+body,
+h4 {
+  text-decoration : none;
+  font-family     : "Open-sans",
+                    sans-serif;
+  font-weight     : 300;
+  font-stretch    : normal;
+}
+
+.heading-section {
+    padding-top: 60px;
+}
+
+.jumbotron {
+    background-color : #232731;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: initial;
+    color:white;
+    padding: 0px 40px;
+}
+
+.section {
+    position: relative;
+    margin: 0 0;
+    padding: 60px 0;
+    background-color: white;
+}
+
+.tagline-section, .social-section {
+    background-color: #E74B3B;
+}
+
+.team-section, .contact-section {
+    background-color: #eef0f4;
+}
+
+.footer-section {
+    background-color: #232731;
+}

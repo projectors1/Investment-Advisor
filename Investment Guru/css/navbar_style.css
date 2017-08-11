@@ -63,7 +63,7 @@ body {
 .navbar-inverse {
   min-height       : 60px;
   border           : none;
-  border-radius    : 1px;
+  border-radius    : 0px;
   background-color : #232731;
 }
 
@@ -85,6 +85,10 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover {
   background-color : rgba(0,0,0,0.1);
   box-shadow       : inset 0px -2px 0px 0px #e74c3c;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 400px;
 }
 
 #login-h {
