@@ -10,7 +10,7 @@ body {
     font-size : 20px;
   }
 
-.btn-main {
+.btn-sign {
     padding          : 5px;
     border           : none;
     border-radius    : 0;
@@ -19,9 +19,8 @@ body {
     transition       : all 0.5s;
   }
 
-.btn-main,
+.btn-sign,
 .navbar-default .navbar-nav>li>a {
-  color     : #FFFFFF;
   font-size : 14px;
 }
 
@@ -81,11 +80,10 @@ body {
     text-transform : uppercase;
     transition     : 0.4s;
   }
-  
-#login-h:hover,
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav > .active > a{
-  color            : #FFFFFF;
-  background-color : #e74c3c;
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0px -2px 0px 0px #e74c3c;
 }
 
 #login-h {
