@@ -43,43 +43,159 @@
     </div>
   </nav>
 
-  <section class="heading-section">
+  <header class="heading-section">
     <div class="jumbotron">
       <h1 class="jumbo-head">About Us</h1>
-      <p class="jumbo-sub">The idea behind this project and the team who developed it.</p>
+      <p class="jumbo-sub">The Idea & The Team</p>
+    </div>
+  </header>
+
+  <section class="section idea-section">
+    <div class="col-md-6">
+      <img src="img/invest.jpg" width="80%" height="80%">
+    </div>
+    <div class="container">     
+      <h2>Idea</h2>
+      <div class="row">
+        <div class="cold-md-offset-6 col-md-6">
+          <p>Nowadays, Investment has become an essential part of living whether it be investing in a policy or stocks.<br> So our goal is to help you invest and earn irrespective of whether its a small amount or a huge amount, because we believe our goal is to help you achieve your GOAL</p>        
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section description-section">
-
+  <section class="section bg-orange working-section">
+    <div class="container">
+      <div class="row working">
+        <div class="col-md-4">  
+          <div class="avatar"><img src="img/money-bag.svg"></div>
+          <h4>1. Invest your savings</h4>
+        </div>      
+        <div class="col-md-4">
+            <div class="avatar"><img src="img/profit.svg"></div>
+            <h4>2. Earn from investment</h4>
+        </div>
+        <div class="col-md-4">
+            <div class="avatar"><img src="img/gift.svg"></div>
+            <h4>3. Get your goal</h4>
+        </div>
+      </div>
+      <div class="working">
+        <button type="" class="btn btn-primary btn-white">LEARN MORE</button>        
+      </div>
+    </div>
   </section>
 
-  <section class="section tagline-section">
-
+  <section class="section bg-offwite team-section">
+    <div class="container">
+      <h2>Team</h2>
+    </div>
   </section>
 
-  <section class="section team-section">
-
+  <section class="section bg-orange social-section">
+    <div class="container">
+      <h2>Follow us</h2>
+      <div class="social-button">
+          <a class="btn btn-social">
+              <img src="img/Facebook.svg">
+          </a>
+          <a class="btn btn-social">
+              <img src="img/GooglePlus.svg">
+          </a>
+          <a class="btn btn-social">
+              <img src="img/Twitter.svg">
+          </a>
+        </div>
+    </div>
   </section>
 
-  <section class="section location-section">
-
+  <section class="section map-section">
+      <div id="map" style="width:100%;height:300px;"></div>      
+      <script>
+        function myMap() {
+          var myCenter = new google.maps.LatLng(19.243549, 72.855526);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 18};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter,animation: google.maps.Animation.BOUNCE});
+          marker.setMap(map);      
+        } 
+      </script>   
   </section>
 
-  <section class="section social-section">
-    
+  <section class="section bg-offwhite contact-section">    
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">Contact Details</h4>                
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-map-marker fa-fw"></i>&nbsp; &nbsp; Mount Poinsur, S.V.P. Road, Borivli (West), Mumbai 400 103</li>
+              <li class="list-group-item"><i class="fa fa-phone fa-fw"></i>&nbsp; &nbsp; 022-28928585 / 28908585</li>
+              <li class="list-group-item"><i class="fa fa-fax fa-fw"></i>&nbsp; &nbsp; 022-28954787</li>
+              <li class="list-group-item"><i class="fa fa-envelope fa-fw"></i><a href="#">&nbsp; &nbsp; sfedu@sfitengg.org</a></li>
+              <li class="list-group-item"><i class="fa fa-clock-o fa-fw"></i>&nbsp; &nbsp; Monday - Saturday 9 AM - 5 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">Contact Form</h4>   
+            </div>
+            <div class="card-form">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-md-2 control-label">Name</label>
+                  <div class="col-lg-10">
+                    <input type="text" placeholder="Name" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-2 control-label">Email</label>
+                  <div class="col-md-10">
+                    <input type="email" placeholder="Email" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-2 control-label">Issue</label>
+                  <div class="col-md-10">
+                    <input type="text" placeholder="Issue" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-2 control-label">Message</label>
+                  <div class="col-md-10">
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-offset-2 col-md-10">
+                    <button type="button" class="btn btn-primary btn-main">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section contact-section">
-
-  </section>
-
-  <footer class="section footer-section">
+  <footer class="section bg-dark">
 
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN-EhvT3iNAy0-DS7SiVDz5o_K-0q1g_8&callback=myMap"></script>
   <script src="js/navbar_script.js"></script>
 </body>
 </html>

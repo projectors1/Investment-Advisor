@@ -1,5 +1,4 @@
-body,
-h4 {
+body {
   text-decoration : none;
   font-family     : "Open-sans",
                     sans-serif;
@@ -7,35 +6,212 @@ h4 {
   font-stretch    : normal;
 }
 
+.avatar {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px;
+    background-color: #ffffff;
+}
+
+.btn.btn-white {
+    background-color: #ffffff;
+    color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 20px; 
+    height: 40px;
+    transition: ease 0.4s;
+}
+
+.btn.btn-white:hover {
+    background-color: #ffffff;
+    color: #e74c3c;
+    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
+    outline: none;
+}
+
+.btn-main {
+    background-color: #e74c3c;
+    color: #ffffff;
+    margin-top: 0px; 
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    height: 40px;  
+    width: 70px;
+    transition: ease 0.4s;
+}
+
+.btn-main:hover,.btn-main:focus {
+    background-color: #e74c3c;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
+    outline: none;
+}
+
+.card {
+    display        : inline-block;
+    position       : relative;
+    width          : 100%;
+    margin         : 45px 0;
+    margin-bottom  : 0px;
+    border-radius  : 4px;
+    background     : #FFFFFF;
+    box-shadow     : 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.card-header {
+    position         : relative;
+    margin-top       : -20px;
+    margin-right     : 10px;
+    margin-bottom    : 10px;
+    margin-left      : 10px;
+    padding          : 15px;
+    border-radius    : 4px;
+    background-color : #e74c3c;
+    box-shadow       : 0 4px 20px 0px rgba(0, 0, 0, 0.14),
+                       0 7px 10px -5px #e74c3c;
+}
+  
+.card-title {
+    margin     : 5px 0px;
+    color      : #FFFFFF;
+    text-align : left;
+}
+
+.card-form {
+    padding:20px;
+}
+
+.contact-section h2, .idea-section h2,.team-section h2,.social-section h2  {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.contact-section ,.team-section {
+    padding: 0px 40px;
+    text-align: center;
+}
+
+.form-control {
+    height   : 40px;
+    float    : left;
+  }
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+  
+input[type=password]:focus,
+input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
+    border        : 1px solid #e74c3c;
+    border-radius : 3px;
+    box-shadow    : none;
+}
+
+.idea-section p {  
+    color: #525558;
+    font-size: 18px;
+}
+
+.idea-section img {
+    width: 100%;
+    height: 100%;
+}
+
 .heading-section {
     padding-top: 60px;
 }
 
+.icon-background {
+    color: #c0ffc0;
+}
+
 .jumbotron {
     background-color : #232731;
+    margin-bottom: 0px;
 }
 
 .jumbotron h1, .jumbotron p {
-    color: initial;
     color:white;
     padding: 0px 40px;
+    text-align: center;
+}
+
+.list-group {
+    margin: 0;
+    border: none;
+    text-align: left;
+}
+
+.list-group-item,.list-group-item:first-child  {
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #F0F0F0;
+
+}
+
+.pointer {
+    display:flex;
+	justify-content:center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.social-button img {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px; 
+}
+
+.social-section h2{
+    color: #FFFFFF;
 }
 
 .section {
     position: relative;
-    margin: 0 0;
-    padding: 60px 0;
+    margin: 0px;
+    padding: 30px 0px;
     background-color: white;
 }
 
-.tagline-section, .social-section {
-    background-color: #E74B3B;
+.map-section {
+    padding: 0px;
 }
 
-.team-section, .contact-section {
+.bg-orange {
+    background-color: #e74c3c;
+}
+
+.bg-offwhite {
     background-color: #eef0f4;
 }
 
-.footer-section {
+.bg-dark {
     background-color: #232731;
+}
+
+.working {
+    margin: 10px 30px;   
+    text-align: center; 
+}
+
+.working img {
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+}
+
+.working h4 , .social-section {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
 }
