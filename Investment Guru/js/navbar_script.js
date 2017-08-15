@@ -1,3 +1,4 @@
+
 $(function(){
     var navbar = $('.navbar');
     $(window).scroll(function(){

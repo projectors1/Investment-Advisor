@@ -53,10 +53,6 @@ body {
     outline: none;
 }
 
-.container {
-    padding: 0px;
-}
-
 .card {
     display        : inline-block;
     position       : relative;
@@ -105,7 +101,7 @@ body {
 .card-team {
     position: relative;
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
@@ -117,7 +113,7 @@ body {
 }
 
 .card-image img {
-    border-radius: 2px 2px 0 0;
+    border-radius: 4px 4px 0 0;
     position: relative;
     left: 0;
     right: 0;
@@ -134,6 +130,7 @@ body {
     padding: 20px;
     color: #fff;
     font-size: 20px;
+    text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
@@ -267,10 +264,6 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 
 .bg-offwhite {
     background-color: #eef0f4;
-}
-
-.bg-dark {
-    background-color: #232731;
 }
 
 .working-section img {
