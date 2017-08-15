@@ -9,7 +9,7 @@ body {
 .avatar {
     display: inline-block;
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 5%;
     border: 1px;
     background-color: #ffffff;
     box-shadow     : 0 1px 4px 0 rgba(0, 0, 0, 0.14);
@@ -87,9 +87,57 @@ body {
     text-align : left;
 }
 
-.card-form {
+.card-form ,.card-content {
     padding:20px;
 }
+
+.card-content {
+    text-align: left;
+    font-size: 16px;
+    color: #525558;
+}
+
+.card-content h4 {
+    color: #525558;
+    font-size: 24px;
+}
+
+.card-team {
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.card-image {
+    position: relative;
+    display: block;
+}
+
+.card-image img {
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.card-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
 
 /* Section Styles start */
 
