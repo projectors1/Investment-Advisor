@@ -90,17 +90,21 @@ body {
 .contact-section h2, .idea-section h2,.team-section h2,.social-section h4,.working-section h2,.choose-section h2  {
     color: #e74c3c;
     margin-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
 }
 
-.social-section h4,.choose-section h2 {
+.social-section h4,.choose-section h2,.choose-section h4,.choose-section p {
     color: #FFFFFF;
 }
 
-.contact-section ,.team-section {
+.choose-section h4,.choose-section p {
+    margin: 15px; 
+}
+
+.contact-section ,.team-section,.choose-section {
     padding: 0px 40px;
     text-align: center;
 }
