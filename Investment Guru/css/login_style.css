@@ -36,7 +36,7 @@ body {
   background-color : #C0392B;
 }
 
-.btn-icon {
+.btn-icon ,.btn-icon:hover {
   color : #FFFFFF;
 }
 
@@ -55,7 +55,7 @@ body {
   padding-bottom : 20px;
   border-radius  : 4px;
   background     : #FFFFFF;
-  box-shadow     : 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow     : 0 2px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
 .card-header {
