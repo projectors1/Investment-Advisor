@@ -10,16 +10,25 @@ body {
     background-color: #232731;
 }
 
-.footer h2,.footer p   {
+.footer-content {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footer h2,.footer p {
     color: #e74c3c;
+    margin-top: 0px;
 }
 
 .footer h4{
     color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .footer p  {
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 .footer-list {
@@ -35,6 +44,21 @@ body {
     font-size: 14px;
     color: #ffffff; 
     text-decoration: none;
+}
+
+.footer-social, .footer-list {
+    margin-right: 40px;
+    padding-top: 10px; 
+    border-top: 1px solid #DFDFDF;
+}
+
+.footer-social a , .footer-social a:hover {
+    color: #ffffff;
+}
+
+.footer-social img {
+    width: 30px;
+    height:30px;
 }
 
 .top-section {
