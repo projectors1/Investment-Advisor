@@ -87,10 +87,17 @@ body {
     padding:20px;
 }
 
-.contact-section h2, .idea-section h2,.team-section h2,.social-section h2  {
+.contact-section h2, .idea-section h2,.team-section h2,.social-section h4,.working-section h2,.choose-section h2  {
     color: #e74c3c;
     margin-top: 0px;
+    margin-bottom: 25px;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.social-section h4,.choose-section h2 {
+    color: #FFFFFF;
 }
 
 .contact-section ,.team-section {
@@ -122,7 +129,6 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 .idea-section p { 
     font-size: 18px;
     text-align: left;
-    margin-top: 25px; 
 }
 
 .idea-section p, .form-group label, .list-group-item {  
@@ -154,9 +160,12 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 }
 
 .list-group, .idea-section h2 {
-    margin: 0;
     border: none;
     text-align: left;
+}
+
+.list-group {
+    margin-bottom: 0px;
 }
 
 .list-group-item,.list-group-item:first-child  {
@@ -175,12 +184,8 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 }
 
 .social-button img {
-    height: 30px;
-    width: 30px;
-}
-
-.social-section h2{
-    color: #FFFFFF;
+    height: 50px;
+    width: 50px;
 }
 
 .section {
