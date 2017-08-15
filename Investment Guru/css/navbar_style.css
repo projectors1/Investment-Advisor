@@ -82,7 +82,7 @@ body {
   transition     : 0.4s;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a:hover ,.navbar-inverse .navbar-nav >.active>a {
   background-color : rgba(0,0,0,0.1);
   box-shadow       : inset 0px -2px 0px 0px #e74c3c;
 }
