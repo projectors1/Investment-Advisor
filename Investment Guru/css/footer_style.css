@@ -21,7 +21,7 @@ body {
 }
 
 .footer h4{
-    color: #ffffff;
+    color: #e74c3c;
     margin-bottom: 20px;
     margin-top: 0px;
 }
@@ -40,10 +40,14 @@ body {
     padding: 5px 0px;
 }
 
-.footer-link a,.footer-link a:hover,.footer-link a:active,.footer-link a:focus {
+.footer-link a {
     font-size: 14px;
     color: #ffffff; 
     text-decoration: none;
+}
+
+.footer-link a:hover,.footer-link a:active,.footer-link a:focus {
+    color: #e74c3c;
 }
 
 .footer-social, .footer-list {
