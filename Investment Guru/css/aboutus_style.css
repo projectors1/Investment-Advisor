@@ -9,25 +9,25 @@ body {
 .avatar {
     display: inline-block;
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 3%;
     border: 1px;
-    background-color: #ffffff;
-    box-shadow     : 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    background-color: #FFFFFF;
+    box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
 }
 
 .btn.btn-white {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     color: #e74c3c;
     border: none;
     border-radius: 4px;
-    outline: none;
+    outline: #e74c3c;
     margin-top: 20px; 
     height: 40px;
     transition: ease 0.4s;
 }
 
 .btn.btn-white:hover {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     color: #e74c3c;
     box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
     outline: none;
@@ -35,20 +35,20 @@ body {
 
 .btn.btn-main {
     background-color: #e74c3c;
-    color: #ffffff;
+    color: #FFFFFF;
     margin: 10px 0px; 
     text-align: center;
     border: none;
     border-radius: 4px;
-    outline: none;
+    outline: #e74c3c;
     height: 40px;  
     width: 120px;
     transition: ease 0.4s;
 }
 
 .btn.btn-main:hover  {
-    background-color: #e74c3c;
-    color: #ffffff;
+    background-color: #E74B3B;
+    color: #FFFFFF;
     box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
     outline: none;
 }
@@ -61,7 +61,7 @@ body {
     margin-bottom  : 0px;
     border-radius  : 4px;
     background     : #FFFFFF;
-    box-shadow     : 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
 }
 
 .card-header {
@@ -73,8 +73,7 @@ body {
     padding          : 15px;
     border-radius    : 4px;
     background-color : #e74c3c;
-    box-shadow       : 0 4px 20px 0px rgba(0, 0, 0, 0.14),
-                       0 7px 10px -5px #e74c3c;
+    box-shadow       : 0 7px 10px -5px #e74c3c;
 }
   
 .card-title {
@@ -100,10 +99,10 @@ body {
 
 .card-team {
     position: relative;
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 4px;
     margin: 20px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
     box-sizing: border-box;
 }
 
@@ -128,7 +127,7 @@ body {
     bottom: 0;
     left: 0;
     padding: 20px;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 20px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -221,10 +220,6 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
     padding-top: 55px;
 }
 
-.icon-background {
-    color: #c0ffc0;
-}
-
 .jumbotron {
     background-color : #232731;
     margin-bottom: 0px;
@@ -246,11 +241,9 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 }
 
 .list-group-item,.list-group-item:first-child  {
-    border-radius: 1px;
     font-size: 16px;
     background-color: #ffffff;
-    border: 1px solid #F0F0F0;
-
+    border: none;
 }
 
 .social-button a,.social-button a:hover {
@@ -267,7 +260,7 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 }
 
 .bg-offwhite {
-    background-color: #eef0f4;
+    background-color: #f9f9f9;
 }
 
 .working-section img {
