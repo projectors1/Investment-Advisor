@@ -263,6 +263,18 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
     background-color: #f9f9f9;
 }
 
+#facebook{
+    color: #3b5998;
+}
+
+#twitter{
+    color: #55acee
+}
+
+#gplus{
+    color: #dd4b39
+}
+
 .working-section img {
     width: 150px;
     height: 150px;
