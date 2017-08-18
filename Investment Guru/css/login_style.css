@@ -8,28 +8,29 @@ h4 {
 }
 
 body {
-  background-image: url("../img/hero.jpg");
+  background: url("../img/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.btn.btn-transparent {
-  padding          : 8px 18px;
-  color            : #e74c3c;
-  border           : 1px;
-  border-radius    : 4px;
-  background-color : transparent;
-  font-size        : 20px;
-  transition       : all 0.5s;
-  outline-color: #e74c3c;
+.btn.btn-main {
+  background-color: #e74c3c;
+  color: #FFFFFF;
+  margin: 10px 0px; 
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  outline: #e74c3c;
+  height: 40px;  
+  width: 120px;
+  transition: ease 0.4s;
 }
 
-.btn-transparent:hover {
-  color            : #FFFFFF;
-  border           : none;
-  background-color : #e74c3c;
-}
-
-.btn-transparent:active {
-  background-color : #C0392B;
+.btn.btn-main:hover  {
+  background-color: #e74c3c;
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
+  outline: none;
 }
 
 .btn-icon ,.btn-icon:hover {
@@ -52,6 +53,7 @@ body {
   border-radius  : 4px;
   background     : #FFFFFF;
   box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+  border-top: 3px solid #e74c3c;
 }
 
 .card-header {
@@ -63,7 +65,7 @@ body {
   padding          : 15px;
   border-radius    : 4px;
   background-color : #e74c3c;
-  box-shadow       : 0 7px 10px -5px #C0392B;
+  box-shadow       : 0 7px 10px -5px #e74c3c;
 }
 
 .card-title {
@@ -103,7 +105,7 @@ body {
 
 input[type=password]:focus,
 input[type=text]:focus {
-  border        : 2px solid #e74c3c;
+  border        : 1px solid #e74c3c;
   border-radius : 3px;
   box-shadow    : none;
 }
