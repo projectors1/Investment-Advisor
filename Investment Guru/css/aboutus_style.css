@@ -36,11 +36,7 @@ body {
 }
 
 .card {
-    display        : inline-block;
-    position       : relative;
-    width          : 100%;
     margin         : 45px 0;
-    margin-bottom  : 0px;
     border-radius  : 4px;
     background     : #FFFFFF;
     box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
@@ -48,7 +44,6 @@ body {
 }
 
 .card-header {
-    position         : relative;
     margin-top       : -20px;
     margin-right     : 10px;
     margin-bottom    : 10px;
@@ -81,12 +76,10 @@ body {
 }
 
 .card-team {
-    position: relative;
     background-color: #FFFFFF;
     border-radius: 4px;
     margin: 20px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-    box-sizing: border-box;
 }
 
 .card-image {
@@ -96,7 +89,6 @@ body {
 
 .card-image img {
     border-radius: 4px 4px 0 0;
-    position: relative;
     left: 0;
     right: 0;
     top: 0;
@@ -225,7 +217,6 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 
 .list-group-item,.list-group-item:first-child  {
     font-size: 16px;
-    background-color: #ffffff;
     border: none;
 }
 

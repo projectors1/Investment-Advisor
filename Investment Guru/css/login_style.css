@@ -45,9 +45,6 @@ body {
 }
 
 .card {
-  display        : inline-block;
-  position       : relative;
-  width          : 100%;
   margin         : 25px 0;
   padding-bottom : 20px;
   border-radius  : 4px;
@@ -57,7 +54,6 @@ body {
 }
 
 .card-header {
-  position         : relative;
   margin-top       : -40px;
   margin-right     : 10px;
   margin-bottom    : 20px;
