@@ -1,9 +1,8 @@
 body {
-  text-decoration : none;
-  font-family     : "Open-sans",
-                    sans-serif;
-  font-weight     : 300;
-  font-stretch    : normal;
+    text-decoration: none;
+    font-family: "Open-sans", sans-serif;
+    font-weight: 300;
+    font-stretch: normal;
 }
 
 .avatar {
@@ -12,7 +11,7 @@ body {
     border-radius: 3%;
     border-top: 3px solid #e74c3c;
     background-color: #FFFFFF;
-    box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
 }
 
 .btn.btn-main {
@@ -28,7 +27,7 @@ body {
     transition: ease 0.4s;
 }
 
-.btn.btn-main:hover  {
+.btn.btn-main:hover {
     background-color: #e74c3c;
     color: #FFFFFF;
     box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
@@ -36,32 +35,33 @@ body {
 }
 
 .card {
-    margin         : 45px 0;
-    border-radius  : 4px;
-    background     : #FFFFFF;
-    box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    margin: 45px 0;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
     border-top: 3px solid #e74c3c;
 }
 
 .card-header {
-    margin-top       : -20px;
-    margin-right     : 10px;
-    margin-bottom    : 10px;
-    margin-left      : 10px;
-    padding          : 15px;
-    border-radius    : 4px;
-    background-color : #e74c3c;
-    box-shadow       : 0 7px 10px -5px #e74c3c;
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    box-shadow: 0 7px 10px -5px #e74c3c;
 }
 
 .card-title {
-    margin     : 5px 0px;
-    color      : #FFFFFF;
-    text-align : left;
+    margin: 5px 0px;
+    color: #FFFFFF;
+    text-align: left;
 }
 
-.card-form ,.card-content {
-    padding:20px;
+.card-form,
+.card-content {
+    padding: 20px;
 }
 
 .card-content {
@@ -112,34 +112,57 @@ body {
 
 /* Section Styles start */
 
-.contact-section h3, .idea-section h3,.team-section h3,.social-section h3,.working-section h3 ,.choose-section h3 {
-    color: #e74c3c;
+.contact-section h3,
+.idea-section h3,
+.team-section h3,
+.social-section h3,
+.working-section h3,
+.choose-section h3 {
+    color: #525558;
     text-transform: uppercase;
 }
 
-.idea-section , .working-section,.social-section {
+.idea-section,
+.working-section,
+.social-section {
     text-align: center;
 }
 
-.contact-section ,.team-section,.choose-section {
+.contact-section,
+.team-section,
+.choose-section {
     padding: 0px 40px;
     text-align: center;
 }
 
-.social-section h3,.choose-section h3,.choose-section h4,.choose-section p {
+.social-section h3,
+.choose-section h3,
+.choose-section h4,
+.choose-section p {
     color: #FFFFFF;
 }
 
-.idea-section p, .form-group label, .list-group-item, .working-section h4 {
+.idea-section p,
+.form-group label,
+.list-group-item,
+.working-section h4 {
     color: #525558;
 }
 
-.choose-section p,.choose-section h3,.contact-section h3,.idea-section h3, .social-section h3,.team-section h3,.team-section h4,.working-section h3 {
+.choose-section p,
+.choose-section h3,
+.contact-section h3,
+.idea-section h3,
+.social-section h3,
+.team-section h3,
+.team-section h4,
+.working-section h3 {
     margin-bottom: 20px;
     margin-top: 0px;
 }
 
-.choose-section h4 , .idea-section h3{
+.choose-section h4,
+.idea-section h3 {
     margin-top: 20px;
 }
 
@@ -167,12 +190,13 @@ body {
     background-color: white;
 }
 
+
 /* Section Styles end */
 
 .form-control {
-    height   : 40px;
-    float    : left;
-  }
+    height: 40px;
+    float: left;
+}
 
 .form-group {
     margin-bottom: 20px;
@@ -180,10 +204,12 @@ body {
 }
 
 input[type=password]:focus,
-input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
-    border        : 1px solid #e74c3c;
-    border-radius : 3px;
-    box-shadow    : none;
+input[type=text]:focus,
+input[type=email]:focus,
+.form-group textarea:focus {
+    border: 1px solid #e74c3c;
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 .idea-section img {
@@ -196,17 +222,19 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
 }
 
 .jumbotron {
-    background-color : #232731;
+    background-color: #232731;
     margin-bottom: 0px;
 }
 
-.jumbotron h1, .jumbotron p {
-    color:white;
+.jumbotron h1,
+.jumbotron p {
+    color: white;
     padding: 0px 40px;
     text-align: center;
 }
 
-.list-group, .idea-section h3 {
+.list-group,
+.idea-section h3 {
     border: none;
     text-align: left;
 }
@@ -215,12 +243,14 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
     margin-bottom: 0px;
 }
 
-.list-group-item,.list-group-item:first-child  {
+.list-group-item,
+.list-group-item:first-child {
     font-size: 16px;
     border: none;
 }
 
-.social-button a,.social-button a:hover {
+.social-button a,
+.social-button a:hover {
     color: white;
     margin: 0px 10px;
 }

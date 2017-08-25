@@ -1,206 +1,210 @@
+html,
 body,
 h4 {
-  text-decoration : none;
-  font-family     : "Open-sans",
-                    sans-serif;
-  font-weight     : 300;
-  font-stretch    : normal;
+    text-decoration: none;
+    font-family: "Open-sans", sans-serif;
+    font-weight: 300;
+    font-stretch: normal;
+    height: 100%;
+    color: #888888;
 }
 
 body {
-  background: url("../img/background.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url("../img/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .btn.btn-main {
-  background-color: #e74c3c;
-  color: #FFFFFF;
-  margin: 10px 0px; 
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  outline: #e74c3c;
-  height: 40px;  
-  width: 120px;
-  transition: ease 0.4s;
+    background-color: #e74c3c;
+    color: #FFFFFF;
+    margin: 10px 0px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    outline: #e74c3c;
+    height: 40px;
+    width: 120px;
+    transition: ease 0.4s;
 }
 
-.btn.btn-main:hover  {
-  background-color: #e74c3c;
-  color: #FFFFFF;
-  box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
-  outline: none;
+.btn.btn-main:hover {
+    background-color: #e74c3c;
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
+    outline: none;
 }
 
-.btn-icon ,.btn-icon:hover {
-  color : #FFFFFF;
+.btn-icon,
+.btn-icon:hover {
+    color: #FFFFFF;
 }
 
 .button-group {
-  display    : block;
-  position   : relative;
-  margin-top : 20px;
-  text-align : center;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .card {
-  margin         : 25px 0;
-  padding-bottom : 20px;
-  border-radius  : 4px;
-  background     : #FFFFFF;
-  box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-  border-top: 3px solid #e74c3c;
+    margin: 25px 0;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    border-top: 3px solid #e74c3c;
 }
 
 .card-header {
-  margin-top       : -40px;
-  margin-right     : 10px;
-  margin-bottom    : 20px;
-  margin-left      : 10px;
-  padding          : 15px;
-  border-radius    : 4px;
-  background-color : #e74c3c;
-  box-shadow       : 0 7px 10px -5px #e74c3c;
+    margin-top: -40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    box-shadow: 0 7px 10px -5px #e74c3c;
 }
 
 .card-title {
-  margin     : 20px 0px;
-  color      : #FFFFFF;
-  text-align : center;
-  font-size  : 20px;
+    margin: 20px 0px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
 }
 
 .card-button,
 .card-form {
-  margin : 20px;
+    margin: 20px;
 }
 
 .card-button {
-  margin-top : 25px;
+    margin-top: 25px;
 }
 
 .content-section {
-  padding-top : 20vh;
+    padding-top: 20vh;
 }
 
 .division {
-  position   : relative;
-  width      : 100%;
-  float      : none;
-  margin     : 0 auto 0;
-  overflow   : hidden;
-  text-align : center;
+    position: relative;
+    width: 100%;
+    float: none;
+    margin: 0 auto 0;
+    overflow: hidden;
+    text-align: center;
 }
 
 .form-control {
-  position : absolute;
-  height   : 40px;
-  float    : left;
+    position: absolute;
+    height: 40px;
+    float: left;
 }
 
 input[type=password]:focus,
 input[type=text]:focus {
-  border        : 1px solid #e74c3c;
-  border-radius : 3px;
-  box-shadow    : none;
+    border: 1px solid #e74c3c;
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 .input-group {
-  display    : flex;
-  position   : relative;
-  margin-top : 25px;
+    display: flex;
+    position: relative;
+    margin-top: 25px;
 }
 
 .input-group-addon {
-  width  : 50px;
-  height : 40px;
+    width: 50px;
+    height: 40px;
 }
 
 .line {
-  position   : absolute;
-  top        : 10px;
-  width      : 34%;
-  margin     : 0px 20px;
-  border-top : 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+    margin: 0px 20px;
+    border-top: 1px solid #DFDFDF;
 }
 
 .line.l {
-  left : 0;
+    left: 0;
 }
 
 .line.r {
-  right : 0;
+    right: 0;
 }
 
 .social-login {
-  margin-top : 15px;
-  padding    : 0;
-  text-align : center;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
 }
 
 .switch-container {
-  margin : 0px;
+    margin: 0px;
 }
 
 .checkbox label {
-  padding : 0px 10px;
+    padding: 0px 10px;
 }
+
 
 /* CSS Switch Button */
 
 .switch {
-  display  : inline-block;
-  position : relative;
-  width    : 40px;
-  height   : 22px;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 22px;
 }
 
 .switch input {
-  display : none;
+    display: none;
 }
 
 .slider {
-  position           : absolute;
-  top                : 0;
-  right              : 0;
-  bottom             : 0;
-  left               : 0;
-  background-color   : #ccc;
-  -webkit-transition : .4s;
-  transition         : .4s;
-  cursor             : pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
 }
 
 .slider:before {
-  content            : "";
-  position           : absolute;
-  bottom             : 2px;
-  left               : 2px;
-  width              : 18px;
-  height             : 18px;
-  background-color   : white;
-  -webkit-transition : .4s;
-  transition         : .4s;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-input:checked + .slider {
-  background-color : #e74c3c;
+input:checked+.slider {
+    background-color: #e74c3c;
 }
 
-input:focus + .slider {
-  box-shadow : 0 0 1px #e74c3c;
+input:focus+.slider {
+    box-shadow: 0 0 1px #e74c3c;
 }
 
-input:checked + .slider:before {
-  -ms-transform : translateX(18px);
-  transform     : translateX(18px);
+input:checked+.slider:before {
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
 }
 
 .slider.round {
-  border-radius : 18px;
+    border-radius: 18px;
 }
 
 .slider.round:before {
-  border-radius : 50%;
+    border-radius: 50%;
 }
