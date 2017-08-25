@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>About Us</title> 
+  <title>About Us</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
   <link rel="stylesheet" type="text/css" href="css/footer_style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -31,7 +32,7 @@
 
       <div class="collapse navbar-collapse" id="bs-navbar">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#" id="how-h" >How it works</a></li>
+          <li><a href="#" id="how-h">How it works</a></li>
           <li><a href="#" id="investment-h">Investment</a></li>
           <li><a href="#" id="mutual-h">Mutual funds</a></li>
           <li class="active"><a href="about_us.html" id="about-h">About us</a></li>
@@ -52,16 +53,17 @@
   </header>
 
   <section class="section idea-section">
-    <div class="container"> 
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <img src="img/invest.svg">
         </div>
-        <div class="col-md-6">          
+        <div class="col-md-6">
           <h3>Our Idea</h3>
           <p>
-            Nowadays, investment has become an essential part of living whether it be investing in a policy or stocks.So our goal is to help you invest and earn irrespective of whether its a small amount or a huge amount, because we believe our goal is to help you achieve your GOAL
-          </p>        
+            Nowadays, investment has become an essential part of living whether it be investing in a policy or stocks.So our goal is to help you invest and earn irrespective of whether its a small amount or a huge amount, because we believe our goal is to help you
+            achieve your GOAL
+          </p>
         </div>
       </div>
     </div>
@@ -72,21 +74,21 @@
       <h3>How we work</h3>
       <h4>Just 3 simple steps to your goal</h4>
       <div class="row">
-        <div class="col-md-4">  
+        <div class="col-md-4">
           <div class="avatar"><img src="img/money-bag.svg"></div>
           <h4>1. Invest your savings</h4>
-        </div>      
-        <div class="col-md-4">
-            <div class="avatar"><img src="img/profit.svg"></div>
-            <h4>2. Earn from investment</h4>
         </div>
         <div class="col-md-4">
-            <div class="avatar"><img src="img/gift.svg"></div>
-            <h4>3. Get your goal</h4>
+          <div class="avatar"><img src="img/profit.svg"></div>
+          <h4>2. Earn from investment</h4>
+        </div>
+        <div class="col-md-4">
+          <div class="avatar"><img src="img/gift.svg"></div>
+          <h4>3. Get your goal</h4>
         </div>
       </div>
       <div>
-        <button type="" class="btn btn-primary btn-main">LEARN MORE</button>        
+        <button type="" class="btn btn-primary btn-main">LEARN MORE</button>
       </div>
     </div>
   </section>
@@ -98,33 +100,33 @@
         <div class="col-md-3">
           <div class="choose-content">
             <i class="fa fa-list-alt fa-inverse fa-3x" aria-hidden="true"></i>
-            <h4>Simple</h4>  
-            <p>Simple and easy step by step procedure that you can follow</p>             
+            <h4>Simple</h4>
+            <p>Simple and easy step by step procedure that you can follow</p>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="choose-content">
             <i class="fa fa-calculator fa-inverse fa-3x" aria-hidden="true"></i>
-            <h4>Calculations</h4>  
-            <p>We do all the complex calculations for you</p>             
-          </div>    
+            <h4>Calculations</h4>
+            <p>We do all the complex calculations for you</p>
+          </div>
         </div>
 
         <div class="col-md-3">
           <div class="choose-content">
             <i class="fa fa-area-chart fa-inverse fa-3x" aria-hidden="true"></i>
-            <h4>Analysis</h4>  
-            <p>We provide the results in an easy to understand graphical charts</p>             
-          </div>      
+            <h4>Analysis</h4>
+            <p>We provide the results in an easy to understand graphical charts</p>
+          </div>
         </div>
 
         <div class="col-md-3">
           <div class="choose-content">
             <i class="fa fa-trophy fa-inverse fa-3x" aria-hidden="true"></i>
-            <h4>Quality</h4>  
-            <p>We provide quality services to our users</p>             
-          </div>          
+            <h4>Quality</h4>
+            <p>We provide quality services to our users</p>
+          </div>
         </div>
       </div>
     </div>
@@ -157,7 +159,7 @@
               <h4>Designer</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
             </div>
-          </div>  
+          </div>
         </div>
 
         <div class="col-md-4">
@@ -187,28 +189,33 @@
     </div>
   </section>
 
-  <section class="section map-section">
-      <div id="map" style="width:100%;height:300px;"></div>      
-      <script>
-        function myMap() {
-          var myCenter = new google.maps.LatLng(19.243549, 72.855526);
-          var mapCanvas = document.getElementById("map");
-          var mapOptions = {center: myCenter, zoom: 18};
-          var map = new google.maps.Map(mapCanvas, mapOptions);
-          var marker = new google.maps.Marker({position:myCenter,animation: google.maps.Animation.BOUNCE});
-          marker.setMap(map);      
-        } 
-      </script>   
-  </section>
-
-  <section id="contact" class="section bg-svg contact-section">    
+  <section id="contact" class="section bg-svg contact-section">
     <div class="container">
       <h3>Contact Us</h3>
+      <div class="card">
+        <div id="map" style="width:100%;height:300px;"></div>
+        <script>
+          function myMap() {
+            var myCenter = new google.maps.LatLng(19.243549, 72.855526);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+              center: myCenter,
+              zoom: 18
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+              position: myCenter,
+              animation: google.maps.Animation.BOUNCE
+            });
+            marker.setMap(map);
+          }
+        </script>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title">Contact Details</h4>                
+              <h4 class="card-title">Contact Details</h4>
             </div>
             <ul class="list-group">
               <li class="list-group-item"><i class="fa fa-map-marker fa-fw"></i>&nbsp; &nbsp; Mount Poinsur, S.V.P. Road, Borivli (West), Mumbai 400 103</li>
@@ -222,28 +229,28 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title">Contact Form</h4>   
+              <h4 class="card-title">Contact Form</h4>
             </div>
             <div class="card-form">
               <form class="form-horizontal">
                 <div class="form-group">
                   <label class="col-md-2 control-label">Name</label>
                   <div class="col-lg-10">
-                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="text" placeholder="Full name" class="form-control">
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="col-md-2 control-label">Email</label>
                   <div class="col-md-10">
-                    <input type="email" placeholder="Email" class="form-control">
+                    <input type="email" placeholder="Email address" class="form-control">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label class="col-md-2 control-label">Issue</label>
+                  <label class="col-md-2 control-label">Subject</label>
                   <div class="col-md-10">
-                    <input type="text" placeholder="Issue" class="form-control">
+                    <input type="text" placeholder="Subject" class="form-control">
                   </div>
                 </div>
 
@@ -256,7 +263,7 @@
 
                 <div class="form-group">
                   <div class="col-md-offset-2 col-md-10">
-                    <button type="button" class="btn btn-primary btn-main">Send</button>
+                    <button type="button" class="btn btn-primary btn-main"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;SUBMIT</button>
                   </div>
                 </div>
               </form>
@@ -269,7 +276,7 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="row">       
+      <div class="row">
         <div class="col-md-offset-10 col-md-2">
           <div class="top-section">
             <div class="top-wrap">
@@ -278,32 +285,32 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row footer-content">
         <div class="col-md-3">
           <h2>INVESTMENT GURU © 2017</h2>
-          <p>Designed and Developed by <br> Jibin, Ivan and Ben</p>         
+          <p>Designed and Developed by <br> Jibin, Ivan and Ben</p>
         </div>
 
         <div class="col-md-3">
           <h4><strong>HELP</strong></h4>
-          <ul class="footer-list">                   
+          <ul class="footer-list">
             <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; How it works</a></li>
             <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact details</a></li>
             <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact form</a></li>
             <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Terms and conditions</a></li>
             <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; FAQ</a></li>
-          </ul> 
+          </ul>
         </div>
 
         <div class="col-md-3">
           <h4><strong>USEFUL LINKS</strong></h4>
-          <ul class="footer-list">                   
+          <ul class="footer-list">
             <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Mutual funds</a></li>
             <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Investment</a></li>
             <li class="footer-link"><a href="about_us.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; About us</a></li>
             <li class="footer-link"><a href="index.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; Home</a></li>
-          </ul> 
+          </ul>
         </div>
 
         <div class="col-md-3">
