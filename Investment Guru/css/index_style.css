@@ -1,11 +1,67 @@
-body {
-  text-decoration : none;
-  font-family     : "Open-sans",
-                    sans-serif;
-  font-weight     : 300;
-  font-stretch    : normal;
+body{
+    text-decoration : none;
+    font-family     : "Open-sans",
+                      sans-serif;
+    font-weight     : 300;
+    font-stretch    : normal;    
 }
 
+.btn-primary {
+    color: #e74c3c;
+    background-color: whitesmoke;
+    border-color: #e74c3c;
+}
+
+#brand{
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#hover-a:hover{
+    background-color: #e74c3c;
+    color: whitesmoke;
+    border-color: #FFA07A;
+}
+
+#how-h:hover{
+    color: #e74c3c;
+}
+
+#investment-h:hover{
+    color: #e74c3c;
+}
+
+#mutual-h:hover{
+    color: #e74c3c;
+}
+
+#about-h:hover{
+    color: #e74c3c;
+}
+
+#contact-h:hover{
+    color: #e74c3c;
+}
+
+.jumbotron{
+    border: 3px solid #e74c3c;
+}
+
+.navbar-inverse{
+    background:#232731;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.somespace{
+    padding-left: 4.5%;
+}
+
+/* Similar Sections Of About_Us Page */
 .avatar {
     display: inline-block;
     overflow: hidden;
@@ -112,52 +168,31 @@ body {
 
 /* Section Styles start */
 
-.contact-section h3, .idea-section h3,.team-section h3,.social-section h3,.working-section h3 ,.choose-section h3 {
+.contact-section h3,.team-section h3,.social-section h3 {
     color: #E74838;
     text-transform: uppercase;
 }
 
-.idea-section , .working-section,.social-section {
+.social-section {
     text-align: center;
 }
 
-.contact-section ,.team-section,.choose-section {
+.contact-section ,.team-section {
     padding: 0px 40px;
     text-align: center;
 }
 
-.social-section h3,.choose-section h3,.choose-section h4,.choose-section p {
+.social-section h3 {
     color: #FFFFFF;
 }
 
-.idea-section p, .form-group label, .list-group-item, .working-section h4 {  
+.form-group label {  
     color: #525558;
 }
 
-.choose-section p,.choose-section h3,.contact-section h3,.idea-section h3, .social-section h3,.team-section h3,.team-section h4,.working-section h3 {
+.contact-section h3,.social-section h3,.team-section h3,.team-section h4, {
     margin-bottom: 20px; 
     margin-top: 0px;
-}
-
-.choose-section h4 , .idea-section h3{
-    margin-top: 20px; 
-}
-
-.choose-section p {
-    font-size: 16px;
-}
-
-.choose-section h3 {
-    margin-bottom: 40px;
-}
-
-.working-section h4 {
-    margin-bottom: 20px;
-}
-
-.idea-section p { 
-    font-size: 18px;
-    text-align: left;
 }
 
 .section {
@@ -184,26 +219,6 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
     border        : 1px solid #e74c3c;
     border-radius : 3px;
     box-shadow    : none;
-}
-
-.idea-section img {
-    width: 40%;
-    height: 40%;
-}
-
-.heading-section {
-    padding-top: 55px;
-}
-
-.jumbotron {
-    background-color : #232731;
-    margin-bottom: 0px;
-}
-
-.jumbotron h1, .jumbotron p {
-    color:white;
-    padding: 0px 40px;
-    text-align: center;
 }
 
 .list-group, .idea-section h3 {
@@ -237,10 +252,4 @@ input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
     background: url("../img/background.svg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.working-section img {
-    width: 150px;
-    height: 150px;
-    padding: 30px;
 }

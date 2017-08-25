@@ -15,38 +15,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="css/investmain.css">
         <link rel="stylesheet" href="css/navbar_style.css">
+        <link rel="stylesheet" href="css/footer_style.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
-			        	<span class="sr-only">Toggle navigation</span>
-			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span>
-			    	</button>
-				<a href="index.html" class="navbar-brand" id="brand">Investment Guru</a>
-			</div>
-			<div class="collapse navbar-collapse" id="bs-navbar">
-				<ul class="nav navbar-nav">
-                    <li><a href="#" id="how-h">How it Works</a></li>
-                    <li><a href="#" id="investment-h">Investment</a></li>
-                    <li><a href="#" id="mutual-h">Mutual funds</a></li>
-					<li><a href="about_us.html" id="about-h">About us</a></li>
-					<li><a href="#" id="contact-h">Contact us</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="signup.html" style="color:#e74c3c"><b>SIGN UP</b></a></li>
-					<li><a href="login.html" style="color:#e74c3c"><b>LOGIN</b></a></li>
-				</ul>
-			</div>
-		</div>
-    </nav> -->
-
+    <!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -84,8 +59,203 @@
              </div>
     </div>
 
+    <!-- About The TEAM -->
+    <section class="section bg-svg team-section">
+      <div class="container">
+        <h3>Our Team</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-team">
+              <div class="card-image">
+                <img src="img/ben.jpg">
+                <span class="card-name">Ben Zachariah</span>
+              </div>
+              <div class="card-content">
+                <h4>Tester</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card-team">
+              <div class="card-image">
+                <img src="img/ben.jpg">
+                <span class="card-name">Jibin Philipose</span>
+              </div>
+              <div class="card-content">
+                <h4>Designer</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
+              </div>
+            </div>  
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card-team">
+              <div class="card-image">
+                <img src="img/ben.jpg">
+                <span class="card-name">Ivan D'Souza</span>
+              </div>
+              <div class="card-content">
+                <h4>Programmer</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="section bg-orange social-section">
+      <div class="container">
+        <h3>Follow us</h3>
+        <div class="social-button">
+          <a class="btn"><i class="fa fa-facebook-square fa-3x"></i></a>
+          <a class="btn"><i class="fa fa-twitter-square fa-3x"></i></a>
+          <a class="btn"><i class="fa fa-google-plus-square fa-3x"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Map Directing to SFIT -->
+    <section class="section map-section">
+        <div id="map" style="width:100%;height:300px;"></div>      
+        <script>
+          function myMap() {
+            var myCenter = new google.maps.LatLng(19.243549, 72.855526);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {center: myCenter, zoom: 18};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({position:myCenter,animation: google.maps.Animation.BOUNCE});
+            marker.setMap(map);      
+          } 
+        </script>   
+    </section>
+    
+    <!-- Contact US -->
+    <section id="contact" class="section bg-svg contact-section">    
+      <div class="container">
+        <h3>Contact Us</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Contact Details</h4>                
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item"><i class="fa fa-map-marker fa-fw"></i>&nbsp; &nbsp; Mount Poinsur, S.V.P. Road, Borivli (West), Mumbai 400 103</li>
+                <li class="list-group-item"><i class="fa fa-phone fa-fw"></i>&nbsp; &nbsp; 022-28928585 / 28908585</li>
+                <li class="list-group-item"><i class="fa fa-fax fa-fw"></i>&nbsp; &nbsp; 022-28954787</li>
+                <li class="list-group-item"><i class="fa fa-envelope fa-fw"></i><a href="#">&nbsp; &nbsp; sfedu@sfitengg.org</a></li>
+                <li class="list-group-item"><i class="fa fa-clock-o fa-fw"></i>&nbsp; &nbsp; Monday - Saturday 9 AM - 5 PM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Contact Form</h4>   
+              </div>
+              <div class="card-form">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" placeholder="Name" class="form-control">
+                    </div>
+                  </div>
+  
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Email</label>
+                    <div class="col-md-10">
+                      <input type="email" placeholder="Email" class="form-control">
+                    </div>
+                  </div>
+  
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Issue</label>
+                    <div class="col-md-10">
+                      <input type="text" placeholder="Issue" class="form-control">
+                    </div>
+                  </div>
+  
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Message</label>
+                    <div class="col-md-10">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+  
+                  <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                      <button type="button" class="btn btn-primary btn-main">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">       
+          <div class="col-md-offset-10 col-md-2">
+            <div class="top-section">
+              <div class="top-wrap">
+                <a href="#top" id="btn_top"><i class="fa fa-angle-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row footer-content">
+          <div class="col-md-3">
+            <h2>INVESTMENT GURU © 2017</h2>
+            <p>Designed and Developed by <br> Jibin, Ivan and Ben</p>         
+          </div>
+  
+          <div class="col-md-3">
+            <h4><strong>HELP</strong></h4>
+            <ul class="footer-list">                   
+              <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; How it works</a></li>
+              <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact details</a></li>
+              <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact form</a></li>
+              <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Terms and conditions</a></li>
+              <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; FAQ</a></li>
+            </ul> 
+          </div>
+  
+          <div class="col-md-3">
+            <h4><strong>USEFUL LINKS</strong></h4>
+            <ul class="footer-list">                   
+              <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Mutual funds</a></li>
+              <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Investment</a></li>
+              <li class="footer-link"><a href="about_us.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; About us</a></li>
+              <li class="footer-link"><a href="index.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; Home</a></li>
+            </ul> 
+          </div>
+  
+          <div class="col-md-3">
+            <h4><strong>SOCIAL LINKS</strong></h4>
+            <div class="footer-social">
+              <a class="btn" id="facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+              <a class="btn" id="twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+              <a class="btn" id="gplus"><i class="fa fa-google-plus-square fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/navbar_script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN-EhvT3iNAy0-DS7SiVDz5o_K-0q1g_8&callback=myMap"></script>
+        <script src="js/footer_script.js"></script>
     </body>
 </html>
