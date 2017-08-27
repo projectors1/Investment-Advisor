@@ -6,9 +6,48 @@ body{
     font-stretch    : normal;    
 }
 
+#content{
+	text-align: center;
+    padding-top: 15%;
+}
+
+.intro{
+    height:100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+#shadow{
+    text-shadow: 0px 4px  3px rgba(231,76,60,0.4),
+    0px 8px 13px rgba(231,76,60,0.1),
+    0px 18px 23px rgba(231,76,60,0.1);
+}
+
+.font37{
+    color: whitesmoke;
+    font-size: 37px;
+    font-weight: 300;
+}
+
+.font38{
+    font-size: 38px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
 .btn-primary {
     color: #e74c3c;
     background-color: whitesmoke;
+    border-color: #e74c3c;
+}
+
+.btn-primary:hover{
+    background-color: #e74c3c;
+    color: whitesmoke;
     border-color: #e74c3c;
 }
 
@@ -44,10 +83,6 @@ body{
     color: #e74c3c;
 }
 
-.jumbotron{
-    border: 3px solid #e74c3c;
-}
-
 .navbar-inverse{
     background:#232731;
     border: none;
@@ -59,197 +94,4 @@ body{
 
 .somespace{
     padding-left: 4.5%;
-}
-
-/* Similar Sections Of About_Us Page */
-.avatar {
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 3%;
-    border-top: 3px solid #e74c3c;
-    background-color: #FFFFFF;
-    box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-}
-
-.btn.btn-main {
-    background-color: #e74c3c;
-    color: #FFFFFF;
-    margin: 10px 0px; 
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    outline: #e74c3c;
-    height: 40px;  
-    width: 120px;
-    transition: ease 0.4s;
-}
-
-.btn.btn-main:hover  {
-    background-color: #e74c3c;
-    color: #FFFFFF;
-    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
-    outline: none;
-}
-
-.card {
-    margin         : 45px 0;
-    border-radius  : 4px;
-    background     : #FFFFFF;
-    box-shadow     : 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-    border-top: 3px solid #e74c3c;
-}
-
-.card-header {
-    margin-top       : -20px;
-    margin-right     : 10px;
-    margin-bottom    : 10px;
-    margin-left      : 10px;
-    padding          : 15px;
-    border-radius    : 4px;
-    background-color : #e74c3c;
-    box-shadow       : 0 7px 10px -5px #e74c3c;
-}
-  
-.card-title {
-    margin     : 5px 0px;
-    color      : #FFFFFF;
-    text-align : left;
-}
-
-.card-form ,.card-content {
-    padding:20px;
-}
-
-.card-content {
-    text-align: left;
-    font-size: 16px;
-    color: #525558;
-}
-
-.card-content h4 {
-    color: #525558;
-    font-size: 24px;
-}
-
-.card-team {
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    margin: 20px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-}
-
-.card-image {
-    position: relative;
-    display: block;
-}
-
-.card-image img {
-    border-radius: 4px 4px 0 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-.card-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    color: #FFFFFF;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    z-index: 2;
-}
-
-
-/* Section Styles start */
-
-.contact-section h3,.team-section h3,.social-section h3 {
-    color: #E74838;
-    text-transform: uppercase;
-}
-
-.social-section {
-    text-align: center;
-}
-
-.contact-section ,.team-section {
-    padding: 0px 40px;
-    text-align: center;
-}
-
-.social-section h3 {
-    color: #FFFFFF;
-}
-
-.form-group label {  
-    color: #525558;
-}
-
-.contact-section h3,.social-section h3,.team-section h3,.team-section h4, {
-    margin-bottom: 20px; 
-    margin-top: 0px;
-}
-
-.section {
-    position: relative;
-    margin: 0px;
-    padding: 30px 0px;
-    background-color: white;
-}
-
-/* Section Styles end */
-
-.form-control {
-    height   : 40px;
-    float    : left;
-  }
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-  
-input[type=password]:focus,
-input[type=text]:focus,input[type=email]:focus, .form-group textarea:focus {
-    border        : 1px solid #e74c3c;
-    border-radius : 3px;
-    box-shadow    : none;
-}
-
-.list-group, .idea-section h3 {
-    border: none;
-    text-align: left;
-}
-
-.list-group {
-    margin-bottom: 0px;
-}
-
-.list-group-item,.list-group-item:first-child  {
-    font-size: 16px;
-    border: none;
-}
-
-.social-button a,.social-button a:hover {
-    color: white;
-    margin: 0px 10px;
-}
-
-.map-section {
-    padding: 0px;
-}
-
-.bg-orange {
-    background-color: #e74c3c;
-}
-
-.bg-svg {
-    background: url("../img/background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }

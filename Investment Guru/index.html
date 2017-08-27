@@ -53,162 +53,20 @@
         </div>
     </nav>
 
-
-    <div class="jumbotron">
-        <div class="container">
-            <h1><i class="fa fa-inr" aria-hidden="true"></i> Investment Guru</h1>
-            <h2 class="somespace">Having Trouble to manage your goals and confused about how to save or invest in mutual funds?</h2>
-            <p class="somespace">Well, Investment Guru is here to help you manage your goals and give you advice on where to invest your saving's.</p>
-            <p style="text-align:center;"><a class="btn btn-primary btn-lg" href="#" role="button" id="hover-a">Get Started Now!</a></p>
+    <!-- Landing Page -->
+    <div class="container intro" style="background: url('img/dark.jpg') no-repeat center center;">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="content">
+            <p class="font37">An Average Person has Lot's Of Goal's</p>
+            <p class="font37">Per Day/Week/Month/Year...</p>
+            <p class="font38">But The Person Who Plans Well Achieve's his GOAL'S.</p>
+            <p><a class="btn btn-primary btn-lg" href="signup.html" role="button" id="shadow"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Plan Now!</a></p>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- About The TEAM -->
-    <section class="section bg-svg team-section">
-        <div class="container">
-            <h3>Our Team</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card-team">
-                        <div class="card-image">
-                            <img src="img/ben.jpg">
-                            <span class="card-name">Ben Zachariah</span>
-                        </div>
-                        <div class="card-content">
-                            <h4>Tester</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card-team">
-                        <div class="card-image">
-                            <img src="img/ben.jpg">
-                            <span class="card-name">Jibin Philipose</span>
-                        </div>
-                        <div class="card-content">
-                            <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card-team">
-                        <div class="card-image">
-                            <img src="img/ben.jpg">
-                            <span class="card-name">Ivan D'Souza</span>
-                        </div>
-                        <div class="card-content">
-                            <h4>Programmer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Media Links -->
-    <section class="section bg-orange social-section">
-        <div class="container">
-            <h3>Follow us</h3>
-            <div class="social-button">
-                <a class="btn"><i class="fa fa-facebook-square fa-3x"></i></a>
-                <a class="btn"><i class="fa fa-twitter-square fa-3x"></i></a>
-                <a class="btn"><i class="fa fa-google-plus-square fa-3x"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Directing to SFIT -->
-    <section class="section map-section">
-        <div id="map" style="width:100%;height:300px;"></div>
-        <script>
-            function myMap() {
-                var myCenter = new google.maps.LatLng(19.243549, 72.855526);
-                var mapCanvas = document.getElementById("map");
-                var mapOptions = {
-                    center: myCenter,
-                    zoom: 18
-                };
-                var map = new google.maps.Map(mapCanvas, mapOptions);
-                var marker = new google.maps.Marker({
-                    position: myCenter,
-                    animation: google.maps.Animation.BOUNCE
-                });
-                marker.setMap(map);
-            }
-        </script>
-    </section>
-
-    <!-- Contact US -->
-    <section id="contact" class="section bg-svg contact-section">
-        <div class="container">
-            <h3>Contact Us</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Contact Details</h4>
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item"><i class="fa fa-map-marker fa-fw"></i>&nbsp; &nbsp; Mount Poinsur, S.V.P. Road, Borivli (West), Mumbai 400 103</li>
-                            <li class="list-group-item"><i class="fa fa-phone fa-fw"></i>&nbsp; &nbsp; 022-28928585 / 28908585</li>
-                            <li class="list-group-item"><i class="fa fa-fax fa-fw"></i>&nbsp; &nbsp; 022-28954787</li>
-                            <li class="list-group-item"><i class="fa fa-envelope fa-fw"></i><a href="#">&nbsp; &nbsp; sfedu@sfitengg.org</a></li>
-                            <li class="list-group-item"><i class="fa fa-clock-o fa-fw"></i>&nbsp; &nbsp; Monday - Saturday 9 AM - 5 PM</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Contact Form</h4>
-                        </div>
-                        <div class="card-form">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Name</label>
-                                    <div class="col-lg-10">
-                                        <input type="text" placeholder="Name" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Email</label>
-                                    <div class="col-md-10">
-                                        <input type="email" placeholder="Email" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Issue</label>
-                                    <div class="col-md-10">
-                                        <input type="text" placeholder="Issue" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Message</label>
-                                    <div class="col-md-10">
-                                        <textarea class="form-control" rows="3"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="col-md-offset-2 col-md-10">
-                                        <button type="button" class="btn btn-primary btn-main">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
