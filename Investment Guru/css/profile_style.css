@@ -1,4 +1,84 @@
-.section {
-    height: 500px;
-    background-color: #ffffff;
+body {
+    text-decoration: none;
+    font-family: "Open-sans", sans-serif;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+/*Section styles*/
+
+.main-section,.sidebar-section {
+    margin-top: 55px;;
+}
+
+.main-section {
+    float: right;
+    position: relative; 
+    width: calc(100% - 260px);
+    height: 100%;
+    background: #EEEEEE;
+    overflow: hidden !important;
+}
+
+.profile-section {
+    height: 900px;
+}
+
+.sidebar-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 265px;
+    z-index: 1;
+    height: 100%;
+    display: block;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/*sidebar styles*/
+
+.nav-list {
+    margin-top: 10px;
+}
+
+.nav-list li {
+    margin-bottom: 10px;
+}
+
+.nav-list a {
+    padding: 10px 15px;
+    margin: 0px 15px;
+    border-radius: 4px;
+    color: #525558;    
+    line-height: 30px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-list li > a:hover {
+    background: rgba(255, 255, 255, 0.23);
+}
+
+.nav-list i {
+    font-size: 24px;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.nav-list p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.line {
+    margin: 0px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
