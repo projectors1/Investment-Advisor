@@ -16,12 +16,12 @@ body {
 
 .footer h2,
 .footer p {
-    color: #e74c3c;
+    color: #FFFFFF;
     margin-top: 0px;
 }
 
 .footer h4 {
-    color: #e74c3c;
+    color: #FFFFFF;
     margin-bottom: 20px;
     margin-top: 0px;
 }
@@ -42,7 +42,7 @@ body {
 
 .footer-link a {
     font-size: 14px;
-    color: #ffffff;
+    color: rgba(255,255,255,.5);
     text-decoration: none;
 }
 
@@ -93,16 +93,4 @@ body {
 .top-wrap i {
     font-size: 30px;
     line-height: 55px;
-}
-
-#facebook {
-    color: #3b5998;
-}
-
-#twitter {
-    color: #55acee
-}
-
-#gplus {
-    color: #dd4b39
 }
