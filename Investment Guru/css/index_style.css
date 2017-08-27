@@ -95,3 +95,21 @@ body{
 .somespace{
     padding-left: 4.5%;
 }
+
+img {
+    vertical-align: middle;
+    display: flex;
+    overflow: hidden;
+}
+
+.samespan{
+    text-transform: uppercase;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.para{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+}
