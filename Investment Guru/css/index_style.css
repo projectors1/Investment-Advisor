@@ -53,6 +53,7 @@ body{
 
 .somespace{
     padding-left: 4.5%;
+<<<<<<< HEAD
 }
 
 img {
@@ -71,4 +72,6 @@ img {
     text-align: center;
     padding-top: 15px;
     font-size: 25px;
+=======
+>>>>>>> 08c85996084c41d4fc4d33d38ea81b0d1d242ade
 }
