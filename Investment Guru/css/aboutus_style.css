@@ -5,15 +5,6 @@ body {
     font-stretch: normal;
 }
 
-.avatar {
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 3%;
-    border-top: 3px solid #e74c3c;
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-}
-
 .btn.btn-main {
     background-color: #e74c3c;
     color: #FFFFFF;
@@ -78,8 +69,8 @@ body {
 .card-team {
     background-color: #FFFFFF;
     border-radius: 4px;
-    margin: 20px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    margin-bottom: 20px; 
 }
 
 .card-image {
@@ -109,6 +100,31 @@ body {
     z-index: 2;
 }
 
+.line {
+    border-top: 1px solid #EEEEEE;
+}
+
+.card-social {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-bg {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    border-radius: 4px;
+}
+
+.row-padding {
+    padding: 0px 100px;
+}
+
+@media (max-width:767px) {
+    .row-padding {
+        padding: 0px 50px; 
+    }
+}
+
 
 /* Section Styles start */
 
@@ -117,7 +133,7 @@ body {
 .team-section h3,
 .social-section h3,
 .working-section h3,
-.choose-section h3 {
+.choose-section h3{
     color: #525558;
     text-transform: uppercase;
 }
@@ -135,30 +151,23 @@ body {
     text-align: center;
 }
 
-.social-section h3,
-.choose-section h3,
-.choose-section h4,
-.choose-section p {
-    color: #FFFFFF;
-}
-
 .idea-section p,
 .form-group label,
 .list-group-item,
-.working-section h4 {
+.working-section h4, .working-section p,
+.choose-section h4,
+.choose-section p  {
     color: #525558;
 }
 
-.choose-section p,
 .choose-section h3,
 .contact-section h3,
 .idea-section h3,
-.social-section h3,
 .team-section h3,
-.team-section h4,
-.working-section h3 {
-    margin-bottom: 20px;
+.working-section h3,.social-section h3 {
+    margin-bottom: 45px;
     margin-top: 0px;
+    font-size: 28px;
 }
 
 .choose-section h4,
@@ -170,12 +179,14 @@ body {
     font-size: 16px;
 }
 
-.choose-section h3 {
-    margin-bottom: 40px;
+.working-section h4 {
+    margin-bottom: 30px;
+    font-size: 24px;
 }
 
-.working-section h4 {
-    margin-bottom: 20px;
+.working-section p {
+    margin: 0px;
+    font-size: 18px;
 }
 
 .idea-section p {
@@ -186,12 +197,37 @@ body {
 .section {
     position: relative;
     margin: 0px;
-    padding: 30px 0px;
+    padding: 100px 0px;
     background-color: white;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.social-section {
+    padding: 30px 0px;
+}
+
+.facebook,.facebook:hover {
+    color: #3b5998;
+}
+
+.gplus,.gplus:hover {
+    color: #dd4b39
+}
+
+.linkedin,.linkedin:hover {
+    color: #0077B5;
 }
 
 
 /* Section Styles end */
+
+.choose-content {
+    margin-bottom: 30px;
+}
+
+.choose-content i {
+    color: #525558;
+}
 
 .form-control {
     height: 40px;
@@ -201,6 +237,16 @@ body {
 .form-group {
     margin-bottom: 20px;
     text-align: left;
+}
+
+.form-group label,
+.choose-section h3,
+.contact-section h3,
+.idea-section h3,
+.social-section h3,
+.team-section h3,
+.working-section h3  {
+    font-weight: 700;
 }
 
 input[type=password]:focus,
@@ -213,8 +259,8 @@ input[type=email]:focus,
 }
 
 .idea-section img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
 }
 
 .heading-section {
@@ -222,8 +268,9 @@ input[type=email]:focus,
 }
 
 .jumbotron {
-    background-color: #232731;
+    background-color: #e74c3c;
     margin-bottom: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron h1,
@@ -249,9 +296,7 @@ input[type=email]:focus,
     border: none;
 }
 
-.social-button a,
-.social-button a:hover {
-    color: white;
+.social-button a{
     margin: 0px 10px;
 }
 
@@ -259,14 +304,8 @@ input[type=email]:focus,
     padding: 0px;
 }
 
-.bg-orange {
-    background-color: #e74c3c;
-}
-
-.bg-svg {
-    background-color: #f6f6f6;
-    background-size: cover;
-    background-repeat: no-repeat;
+.bg-off {
+    background-color: #F6F6F6;
 }
 
 .working-section img {
