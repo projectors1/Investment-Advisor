@@ -113,7 +113,16 @@ label {
     width: calc(100% - 260px);
 }
 
-.navbar-toggle.navbar-left {
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:active,
+.navbar-inverse .navbar-toggle:focus  {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background: transparent;
+}
+
+.pull-left {
     float: left;
     margin-left: 10px;
 }
@@ -123,27 +132,7 @@ label {
     color: #FFFFFF;
 }
 
-
-/*Profile navbar*/
-
-.btn-profile,
-.btn-profile:active,
-.btn-profile:hover,
-.btn-profile:focus {
-    padding: 0px;
-    border: 0px;
-    background: transparent;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-profile img {
-    vertical-align: middle;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
+/*After login options style*/
 
 .navbar-nav>li>.dropdown-menu,
 .navbar-brand>li>.dropdown-menu {
@@ -189,7 +178,7 @@ label {
     right: 10px;
     display: inline-block;
     border-right: 7px solid transparent;
-    border-bottom: 7px solid #CCC;
+    border-bottom: 7px solid #ccc;
     border-left: 7px solid transparent;
     border-bottom-color: rgba(0, 0, 0, 0.2);
     content: '';
@@ -215,21 +204,27 @@ label {
     right: 25px;
 }
 
-.navbar-profile {
-    line-height: 54px;
+.navbar-more {
+    line-height: 55px !important;
     margin: 0px;
     padding: 0px 15px;
     list-style: none;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.profile-name {
-    vertical-align: middle;
+.btn-more,.btn-more:hover,.btn-more:active {
+    padding: 0px;
+    border: 0px;
+    background: transparent;
+    outline: none;
     text-align: center;
-    color: #FFFFFF;
-    margin: 0px;
-    font-size: 16px;
-    margin-right: 10px;
     cursor: pointer;
+
+    display:inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: bottom;
 }
 
 .pull-right {

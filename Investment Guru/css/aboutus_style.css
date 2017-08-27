@@ -101,7 +101,7 @@ body {
 }
 
 .line {
-    border-top: 1px solid #EEEEEE;
+    border-top: 1px solid #E6E6E6;
 }
 
 .card-social {
@@ -111,7 +111,7 @@ body {
 
 .card-bg {
     background-color: #FFFFFF;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid #E6E6E6;
     border-radius: 4px;
 }
 
@@ -199,7 +199,7 @@ body {
     margin: 0px;
     padding: 100px 0px;
     background-color: white;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .social-section {

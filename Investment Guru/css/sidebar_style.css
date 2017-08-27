@@ -1,0 +1,105 @@
+body {
+    text-decoration: none;
+    font-family: "Open-sans", sans-serif;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+.sidebar-section {
+    margin-top: 55px;;
+}
+
+.sidebar-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 265px;
+    z-index: 1;
+    height: 100%;
+    display: block;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    margin-top: 20px;
+}
+
+.nav-list > li > a {
+    margin: 10px 15px 0;
+    padding: 10px 15px;
+    border-radius: 4px;   
+    line-height: 30px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-list > li > a:hover {
+    background: rgba(200, 200, 200, 0.2);;
+}
+
+.nav-list li.active > a,.nav-list li.active > a > p,.nav-list li.active > a > i {
+    background: #e74c3c;
+    color: #FFFFFF;
+    box-shadow: 0 7px 10px -5px #e74c3c;
+}
+
+.nav-list i {
+    font-size: 24px;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #a9afbb; 
+}
+
+.nav-list p {
+    margin: 0;
+    font-size: 14px;
+    color: #525558;
+}
+
+.line {
+    margin: 0px 20px;
+    border-top: 1px solid #E6E6E6;
+}
+
+.sidebar-heading {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar-heading h3 {
+    font-size: 18px;
+    color: #525558;
+    padding: 5px 0px;
+    margin: 0px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.sidebar-user {
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+.sidebar-user label {
+    margin: 10px;
+    color: #525558;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.sidebar-user img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
