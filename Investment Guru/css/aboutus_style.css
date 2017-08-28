@@ -1,121 +1,3 @@
-body {
-    text-decoration: none;
-    font-family: "Open-sans", sans-serif;
-    font-weight: 300;
-    font-stretch: normal;
-}
-
-.btn.btn-main {
-    background-color: #e74c3c;
-    color: #FFFFFF;
-    margin: 10px 0px;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    outline: #e74c3c;
-    height: 40px;
-    width: 120px;
-    transition: ease 0.4s;
-}
-
-.btn.btn-main:hover {
-    background-color: #e74c3c;
-    color: #FFFFFF;
-    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.2);
-    outline: none;
-}
-
-.card {
-    margin: 45px 0;
-    border-radius: 4px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-    border-top: 3px solid #e74c3c;
-}
-
-.card-header {
-    margin-top: -20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #e74c3c;
-    box-shadow: 0 7px 10px -5px #e74c3c;
-}
-
-.card-title {
-    margin: 5px 0px;
-    color: #FFFFFF;
-    text-align: left;
-}
-
-.card-form,
-.card-content {
-    padding: 20px;
-}
-
-.card-content {
-    text-align: left;
-    font-size: 16px;
-    color: #525558;
-}
-
-.card-content h4 {
-    color: #525558;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.card-team {
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-    margin-bottom: 20px; 
-}
-
-.card-image {
-    position: relative;
-    display: block;
-}
-
-.card-image img {
-    border-radius: 4px 4px 0 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-.card-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    color: #FFFFFF;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    z-index: 2;
-}
-
-.line {
-    border-top: 1px solid #E6E6E6;
-}
-
-.card-social {
-    text-align: center;
-    padding: 10px;
-}
-
-.card-bg {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #E6E6E6;
-    border-radius: 4px;
-}
-
 .row-padding {
     padding: 0px 100px;
 }
@@ -126,7 +8,6 @@ body {
     }
 }
 
-
 /* Section Styles start */
 
 .contact-section h3,
@@ -135,7 +16,6 @@ body {
 .social-section h3,
 .working-section h3,
 .choose-section h3{
-    color: #525558;
     text-transform: uppercase;
 }
 
@@ -150,15 +30,6 @@ body {
 .choose-section {
     padding: 0px 40px;
     text-align: center;
-}
-
-.idea-section p,
-.form-group label,
-.list-group-item,
-.working-section h4, .working-section p,
-.choose-section h4,
-.choose-section p  {
-    color: #525558;
 }
 
 .choose-section h3,
@@ -177,7 +48,7 @@ body {
 }
 
 .choose-section p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .working-section h4 {
@@ -188,11 +59,16 @@ body {
 .working-section p {
     margin: 0px;
     font-size: 18px;
+    text-align: center;
 }
 
 .idea-section p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
+}
+
+.social-section {
+    padding: 30px 0px;
 }
 
 .section {
@@ -203,22 +79,9 @@ body {
     border-bottom: 1px solid #E6E6E6;
 }
 
-.social-section {
-    padding: 30px 0px;
+.contact-section {
+    padding-bottom: 0px;
 }
-
-.facebook,.facebook:hover {
-    color: #3b5998;
-}
-
-.gplus,.gplus:hover {
-    color: #dd4b39
-}
-
-.linkedin,.linkedin:hover {
-    color: #0077B5;
-}
-
 
 /* Section Styles end */
 
@@ -226,18 +89,13 @@ body {
     margin-bottom: 30px;
 }
 
+.choose-content h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .choose-content i {
     color: #525558;
-}
-
-.form-control {
-    height: 40px;
-    float: left;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
 }
 
 .form-group label,
@@ -250,18 +108,13 @@ body {
     font-weight: 700;
 }
 
-input[type=password]:focus,
-input[type=text]:focus,
-input[type=email]:focus,
-.form-group textarea:focus {
-    border: 1px solid #e74c3c;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
 .idea-section img {
     width: 50%;
     height: 50%;
+}
+
+.card-padding {
+    padding: 0px 20px;
 }
 
 .heading-section {
@@ -297,7 +150,7 @@ input[type=email]:focus,
     border: none;
 }
 
-.social-button a{
+.social-button a {
     margin: 0px 10px;
 }
 
