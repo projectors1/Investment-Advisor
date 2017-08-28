@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/control_style.css">
     <link rel="stylesheet" type="text/css" href="css/profile_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
@@ -96,7 +96,111 @@
 
     <section class="main-section">
         <section class="profile-section">
-            
+            <div class="profile-form">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Personal Details</h4>
+                                </div>
+                                <div class="card-form">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">                                           
+                                            <div class="col-md-6">
+                                                <label>First Name</label>
+                                                <input type="text" class="form-control" placeholder="eg: Sachin">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Last Name</label>
+                                                <input type="text" class="form-control" placeholder="eg: Tendulkar">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" placeholder="eg: example@company.com">
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label>Date of Birth</label>
+                                            <input type="date" class="form-control" value="2000-01-01">  
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label>City</label>
+                                                <input type="text" class="form-control" placeholder="eg: Mumbai">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Country</label>
+                                                <input type="text" class="form-control" placeholder="eg: India">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-3 col-md-offset-9">
+                                                <button type="button" class="btn btn-primary btn-main"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Financial Details</h4>
+                                </div>
+                                <div class="card-form">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">                                           
+                                            <div class="col-md-6">
+                                                <label>Monthly Income</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>
+                                                    <input type="number" class="form-control" placeholder="eg: 25000">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Expenses</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>
+                                                    <input type="number" class="form-control" placeholder="eg: 20000">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">                                           
+                                            <div class="col-md-6">
+                                                <label>Savings</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>
+                                                    <input type="number" class="form-control" placeholder="eg: 4000">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Extra</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>
+                                                    <input type="number" class="form-control" placeholder="eg: 1000">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-3 col-md-offset-9">
+                                                <button type="button" class="btn btn-primary btn-main"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer class="footer">

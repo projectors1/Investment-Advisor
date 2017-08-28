@@ -1,14 +1,11 @@
-body {
-    text-decoration: none;
-    font-family: "Open-sans", sans-serif;
-    font-weight: 300;
-    font-stretch: normal;
+.container-fluid {
+    margin: auto 20px;
 }
 
 .main-section {
     float: right;
     position: relative; 
-    width: calc(100% - 260px);
+    width: calc(100% - 285px);
     height: 100%;
     background: #EEEEEE;
     overflow: hidden !important;
@@ -19,5 +16,12 @@ body {
 }
 
 .profile-section {
-    height: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-heading h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
