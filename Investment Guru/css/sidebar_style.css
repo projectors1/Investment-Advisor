@@ -14,7 +14,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 265px;
+    width: 285px;
     z-index: 1;
     height: 100%;
     display: block;
@@ -80,7 +80,8 @@ body {
 }
 
 .sidebar-user label {
-    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 0px;
     color: #525558;
     font-size: 18px;
     text-transform: uppercase;
