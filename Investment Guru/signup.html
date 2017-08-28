@@ -10,11 +10,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+    <link rel="stylesheet" type="text/css" href="css/control_style.css">   
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="login.html" id="login-nav"><i class="fa fa-sign-in fa-2x fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Login</a></li>
-                    <li><a href="signup.html" type="button" class="btn btn-primary btn-sign" id="btn-signup"><span><i class="material-icons fa-icons">account_circle</i>&nbsp;&nbsp;Sign Up</span></a></li>
+                    <li><a href="signup.html" type="button" class="btn btn-primary btn-sign" id="btn-signup"><span><i class="fa fa-user-circle-o fa-2x fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Sign Up</span></a></li>
                 </ul>
             </div>
         </div>
@@ -74,23 +74,23 @@
                             </div>
 
                             <div class="card-form">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="material-icons">face</i></span>
+                                <div class="input-group form-margin no-margin">
+                                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                                     <input id="user-name" type="text" class="form-control" name="name" placeholder="Name">
                                 </div>
 
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="material-icons">account_circle</i></span>
+                                <div class="input-group form-margin">
+                                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                                     <input id="email" type="text" class="form-control" name="email" placeholder="Email">
                                 </div>
 
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="material-icons">lock_outline</i></span>
+                                <div class="input-group form-margin">
+                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
                                     <input id="password" type="password" class="form-control" name="password" placeholder="Password">
                                 </div>
 
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="material-icons">lock_outline</i></span>
+                                <div class="input-group form-margin">
+                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
                                     <input id="confirm-password" type="password" class="form-control" name="password" placeholder="Confirm Password">
                                 </div>
                             </div>
@@ -104,8 +104,10 @@
                                     <label class="col-md-10" style="color:#888888">I agree to the <a href="#">terms and conditions</a></label>
                                 </div>
 
-                                <div class="button-group">
-                                    <button onclick="location.href='login.html'" type="button" class="btn btn-main">SIGN UP</button>
+                                <div class="form-margin row">
+                                    <div class="col-md-6 col-md-offset-3">  
+                                        <button onclick="location.href='login.html'" type="button" class="btn btn-main">SIGN UP</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

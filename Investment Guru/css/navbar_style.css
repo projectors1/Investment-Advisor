@@ -1,9 +1,5 @@
 body,
 label {
-    text-decoration: none;
-    font-family: "Open-sans", sans-serif;
-    font-weight: 300;
-    font-stretch: normal;
     font-size: 14px;
 }
 
@@ -16,13 +12,13 @@ label {
     padding: 5px;
     border: none;
     border-radius: 0;
-    background-color: #E53C2A;
+    background-color: #FFFFFF;
     text-align: center;
     transition: all 0.5s;
 }
 
 #btn-signup {
-    color: #FFFFFF;
+    color: #e74c3c;
 }
 
 .btn-sign,
@@ -32,8 +28,8 @@ label {
 
 #btn-signup:focus,
 #btn-signup:hover {
-    border-color: #E53C2A;
-    background-color: #E53C2A;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 #btn-signup span {
@@ -89,6 +85,8 @@ label {
     padding: 0 10px;
     text-transform: uppercase;
     transition: 0.4s;
+    font-weight: bold;
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
 }
 
