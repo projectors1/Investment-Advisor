@@ -216,12 +216,8 @@ label {
     border: 0px;
     background: transparent;
     outline: none;
-    text-align: center;
     cursor: pointer;
-
-    display:inline-block;
-    line-height: 50px;
-    text-align: center;
+    line-height: 45px;
     vertical-align: bottom;
 }
 
