@@ -64,6 +64,7 @@ body {
 .card-content h4 {
     color: #525558;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .card-team {

@@ -73,15 +73,6 @@ body {
     text-align: center;
 }
 
-.sidebar-heading h3 {
-    font-size: 18px;
-    color: #525558;
-    padding: 5px 0px;
-    margin: 0px;
-    line-height: 30px;
-    text-transform: uppercase;
-}
-
 .sidebar-user {
     padding: 20px;
     text-align: center;
@@ -89,15 +80,15 @@ body {
 }
 
 .sidebar-user label {
-    margin: 10px;
+    margin: 15px;
     color: #525558;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
 .sidebar-user img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto;
