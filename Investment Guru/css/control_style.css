@@ -241,3 +241,16 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.switch-container {
+    margin: 0px;
+    display: flex;
+}
+
+.switch-label {
+    color:#888888;
+}
+
+.checkbox label {
+    padding: 0px 10px;
+}
