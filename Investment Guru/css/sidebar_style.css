@@ -6,17 +6,14 @@ body {
 }
 
 .sidebar-section {
-    margin-top: 55px;;
-}
-
-.sidebar-section {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 285px;
-    z-index: 1;
+    width: 265px;
+    z-index: 10;
     height: 100%;
+    margin-top: 55px;
     display: block;
     float: left;
     background: #FFFFFF;
@@ -64,7 +61,7 @@ body {
 }
 
 .line {
-    margin: 0px 20px;
+    margin: 10px 20px;
     border-top: 1px solid #E6E6E6;
 }
 
@@ -94,4 +91,25 @@ body {
     border-radius: 50%;
     margin: 0 auto;
     box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width:768px) {
+    .sidebar-section {
+        display: block !important;
+        width: 265px;    
+    }
+
+    .main-section {
+        width: calc(100% - 265px);
+    }
+}
+
+@media (max-width:767px)  {
+    .sidebar-section {
+        display: none;    
+    }
+
+    .main-section {
+        width: 100%;
+    }
 }
