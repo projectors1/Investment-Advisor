@@ -31,3 +31,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media(min-width:768px) {
+    .main-section {
+        opacity: 1 !important;
+    }
+}

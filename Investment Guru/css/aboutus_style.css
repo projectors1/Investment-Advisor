@@ -167,3 +167,9 @@
     height: 150px;
     padding: 30px;
 }
+
+@media (max-width:767px) {
+    .idea-section h3,.idea-section p {
+        text-align: center;
+    }
+}
