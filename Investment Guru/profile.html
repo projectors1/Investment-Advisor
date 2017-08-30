@@ -26,15 +26,29 @@
                     <button id="btn_sidebar" type="button" class="navbar-toggle sidebar-toggle pull-left" data-toggle="collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-th" aria-hidden="true"></i>
-                    </button>   
-
+                    </button>  
+                    
+                    <ul id="sm-view" class="navbar-brand navbar-settings pull-right settings-sm">
+                        <li>
+                            <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-cog fa-inverse fa-2x" aria-hidden="true"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                                <li><a><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a></li>
+                            </ul>
+                        </li>                      
+                    </ul>   
+                    
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>          
-                    <a href="index.html" class="navbar-brand" id="brand"><i class="fa fa-line-chart fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; INVESTMENT GURU</a>                   
+                    </button>                          
+                    <a href="index.html" class="navbar-brand" id="brand"><i class="fa fa-line-chart fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; INVESTMENT GURU</a>                 
                 </div>
             </div>
 
@@ -43,6 +57,19 @@
                     <li><a href="#" id="how-h">How it works</a></li>
                     <li><a href="about_us.html" id="about-h">About us</a></li>
                 </ul>
+                <ul id="lg-view" class="navbar-brand navbar-settings pull-right settings-lg">
+                    <li>
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog fa-inverse fa-2x" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                            <li><a><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul> 
             </div>
         </div>
     </nav>
@@ -51,7 +78,7 @@
         <div class="line"></div>  
         <div class="sidebar-user">
             <img src="img/profile.jpg">
-            <div><label>Ivan D'Souza</label></div>
+            <div><label>Batman</label></div>
         </div>
         <div class="line"></div>
          <ul class="nav nav-list">
@@ -273,6 +300,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/footer_script.js"></script>
     <script src="js/sidebar_script.js"></script>
+    <script src="js/navbar_script.js"></script>
 </body>
 
 </html>

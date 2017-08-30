@@ -124,10 +124,6 @@ label {
     background: transparent;
 }
 
-.pull-left {
-    float: left;
-}
-
 .navbar-toggle {   
     margin-top: 10px;
     margin-right: 5px;
@@ -171,4 +167,93 @@ label {
     .navbar-logo {
         border-right: none;
     }
+}
+
+/*Settings dropdown style*/
+
+.navbar-nav>li>.dropdown-menu,
+.navbar-brand>li>.dropdown-menu {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    z-index: 10;
+    margin-top: -25px;
+    border-radius: 4px;
+    transition: all 150ms linear;
+    visibility: hidden;
+    display: block;
+}
+
+.navbar-nav>li.open>.dropdown-menu,
+.navbar-brand>li.open>.dropdown-menu {
+    visibility: visible;
+    margin-top: -5px;
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+    color: #575a5d;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar-brand>li>.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-menu i {
+    margin-right: 10px;
+}
+
+.dropdown-menu .divider {
+    margin: 5px 0px;
+}
+
+.navbar-brand>li>.dropdown-menu::before {
+    position: absolute;
+    top: -7px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+.navbar-brand>li>.dropdown-menu::after {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    content: '';
+}
+
+.settings-sm>li>.dropdown-menu::before,.settings-sm>li>.dropdown-menu::after  {
+    right: 20px;
+}
+
+.settings-lg>li>.dropdown-menu::before,.settings-lg>li>.dropdown-menu::after 
+{
+    right: 40px;
+}
+
+.navbar-settings {
+    line-height: 55px !important;
+    margin: 0px;
+    padding: 0px 15px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-settings button,.navbar-settings button:hover,.navbar-settings button:active {
+    padding: 0px;
+    border: 0px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    line-height: 45px;
+    vertical-align: bottom;
 }
