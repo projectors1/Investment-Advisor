@@ -243,7 +243,6 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    -ms-transform: translateX(18px);
     transform: translateX(18px);
 }
 
