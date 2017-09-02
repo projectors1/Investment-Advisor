@@ -9,7 +9,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
     color: #525558;
 }
 
-.btn.btn-main {
+.btn.btn-main,.btn-second {
     background-color: #e74c3c;
     color: #FFFFFF;
     margin: 10px 0px;
@@ -19,14 +19,28 @@ p,label,h1,h2,h3,h4,h5,h6 {
     height: 40px;
     width: 100%;
     transition: ease 0.4s;
-    box-shadow: 0 3px 10px -5px #e74c3c;
+    box-shadow: 0 3px 10px -5px #E74B3B;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .btn.btn-main:hover {
     background-color: #e74c3c;
     color: #FFFFFF;
     box-shadow: 0 7px 20px -5px #e74c3c;
+    outline: none;
+}
+
+.btn.btn-second {
+    background-color: #999999;
+    outline: #999999;
+    box-shadow: 0 3px 10px -5px #999999;
+}
+
+.btn.btn-second:hover {
+    background-color: #999999;
+    color: #FFFFFF;
+    box-shadow: 0 7px 20px -5px #999999;
     outline: none;
 }
 
@@ -155,6 +169,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 input[type=date]:focus,
 input[type=number]:focus,
+.form-control:focus,
 .form-group textarea:focus {
     border: 1px solid #AAAAAA;
     border-radius: 4px;
@@ -173,7 +188,6 @@ input[type=number]:focus,
     font-size: 18px;
     color: #525558;
 }
-
 
 .linkedin,.linkedin:hover {
     color: #0077B5;
@@ -254,7 +268,7 @@ input:checked+.slider:before {
     padding: 0px 10px;
 }
 
-
+/*end of swicth stle*/
 
 @media (max-width: 767px) {
     .card {       
