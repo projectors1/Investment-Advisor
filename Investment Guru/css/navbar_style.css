@@ -241,12 +241,12 @@ label {
 }
 
 .settings-sm>li>.dropdown-menu::before,.settings-sm>li>.dropdown-menu::after  {
-    right: 15px;
+    right: 5px;
 }
 
 .settings-lg>li>.dropdown-menu::before,.settings-lg>li>.dropdown-menu::after 
 {
-    right: 35px;
+    right: 25px;
 }
 
 .navbar-settings {

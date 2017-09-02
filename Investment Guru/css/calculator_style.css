@@ -8,7 +8,7 @@ body {
 .main-section {
     float: right;
     position: relative; 
-    width: calc(100% - 260px);
+    width: calc(100% - 265px);
     height: 100%;
     background: #EEEEEE;
     overflow: hidden !important;
@@ -18,6 +18,72 @@ body {
     margin-top: 55px;;
 }
 
+.nav-pills {
+    margin-top: 20px;
+    background-color:  rgba(200, 200, 200, 0.2);
+}
+
 .calculator-section {
-    height: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-wizard-header {
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.card-wizard-header h3 {
+    font-size: 28px;
+}
+
+.card-wizard-header p {
+    font-size: 18px;
+}
+
+.nav-pills li > a {
+    padding: 10px 15px;
+    color: #525558;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+.nav-pills li.active > a,.nav-pills li.active > a:hover,.nav-pills li.active > a:focus {
+    background: #e74c3c;
+    color: #FFFFFF;
+    box-shadow: 0 7px 10px -5px #e74c3c;
+    border-radius: 4px;
+}
+
+.nav-pills li > a:hover,.nav-pills li> a:focus {
+    background-color:  rgba(200, 200, 200, 0.2);
+    color: #525558;
+    border-radius: 0px;
+}
+
+.card-wizard-content,.card-wizard-footer {
+    margin: 0px 100px;
+}
+
+.card-wizard-content {
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+
+.card-tab-content h4 {
+    text-align: center;
+}
+
+.card-wizard-footer {
+    padding: 0px 15px 30px 15px;
+    line-height: 30px;
+}
+
+.btn-wd {
+    width: auto !important;
+    min-width: 140px;
+}
+
+.no-padding {
+    padding: 0px !important;
 }

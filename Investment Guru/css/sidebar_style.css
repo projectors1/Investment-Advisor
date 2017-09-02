@@ -35,7 +35,7 @@ body {
 }
 
 .nav-list > li > a:hover {
-    background: rgba(200, 200, 200, 0.2);;
+    background: rgba(200, 200, 200, 0.2);
 }
 
 .nav-list li.active > a,.nav-list li.active > a > p,.nav-list li.active > a > i {
