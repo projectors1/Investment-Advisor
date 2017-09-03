@@ -43,7 +43,7 @@
 
             <div class="collapse navbar-collapse" id="bs-navbar">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">How it works</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
                     <li><a href="#">Investment</a></li>
                     <li><a href="about_us.html">About us</a></li>
                 </ul>
@@ -73,7 +73,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="imager">
-                    <img width="610" height="455" src="img/apparth.jpg" alt="An image related to finance in day to day life">
+                    <img src="img/apparth.jpg" alt="An image related to finance in day to day life">
                 </div>    
             </div>
             <div class="col-sm-6">
@@ -91,11 +91,13 @@
     <div class="container" id="contain">
         <p id="header">Check How Much Money You will need to meet Your Goals!</p>
         <p style="text-align:center;" id="calculation">I am <span class="bBorder"><input type="text" id="name" minlength="2" maxlength="30" placeholder="Your Name"></span>, <span class="bBorder"><input type="text" id="age" minlength="1" maxlength="3" size="2"></span> Years old.<br> I am currently 
-        <span class="bBorder"><select name="statuss" id="status">
-            <option value="employed">Working</option>
-            <option value="student">A Student</option>
-            <option value="jobless">Unemployed</option>   
-        </select></span>, I save <span class="bBorder"><input type="text" id="saving" minlength="2" size="7"></span> 
+        <span class="bBorder">
+            <select name="status" id="status">
+                <option value="employed">Working</option>
+                <option value="student">A Student</option>
+                <option value="jobless">Unemployed</option>   
+            </select>
+        </span>, I save <span class="bBorder"><input type="text" id="saving" minlength="2" size="7"></span> 
         <span class="bBorder"><select name="savings" id="savingsType">
             <option value="annually" selected>Annually</option>
             <option value="monthly">Monthly</option>
@@ -116,54 +118,60 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-offset-10 col-md-2">
-                    <div class="top-section">
-                        <div class="top-wrap">
-                            <a href="#top" id="btn_top"><i class="fa fa-angle-up"></i></a>
+            <div class="container-fluid footer-padding">
+                <div class="row">
+                    <div class="col-md-offset-10 col-md-2">
+                        <div class="top-section">
+                            <div class="top-wrap">
+                                <a href="#top" id="btn_top"><i class="fa fa-angle-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row footer-content">
+                    <div class="col-md-6">
+                        <div class="footer-logo">
+                            <i class="fa fa-line-chart fa-inverse" aria-hidden="true"></i>        
+                            <h2>INVESTMENT<br>GURU</h2>
+                        </div>
+                        <p>Designed and Developed by Jibin, Ivan and Ben</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h4><strong>HELP</strong></h4>
+                        <ul class="footer-list">
+                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; How it works</a></li>
+                            <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact details</a></li>
+                            <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact form</a></li>
+                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Terms and conditions</a></li>
+                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h4><strong>USEFUL LINKS</strong></h4>
+                        <ul class="footer-list">
+                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Mutual funds</a></li>
+                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Investment</a></li>
+                            <li class="footer-link"><a href="about_us.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; About us</a></li>
+                            <li class="footer-link"><a href="index.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; Home</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h4><strong>SOCIAL LINKS</strong></h4>
+                        <div class="footer-social">
+                            <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a class="btn twitter"><i class="fa fa-twitter fa-2x"></i></a>
+                            <a class="btn gplus"><i class="fa fa-google-plus fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row footer-content">
-                <div class="col-md-3">
-                    <h2>INVESTMENT GURU © 2017</h2>
-                    <p>Designed and Developed by <br> Jibin, Ivan and Ben</p>
-                </div>
-
-                <div class="col-md-3">
-                    <h4><strong>HELP</strong></h4>
-                    <ul class="footer-list">
-                        <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; How it works</a></li>
-                        <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact details</a></li>
-                        <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact form</a></li>
-                        <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Terms and conditions</a></li>
-                        <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <h4><strong>USEFUL LINKS</strong></h4>
-                    <ul class="footer-list">
-                        <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Mutual funds</a></li>
-                        <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Investment</a></li>
-                        <li class="footer-link"><a href="about_us.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; About us</a></li>
-                        <li class="footer-link"><a href="index.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; Home</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <h4><strong>SOCIAL LINKS</strong></h4>
-                    <div class="footer-social">
-                        <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
-                        <a class="btn twitter"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a class="btn gplus"><i class="fa fa-google-plus fa-2x"></i></a>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2017 Investment Guru, All rights reserved.</p>
             </div>
-        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

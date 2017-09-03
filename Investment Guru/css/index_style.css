@@ -61,10 +61,8 @@ body{
     padding-left: 4.5%;
 }
 
-img {
-    vertical-align: middle;
-    display: flex;
-    overflow: hidden;
+.imager img {
+    width: 100%;
 }
 
 .samespan{
