@@ -202,7 +202,7 @@ input[type=number]:focus,
 .switch {
     display: inline-block;
     position: relative;
-    width: 40px;
+    width: 50px;
     height: 22px;
 }
 
@@ -216,10 +216,10 @@ input[type=number]:focus,
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
+    background-color: #E6E6E6;
     transition: .4s;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .slider:before {
@@ -227,11 +227,11 @@ input[type=number]:focus,
     position: absolute;
     bottom: 2px;
     left: 2px;
-    width: 18px;
+    width: 23px;
     height: 18px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 4px;
 }
 
 input:checked+.slider {
@@ -243,15 +243,7 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(18px);
-}
-
-.slider.round {
-    border-radius: 18px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+    transform: translateX(23px);
 }
 
 .switch-container {
