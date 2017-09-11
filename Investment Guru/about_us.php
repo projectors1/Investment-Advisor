@@ -19,33 +19,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div class="navbar-logo">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>               
-                    <a href="index.html" class="navbar-brand" id="brand"><i class="fa fa-line-chart fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; INVESTMENT GURU</a>
-                </div>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-navbar">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="how_it_works.html">How it works</a></li>
-                    <li><a href="#">Investment</a></li>
-                    <li class="active"><a href="about_us.html">About us</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.html" id="login-nav"><i class="fa fa-sign-in fa-2x fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Login</a></li>
-                    <li><a href="signup.html" type="button" class="btn btn-primary btn-sign" id="btn-signup"><span><i class="fa fa-user-circle-o fa-2x fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Sign Up</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php
+        include_once 'navbar.php';
+    ?>
 
     <header class="heading-section">
         <div class="jumbotron">
@@ -114,7 +90,7 @@
                 </div>
             </div>
             <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                <button type="button" class="btn btn-primary btn-main" onclick="location.href='how_it_works.html'">LEARN MORE</button>
+                <button type="button" class="btn btn-primary btn-main" onclick="location.href='how_it_works.php'">LEARN MORE</button>
             </div>
         </div>
     </section>
@@ -323,62 +299,10 @@
         </div>
     </section>
 
-    <footer class="footer">
-            <div class="container-fluid footer-padding">
-                <div class="row">
-                    <div class="col-md-offset-10 col-md-2">
-                        <div class="top-section">
-                            <div class="top-wrap">
-                                <a href="#top" id="btn_top"><i class="fa fa-angle-up"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <?php
+        include_once 'footer.php';
+    ?>
 
-                <div class="row footer-content">
-                    <div class="col-md-6">
-                        <div class="footer-logo">
-                            <i class="fa fa-line-chart fa-inverse" aria-hidden="true"></i>        
-                            <h2>INVESTMENT<br>GURU</h2>
-                        </div>
-                        <p>Designed and Developed by Jibin, Ivan and Ben</p>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h4><strong>HELP</strong></h4>
-                        <ul class="footer-list">
-                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; How it works</a></li>
-                            <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact details</a></li>
-                            <li class="footer-link"><a href="about_us.html#contact"><i class="fa fa-angle-right"></i>&nbsp; Contact form</a></li>
-                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Terms and conditions</a></li>
-                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; FAQ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h4><strong>USEFUL LINKS</strong></h4>
-                        <ul class="footer-list">
-                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Mutual funds</a></li>
-                            <li class="footer-link"><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Investment</a></li>
-                            <li class="footer-link"><a href="about_us.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; About us</a></li>
-                            <li class="footer-link"><a href="index.html" class="hovor"><i class="fa fa-angle-right"></i>&nbsp; Home</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h4><strong>SOCIAL LINKS</strong></h4>
-                        <div class="footer-social">
-                            <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
-                            <a class="btn twitter"><i class="fa fa-twitter fa-2x"></i></a>
-                            <a class="btn gplus"><i class="fa fa-google-plus fa-2x"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2017 Investment Guru, All rights reserved.</p>
-            </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
