@@ -12,6 +12,14 @@ h4 {
     color: #888888;
 }
 
+.alert {
+    padding: 10px 15px;
+}
+
+.alert:empty{
+    display: none;
+}
+
 .btn-icon,
 .btn-icon:hover {
     color: #FFFFFF;

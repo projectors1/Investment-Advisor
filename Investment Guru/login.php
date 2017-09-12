@@ -51,10 +51,6 @@
                             </div>
 
                             <div class="card-form">
-                                <div class="input-group form-margin no-margin">
-                                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                    <input id="msg" type="text" class="form-control" name="name" placeholder="Name">
-                                </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
@@ -68,7 +64,7 @@
                             </div>
 
                             <div class="card-button">
-                                <div class="row checkbox switch-container">
+                                <div class="checkbox switch-container">
                                     <label class="col-md-2 switch">
                                       <input type="checkbox">
                                       <span class="slider"></span>
@@ -76,11 +72,13 @@
                                     <label class="col-md-9 switch-label">Stay signed in</label>
                                 </div>
 
-                                <div class="form-margin row">
+                                <div class="form-margin">
                                     <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">                                       
                                         <button onclick="location.href='profile.php'" type="button" class="btn btn-main">LOGIN</button>
                                     </div>
                                 </div>
+
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                     </form>

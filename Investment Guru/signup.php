@@ -1,4 +1,31 @@
-<!doctype html>
+<?php
+session_start();
+$_SESSION['message'] = '';
+
+$mysql = new mysqli('localhost','root','darkknight08','investdb');
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if($_POST['password'] == $_POST['confirmpassword']) {
+        $email = $mysql->real_escape_string($_POST['email']);
+        $password = md5($_POST['password']);
+
+        $sql = "Insert into useraccount(Email,Password) "."Values('$email','$password')";
+
+        if($mysql->query($sql) === true) {
+            $_SESSION['message'] = 'Registration successful!';
+            header("location: profile.php");
+        }
+        else {
+            $_SESSION['message'] = "Registration failed!";
+        }
+    }
+    else {
+        $_SESSION['message'] = "Passwords do not match!";
+    }
+}
+
+
+?>
 
 <html>
 
@@ -26,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form method="POST">
+                    <form method="POST" action="signup.php" enctype="multipart/form-data" autocomplete="off">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Login with</h4>
@@ -50,41 +77,40 @@
                             </div>
 
                             <div class="card-form">
-                                <div class="input-group form-margin no-margin">
-                                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                    <input id="user-name" type="text" class="form-control" name="name" placeholder="Name">
-                                </div>
+                                <div class="alert alert-info"><?= $_SESSION['message'] ?></div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                    <input type="text" class="form-control" name="email" placeholder="Email" required>
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required>
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input id="confirm-password" type="password" class="form-control" name="password" placeholder="Confirm Password">
+                                    <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required>
                                 </div>
                             </div>
 
                             <div class="card-button">
-                                <div class="row checkbox switch-container">
+                                <div class="checkbox switch-container">
                                     <label class="col-md-2 switch">
-                                      <input type="checkbox"  id="chbx_terms">
+                                      <input type="checkbox" name="chbx_terms">
                                       <span class="slider"></span>
                                     </label>
                                     <label class="col-md-10 switch-label">I agree to the <a href="#">terms and conditions</a></label>
                                 </div>
 
-                                <div class="form-margin row">
+                                <div class="form-margin">
                                     <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">  
-                                        <button onclick="location.href='login.php'" type="button" class="btn btn-main">SIGN UP</button>
+                                        <button type="submit" name="btn_signup" class="btn btn-main">SIGN UP</button>
                                     </div>
                                 </div>
+
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                     </form>

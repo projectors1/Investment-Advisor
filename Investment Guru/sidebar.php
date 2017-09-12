@@ -1,8 +1,12 @@
+<?php
+    session_start();
+?>
+
 <div class="sidebar-section">
     <div class="line"></div>
     <div class="sidebar-user">
         <img src="img/profile.jpg">
-        <div><label>Batman</label></div>
+        <div><label><?= $_SESSION['email'] ?></label></div>
     </div>
     <div class="line"></div>
     <ul class="nav nav-list">
