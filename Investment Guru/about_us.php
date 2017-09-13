@@ -20,7 +20,7 @@
 
 <body>
     <?php
-        include_once 'navbar.php';
+        require_once('navbar.php');
     ?>
 
     <header class="heading-section">
@@ -300,7 +300,7 @@
     </section>
 
     <?php
-        include_once 'footer.php';
+        require_once('footer.php');
     ?>
 
 

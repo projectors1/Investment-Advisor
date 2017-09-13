@@ -1,31 +1,4 @@
-<?php
-session_start();
-$_SESSION['message'] = '';
-
-$mysql = new mysqli('localhost','root','darkknight08','investdb');
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if($_POST['password'] == $_POST['confirmpassword']) {
-        $email = $mysql->real_escape_string($_POST['email']);
-        $password = md5($_POST['password']);
-
-        $sql = "Insert into useraccount(Email,Password) "."Values('$email','$password')";
-
-        if($mysql->query($sql) === true) {
-            $_SESSION['message'] = 'Registration successful!';
-            header("location: profile.php");
-        }
-        else {
-            $_SESSION['message'] = "Registration failed!";
-        }
-    }
-    else {
-        $_SESSION['message'] = "Passwords do not match!";
-    }
-}
-
-
-?>
+<?php include('includes/authenticate.php')?>
 
 <html>
 
@@ -45,15 +18,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <?php
-        include_once 'navbar.php';
-    ?>
+
+    <?php require('navbar.php')?>
 
     <section class="content-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form method="POST" action="signup.php" enctype="multipart/form-data" autocomplete="off">
+                    <form action="" method="post" autocomplete="off">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Login with</h4>
@@ -77,21 +49,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </div>
 
                             <div class="card-form">
-                                <div class="alert alert-info"><?= $_SESSION['message'] ?></div>
+                                <div class="alert alert-info"></div>
+
+                                <div class="input-group form-margin">
+                                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="txt_firstname" placeholder="First Name" value="<?php echo $firstname; ?>">
+                                </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="email" placeholder="Email" required>
+                                    <input type="email" class="form-control" name="txt_email" placeholder="Email" value="<?php echo $email; ?>">
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                    <input type="password" class="form-control" name="txt_pass" placeholder="Password">
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required>
+                                    <input type="password" class="form-control" name="txt_confirmpass" placeholder="Confirm Password">
                                 </div>
                             </div>
 

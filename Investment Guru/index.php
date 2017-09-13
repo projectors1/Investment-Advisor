@@ -27,7 +27,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <?php
-        include_once 'navbar.php';
+        require_once('navbar.php');
     ?>
 
     <!-- Landing Page -->
@@ -90,7 +90,7 @@
     </div>
 
     <?php
-        include_once 'footer.php';
+        require_once('footer.php');
     ?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

@@ -20,7 +20,7 @@
 <body>
 
     <?php
-        include_once 'navbar.php';
+        require_once('navbar.php');
     ?>
 
     <section class="content-section">
@@ -54,7 +54,7 @@
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+                                    <input id="email" type="email" class="form-control" name="email" placeholder="Email" required>
                                 </div>
 
                                 <div class="input-group form-margin">

@@ -19,11 +19,11 @@
 
 <body>
     <?php
-        include_once 'navbar.php';
+        require_once('navbar.php');
     ?>
 
     <?php
-        include_once 'sidebar.php';
+        require_once('sidebar.php');
     ?>
 
     <section class="main-section">
@@ -32,7 +32,7 @@
         </section>
 
         <?php
-            include_once 'footer.php';
+            require_once('footer.php');
         ?>
     </section>
 
