@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php require('includes/dashboard_inc.php')?>
+
 <html>
 
 <head>
@@ -18,22 +19,16 @@
 </head>
 
 <body>
-    <?php
-        require_once('navbar.php');
-    ?>
+    <?php require_once('navbar.php'); ?>
 
-    <?php
-        require_once('sidebar.php');
-    ?>
+    <?php require_once('sidebar.php'); ?>
 
     <section class="main-section">
         <section class="dashboard-section">
             
         </section>
 
-        <?php
-            require_once('footer.php');
-        ?>
+        <?php require_once('footer.php'); ?>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

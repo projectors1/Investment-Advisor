@@ -4,7 +4,7 @@
     $email = "";
     $_SERVER['message'] = "";
 
-    require_once 'includes/db_inc.php';
+    require_once 'db_inc.php';
 
     if(isset($_POST['btn_signup'])) {
         $firstname = mysqli_real_escape_string($conn, $_POST['txt_firstname']);

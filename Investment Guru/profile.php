@@ -25,7 +25,6 @@
     <?php require_once('sidebar.php'); ?>
 
     <section class="main-section">
-
         <section class="profile-section">
                 <div class="container-fluid">
                     <div class="row">
