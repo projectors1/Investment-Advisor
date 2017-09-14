@@ -1,4 +1,4 @@
-<!doctype html>
+<?php require('includes/authenticate_inc.php')?>
 
 <html>
 
@@ -19,15 +19,13 @@
 
 <body>
 
-    <?php
-        require_once('navbar.php');
-    ?>
+    <?php require_once('navbar.php'); ?>
 
     <section class="content-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form method="POST">
+                    <form action="" method="POST" autocomplete="off">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Login with</h4>
@@ -51,15 +49,16 @@
                             </div>
 
                             <div class="card-form">
+                                <div class="alert alert-info"><?php $_SERVER['message'] ?></div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input id="email" type="email" class="form-control" name="email" placeholder="Email" required>
+                                    <input type="email" class="form-control" name="txt_email" placeholder="Email" value="<?php echo $email ?>">
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                    <input type="password" class="form-control" name="txt_pass" placeholder="Password">
                                 </div>
                             </div>
 
@@ -74,7 +73,7 @@
 
                                 <div class="form-margin">
                                     <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">                                       
-                                        <button onclick="location.href='profile.php'" type="button" class="btn btn-main">LOGIN</button>
+                                        <button type="submit" name="btn_login" class="btn btn-main">LOGIN</button>
                                     </div>
                                 </div>
 

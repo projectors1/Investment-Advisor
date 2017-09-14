@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <div class="sidebar-section">
     <div class="line"></div>
     <div class="sidebar-user">

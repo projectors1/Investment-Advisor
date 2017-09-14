@@ -1,4 +1,4 @@
-<?php include('includes/authenticate.php')?>
+<?php require('includes/authenticate_inc.php')?>
 
 <html>
 
@@ -19,13 +19,13 @@
 
 <body>
 
-    <?php require('navbar.php')?>
+    <?php require_once('navbar.php') ?>
 
     <section class="content-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form action="" method="post" autocomplete="off">
+                    <form action="" method="POST" autocomplete="off">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Login with</h4>
