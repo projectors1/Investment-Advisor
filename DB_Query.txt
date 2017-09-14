@@ -1,0 +1,55 @@
+Note: Change the single inverted commas
+
+
+1> CREATE SCHEMA 'investdb' DEFAULT CHARACTER SET utf8 ;
+
+2> CREATE TABLE `useraccount` (
+  
+`AccountID` int(11) NOT NULL AUTO_INCREMENT,
+  
+`Email` varchar(100) NOT NULL,
+  
+`Password` varchar(100) NOT NULL,
+  
+`ProfileID` int(11),
+  
+`FinanceID` int(11),
+  
+PRIMARY KEY (`AccountID`),
+  
+UNIQUE KEY `Email_UNIQUE` (`Email`),
+  
+KEY `ProfileID_idx` (`ProfileID`),
+  
+KEY `ProfileKey_idx` (`ProfileID`),
+  
+KEY `FinanceKey_idx` (`FinanceID`),
+  
+CONSTRAINT `FinanceKey` FOREIGN KEY (`FinanceID`) REFERENCES `userfinance` (`FinanceID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  
+CONSTRAINT `ProfileKey` FOREIGN KEY (`ProfileID`) REFERENCES `useraccount` (`ProfileID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+3> CREATE TABLE `investdb`.`userprofile` (
+`ProfileID` INT(11) NOT NULL AUTO_INCREMENT,
+`FirstName` VARCHAR(45) NOT NULL,
+`LastName` VARCHAR(45) NOT NULL,
+`DOB` DATE NOT NULL,
+`City` VARCHAR(45) NOT NULL,
+`Country` VARCHAR(45) NOT NULL,
+PRIMARY KEY (`ProfileID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+4> CREATE TABLE `investdb`.`userfinance` (
+`FinanceID` INT(11) NOT NULL AUTO_INCREMENT,
+`Income` DECIMAL(10,2) NOT NULL,
+`Expenses` DECIMAL(10,2) NOT NULL,
+`Savings` DECIMAL(10,2) NOT NULL,
+`Other` DECIMAL(10,2) NOT NULL,
+ PRIMARY KEY (`FinanceID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+5> 
