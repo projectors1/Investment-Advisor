@@ -1,11 +1,4 @@
-<?php 
-	if (isset($_GET['logout'])) {
-        session_destroy();
-        unset($_SESSION['AccountID']);
-        $_SESSION['loggedIN'] = false;
-		header("location: login.php");
-	}
-?>
+<?php require_once 'includes/navbar_inc.php'; ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">

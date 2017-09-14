@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require('includes/aboutus_inc.php')?>
 
 <html>
 
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php  require_once('navbar.php'); ?>
+    <?php require_once('navbar.php'); ?>
 
     <header class="heading-section">
         <div class="jumbotron">

@@ -2,10 +2,10 @@
     session_start();
     $firstname = "";
     $email = "";
-    $_SERVER['message'] = "";
+    $_SERVER['message'] = '';
 
     require_once 'db_inc.php';
-
+    
     if(isset($_POST['btn_signup'])) {
         $firstname = mysqli_real_escape_string($conn, $_POST['txt_firstname']);
         $email = mysqli_real_escape_string($conn, $_POST['txt_email']);
@@ -44,11 +44,11 @@
                 header('location: profile.php');
             }
             else {
-                $_SERVER['message'] = "Invalid password";
+                $_SERVER['message'] = 'Invalid password';
             }
         }
         else {
-            $_SERVER['message'] = "Account with this email does not exist";
+            $_SERVER['message'] = 'Account with this email does not exist';
         }
     }
 ?>

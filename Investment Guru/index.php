@@ -1,3 +1,5 @@
+<?php require('includes/index_inc.php')?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -23,14 +25,8 @@
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <?php
-        require_once('navbar.php');
-    ?>
+    <?php require_once('navbar.php'); ?>
 
-    <!-- Landing Page -->
     <div class="container intro" style="background: url('img/dark.jpg') no-repeat center center;">
       <div class="row">
         <div class="col-xs-12">
@@ -89,9 +85,7 @@
         </div>
     </div>
 
-    <?php
-        require_once('footer.php');
-    ?>
+    <?php require_once('footer.php'); ?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
