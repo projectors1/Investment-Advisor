@@ -16,7 +16,7 @@
             <a href="calculator.php"><i class="fa fa-calculator fa-fw" aria-hidden="true"></i><p>Calculator</p></a>
         </li>
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'investment.php') echo 'class="active"' ?>>
-            <a href="investment.php"><i class="fa fa-line-chart fa-fw" aria-hidden="true"></i><p>Investment</p></a>
+            <a href="investment.php"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i><p>Investment</p></a>
         </li>
     </ul>
 </div>
