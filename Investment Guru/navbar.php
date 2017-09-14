@@ -1,6 +1,7 @@
 <?php 
 	if (isset($_GET['logout'])) {
-		session_destroy();
+        session_destroy();
+        unset($_SESSION['AccountID']);
         $_SESSION['loggedIN'] = false;
 		header("location: login.php");
 	}

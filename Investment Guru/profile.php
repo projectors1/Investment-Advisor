@@ -39,7 +39,7 @@
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin">
+                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin" value="<?php echo $firstname ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Last name</label>
@@ -70,46 +70,6 @@
 
                                         <div class="form-group">
                                             <div class="col-md-3 col-md-offset-9 col-xs-6 col-xs-offset-6">
-                                                <button type="button" class="btn btn-primary btn-main">Save</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Job Details</h4>
-                                </div>
-                                <div class="card-form">
-                                    <form class="form-horizontal">
-                                        <div class="form-group col-md-12">
-                                            <label>Company name</label>
-                                            <input type="text" class="form-control" placeholder="eg: Reliance">
-                                        </div>
-
-                                        <div class="form-group col-md-12">
-                                            <label>City</label>
-                                            <input type="text" class="form-control" placeholder="eg: Mumbai">
-                                        </div>
-
-                                        <div class="form-group col-md-12">  
-                                            <label>Designation</label>
-                                            <input type="text" class="form-control" placeholder="eg: Manager">
-                                        </div>
-
-                                        <div class="form-group col-md-12">
-                                            <label>Annual salary</label>
-                                            <div class="input-group">
-                                                <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 4,00,000">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
                                                 <button type="button" class="btn btn-primary btn-main">Save</button>
                                             </div>
                                         </div>
