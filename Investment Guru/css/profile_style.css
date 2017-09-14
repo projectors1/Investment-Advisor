@@ -4,7 +4,6 @@
     width: calc(100% - 265px);
     height: 100%;
     background: #EEEEEE;
-    overflow: hidden !important;
 }
 
 .main-section {
