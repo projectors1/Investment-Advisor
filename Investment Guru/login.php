@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="card-form">
-                                <div class="alert alert-info"><?php $_SERVER['message'] ?></div>
+                                <div class="alert alert-danger"><?= $_SERVER['message'] ?></div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
