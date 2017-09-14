@@ -31,7 +31,7 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Personal Details</h4>
+                                    <h4 class="card-title">Personal Info</h4>
                                 </div>
                                 <div class="card-form">
                                     <form class="form-horizontal">
@@ -80,7 +80,7 @@
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Financial Details</h4>
+                                    <h4 class="card-title">Financial Info</h4>
                                 </div>
                                 <div class="card-form">
                                     <form class="form-horizontal">
@@ -119,6 +119,47 @@
                                         <div class="form-group">
                                             <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
                                                 <button type="button" class="btn btn-primary btn-main">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Change Password</h4>
+                                </div>
+                                <div class="card-form">
+                                    <form class="form-horizontal">
+                                        <div class="form-group col-md-12">
+                                            <label>Current</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                                <input type="password" class="form-control" placeholder="eg: current123">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label>New</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                                <input type="password" class="form-control" placeholder="eg: new123">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <label>Confirm new</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                                <input type="password" class="form-control" placeholder="eg: new123">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
+                                                <button type="button" class="btn btn-primary btn-main">Change</button>
                                             </div>
                                         </div>
                                     </form>

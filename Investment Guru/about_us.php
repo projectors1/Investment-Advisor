@@ -220,7 +220,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Contact Details</h4>
+                            <h4 class="card-title">Contact Info</h4>
                         </div>
                         <ul class="list-group">
                             <li class="list-group-item"><i class="fa fa-map-marker fa-fw"></i>&nbsp; &nbsp; Mount Poinsur, S.V.P. Road, Borivli (West), Mumbai 400 103</li>
