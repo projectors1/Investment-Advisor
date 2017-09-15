@@ -29,8 +29,11 @@ h4 {
     padding-bottom: 20px;
 }
 
+.card-header {
+    padding: 30px;
+}
+
 .card-title {
-    margin: 20px 0px;
     text-align: center;
     font-size: 20px;
 }

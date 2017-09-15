@@ -1,7 +1,7 @@
 <?php
     $dbServer = "localhost";
     $dbUser = "root";
-    $dbPass = "Cmpnb_123";
+    $dbPass = "";
     $dbName = "investdb";
 
     $conn = mysqli_connect($dbServer,$dbUser,$dbPass,$dbName);

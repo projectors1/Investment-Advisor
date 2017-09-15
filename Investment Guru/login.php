@@ -28,7 +28,7 @@
                     <form action="" method="POST" autocomplete="off">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Login with</h4>
+                                <h4 class="card-title">Login</h4>
                                 <div class="social-login">
                                     <a class="btn btn-icon">
                                         <i class="fa fa-facebook-square fa-2x"></i>
@@ -65,10 +65,10 @@
                             <div class="card-button">
                                 <div class="checkbox switch-container">
                                     <label class="col-md-2 switch">
-                                      <input type="checkbox">
+                                      <input type="checkbox" name="chk_remember">
                                       <span class="slider"></span>
                                     </label>
-                                    <label class="col-md-9 switch-label">Stay signed in</label>
+                                    <label class="col-md-9 switch-label">Remember me</label>
                                 </div>
 
                                 <div class="form-margin">

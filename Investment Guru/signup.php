@@ -28,7 +28,7 @@
                     <form action="" method="POST" autocomplete="off">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Login with</h4>
+                                <h4 class="card-title">Sign up</h4>
                                 <div class="social-login">
                                     <a class="btn btn-icon">
                                         <i class="fa fa-facebook-square fa-2x"></i>

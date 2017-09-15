@@ -1,8 +1,24 @@
 <?php
+    if(isset($_COOKIE["InvestCookie"])) {
+        $cookieContent = $_COOKIE['InvestCookie'];
+        $cookieArray = unserialize($cookieContent);
+        $cookiekey = $cookieArray['cookiedata'];
+        $email = $cookieArray['email'];
+        $query = "SELECT AccountID FROM useraccount WHERE Email=$email AND CookieKey=$cookiekey";
+        $result = mysqli_query($conn,$query);
+
+        if($result == 1) {
+            $data = mysqli_fetch_assoc($result);
+            $_SESSION['AccountID'] = $data['AccountID'];
+            $_SESSION['loggedIN'] = true;
+        }
+    }
+
 	if (isset($_GET['logout'])) {
-        session_destroy();
         unset($_SESSION['AccountID']);
+        session_destroy();
         $_SESSION['loggedIN'] = false;
+        setcookie('InvestCookie','',time() - 3600, "/", NULL);
 		header("location: login.php");
 	}
     
