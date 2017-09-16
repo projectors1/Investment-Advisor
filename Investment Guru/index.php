@@ -1,6 +1,5 @@
 <?php require('includes/index_inc.php')?>
 
-<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -18,73 +17,171 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/index_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">   
     <link rel="stylesheet" href="css/navbar_style.css">
     <link rel="stylesheet" href="css/footer_style.css">
+    <link rel="stylesheet" href="css/control_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/aboutus_style.css">
 </head>
 
 <body>
     <?php require_once('navbar.php'); ?>
 
-    <div class="container intro" style="background: url('img/dark.jpg') no-repeat center center;">
-      <div class="row">
-        <div class="col-xs-12">
-          <div id="content">
-            <p class="font37">An Average Person has Lot's Of Goal's</p>
-            <p class="font37">Per Day/Week/Month/Year...</p>
-            <p class="font38">But The Person Who Plans Well Achieve's his GOAL'S.</p>
-            <p><a class="btn btn-primary btn-lg" href="signup.php" role="button" id="shadow"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Plan Now!</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="imager">
-                    <img src="img/apparth.jpg" alt="An image related to finance in day to day life">
-                </div>    
-            </div>
-            <div class="col-sm-6">
-                <p class="para" style="font-family: 'Dosis', sans-serif;">We Will Help You <span class="samespan">PLAN,SAVE AND INVEST EFFECTIVELY.</span></p>
-                <p class="para" style="font-family: 'Dosis', sans-serif;">Track Your Goal's And <span class="samespan">Accomplish Them.</span></p>
-                <p class="para" style="font-family: 'Dosis', sans-serif;">Investment's are now a vital part to earn more and increase your networth and all of it can be achieved through a good plan.</p>
-                <p class="para" style="font-family: 'Dosis', sans-serif;">We will direct you to the most <span class="samespan">risk-free and maximum return MUTUAl FUNDS.</span></p>
-                <p class="para" style="font-family: 'Dosis', sans-serif;">So that you can achieve your goal's much faster and also <span class="samespan">earn while you save.</span></p>
+    <section class="banner-section">
+        <div class="container">    
+            <div class="row">
+                <div class="col-md-12 top-margin">
+                    <h2>An Average Person has multiple goals in a year and</h2>
+                    <h1>PLAN...SAVE...EARN</h1>
+                    <h3>is the best way to acheive these goals quicker</h3>
+                    <div class="banner-btn">              
+                        <button type="button" id="btn_started" class="btn btn-primary btn-white" >Get Started</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <hr class="hr3d">
-
-    <div class="container" id="contain">
-        <p id="header">Check How Much Money You will need to meet Your Goals!</p>
-        <p style="text-align:center;" id="calculation">I am <span class="bBorder"><input type="text" id="name" minlength="2" maxlength="30" placeholder="Your Name"></span>, <span class="bBorder"><input type="text" id="age" minlength="1" maxlength="3" size="2"></span> Years old.<br> I am currently 
-        <span class="bBorder">
-            <select name="status" id="status">
-                <option value="employed">Working</option>
-                <option value="student">A Student</option>
-                <option value="jobless">Unemployed</option>   
-            </select>
-        </span>, I save <span class="bBorder"><input type="text" id="saving" minlength="2" size="7"></span> 
-        <span class="bBorder"><select name="savings" id="savingsType">
-            <option value="annually" selected>Annually</option>
-            <option value="monthly">Monthly</option>
-        </select></span>,<br> I earn <span class="bBorder"><input type="text" id="earning" minlength="2" size="7"></span>
-        <span class="bBorder"><select name="earnings" id="earningsType">
-            <option value="annually" selected>Annually</option>
-            <option value="monthly">Monthly</option>
-        </select></span>.</p>
-        <p style="text-align:center;"><a class="btn btn-primary" href="#" role="button" id="estimate">Continue</a></p>
-
-        <!-- Will Have to Write a script here To Display a Demo -->
-        <div id="resultOfCalculation">
-
+    <section class="section description-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div>
+                        <img src="img/apparth.jpg" alt="An image related to finance in day to day life">
+                    </div>    
+                </div>
+                <div class="col-sm-6">
+                    <p>We Will Help You <span>PLAN,SAVE AND INVEST EFFECTIVELY.</span></p>
+                    <p>Track Your Goal's And <span>Accomplish Them.</span></p>
+                    <p>Investment's are now a vital part to earn more and increase your networth and all of it can be achieved through a good plan.</p>
+                    <p>We will direct you to the most <span>risk-free and maximum return MUTUAl FUNDS.</span></p>
+                    <p>So that you can achieve your goal's much faster and also <span>earn while you save.</span></p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <section class="section bg-off working-section">
+        <div class="container">
+            <h3>How we work</h3>
+            <h4>Just <strong>3</strong> simple steps to your goal</h4>
+            <div class="row row-padding">
+                <div class="col-md-4">
+                    <div class="card-padding">
+                        <div class="card-team">
+                            <div class="card-bg">
+                                <img src="img/money-bag.svg">
+                            </div>
+                            <div class="card-content">
+                                <p>1. Invest your savings</p>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-padding">
+                        <div class="card-team">
+                            <div class="card-bg">
+                                <img src="img/profit.svg">
+                            </div>
+                            <div class="card-content">
+                                <p>2. Earn from investment</p>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-padding">
+                        <div class="card-team">
+                            <div class="card-bg">
+                                <img src="img/gift.svg">
+                            </div>
+                            <div class="card-content">
+                                <p>3. Get your goal</p>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
+                <button type="button" class="btn btn-primary btn-main" onclick="location.href='how_it_works.php'">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section choose-section">
+        <div class="container">
+            <h3>Why Choose Us</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="choose-content">
+                        <i class="fa fa-list-alt fa-inverse fa-4x" aria-hidden="true"></i>
+                        <h4>Simple</h4>
+                        <p>Simple and easy step by step procedure that you can follow</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="choose-content">
+                        <i class="fa fa-calculator fa-inverse fa-4x" aria-hidden="true"></i>
+                        <h4>Calculations</h4>
+                        <p>We do all the complex calculations for you</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="choose-content">
+                        <i class="fa fa-area-chart fa-inverse fa-4x" aria-hidden="true"></i>
+                        <h4>Analysis</h4>
+                        <p>We provide the results in an easy to understand graphical charts</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="choose-content">
+                        <i class="fa fa-trophy fa-inverse fa-4x" aria-hidden="true"></i>
+                        <h4>Quality</h4>
+                        <p>We provide quality services to our users</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section form-section" id="form-section">
+        <div class="container">
+            <h3>Get Started</h3>
+            <div class="row">
+                <form method="POST" action="" autocomplete="off">
+                    <div class="col-md-10 col-md-offset-1">                      
+                        <p>I am <span><input class="form-control" type="text" minlength="2" maxlength="30" placeholder="Your Name"></span>, <span><input class="form-control" type="text" placeholder="Age" minlength="1" maxlength="3" size="2"></span> years old.<br> I am currently 
+                        <span>
+                            <select class="form-control" name="status">
+                                <option value="employed">Working</option>
+                                <option value="student">A Student</option>
+                                <option value="jobless">Unemployed</option>   
+                            </select>
+                        </span>, I save <span><input class="form-control" type="text" minlength="2" size="7"></span> 
+                        <span ><select class="form-control" name="savings">
+                            <option value="annually" selected>Annually</option>
+                            <option value="halfyearly">Half Yearly</option>
+                            <option value="quaterly">Quaterly</option>
+                            <option value="monthly">Monthly</option>
+                        </select></span>,<br> I earn <span><input class="form-control" type="text" minlength="2" size="7"></span>
+                        <span><select class="form-control" name="earnings">
+                            <option value="annually" selected>Annually</option>
+                            <option value="monthly">Monthly</option>
+                        </select></span>.</p>
+                    </div>
+                    <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
+                        <button type="button" class="btn btn-primary btn-main">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+  
     <?php require_once('footer.php'); ?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

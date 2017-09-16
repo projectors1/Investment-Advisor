@@ -9,7 +9,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
     color: #525558;
 }
 
-.btn.btn-main,.btn-second {
+.btn.btn-main,.btn.btn-second,.btn.btn-white,.btn.btn-transparent{
     background-color: #e74c3c;
     color: #FFFFFF;
     margin: 10px 0px;
@@ -27,7 +27,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
 .btn.btn-main:hover {
     background-color: #e74c3c;
     color: #FFFFFF;
-    box-shadow: 0 7px 20px -5px #e74c3c;
+    box-shadow: 0 7px 20px -5px #E74B3B;
     outline: none;
 }
 
@@ -42,6 +42,22 @@ p,label,h1,h2,h3,h4,h5,h6 {
     color: #FFFFFF;
     box-shadow: 0 7px 20px -5px #999999;
     outline: none;
+}
+
+.btn.btn-white {
+    background-color: #FFFFFF;
+    color: #e74c3c;
+    outline: #e74c3c;
+    height: 50px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.btn.btn-white:hover {
+    background-color: #FFFFFF;
+    color: #e74c3c;
+    outline: none;
+    box-shadow: 0 7px 20px -5px rgba(0, 0, 0, 0.26);
 }
 
 .card form [class*="col-"] {
@@ -64,7 +80,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
     padding: 15px;
     border-radius: 4px;
     background-color: #e74c3c;
-    box-shadow: 0 7px 10px -5px #e74c3c;
+    box-shadow: 0 7px 10px -5px #E74B3B;
 }
 
 .card-title {
@@ -138,6 +154,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
 .facebook,.facebook:hover {
     color: #3b5998;
 }
+
 
 .form-control {
     float: left;
