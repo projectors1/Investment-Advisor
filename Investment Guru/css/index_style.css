@@ -32,6 +32,10 @@
     margin-top: 50px;
 }
 
+.card-title {
+    text-align: center;
+}
+
 .description-section img {
     width: 100%;
 }
@@ -59,6 +63,10 @@
     font-size: 28px;
     margin-bottom: 70px;
     margin-top: 0px;
+}
+
+.form-section h4 {
+    font-size: 22px;
 }
 
 .form-section p {
