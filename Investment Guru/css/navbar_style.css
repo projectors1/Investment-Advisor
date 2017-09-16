@@ -170,4 +170,13 @@ label {
     .nav-div {
         display: none;
     }
+
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>.active>a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 4px 0px 0px 0px #FFFFFF;
+    }
 }
