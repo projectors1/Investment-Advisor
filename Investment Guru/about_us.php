@@ -30,103 +30,16 @@
 
     <section class="section idea-section">
         <div class="container">
+            <h3>Our Idea</h3>
             <div class="row">
                 <div class="col-md-6">
                     <img src="img/invest.svg">
                 </div>
                 <div class="col-md-6">
-                    <h3>Our Idea</h3>
                     <p>
                         Nowadays, investment has become an essential part of living whether it be investing in a policy or stocks.So our goal is to help you invest and earn irrespective of whether its a small amount or a huge amount, because we believe our goal is to help you
                         achieve your GOAL
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section bg-off working-section">
-        <div class="container">
-            <h3>How we work</h3>
-            <h4>Just <strong>3</strong> simple steps to your goal</h4>
-            <div class="row row-padding">
-                <div class="col-md-4">
-                    <div class="card-padding">
-                        <div class="card-team">
-                            <div class="card-bg">
-                                <img src="img/money-bag.svg">
-                            </div>
-                            <div class="card-content">
-                                <p>1. Invest your savings</p>                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-padding">
-                        <div class="card-team">
-                            <div class="card-bg">
-                                <img src="img/profit.svg">
-                            </div>
-                            <div class="card-content">
-                                <p>2. Earn from investment</p>                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-padding">
-                        <div class="card-team">
-                            <div class="card-bg">
-                                <img src="img/gift.svg">
-                            </div>
-                            <div class="card-content">
-                                <p>3. Get your goal</p>                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                <button type="button" class="btn btn-primary btn-main" onclick="location.href='how_it_works.php'">LEARN MORE</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="section choose-section">
-        <div class="container">
-            <h3>Why Choose Us</h3>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="choose-content">
-                        <i class="fa fa-list-alt fa-inverse fa-4x" aria-hidden="true"></i>
-                        <h4>Simple</h4>
-                        <p>Simple and easy step by step procedure that you can follow</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="choose-content">
-                        <i class="fa fa-calculator fa-inverse fa-4x" aria-hidden="true"></i>
-                        <h4>Calculations</h4>
-                        <p>We do all the complex calculations for you</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="choose-content">
-                        <i class="fa fa-area-chart fa-inverse fa-4x" aria-hidden="true"></i>
-                        <h4>Analysis</h4>
-                        <p>We provide the results in an easy to understand graphical charts</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="choose-content">
-                        <i class="fa fa-trophy fa-inverse fa-4x" aria-hidden="true"></i>
-                        <h4>Quality</h4>
-                        <p>We provide quality services to our users</p>
-                    </div>
                 </div>
             </div>
         </div>
