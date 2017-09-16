@@ -90,9 +90,8 @@ label {
     padding: 0 10px;
     text-transform: uppercase;
     transition: 0.4s;
-    font-weight: bold;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #FFFFFF;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -105,7 +104,7 @@ label {
 }
 
 .navbar-logo {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     min-height: 55px;
 }
 
@@ -131,6 +130,11 @@ label {
     margin-left: 0px;
     margin-bottom: 0px;
     border: none;
+}
+
+.nav-div {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
 }
 
 #login-nav {
@@ -161,5 +165,9 @@ label {
     .navbar-toggle {
         padding-left: 5px;
         padding-right: 10px;
+    }
+
+    .nav-div {
+        display: none;
     }
 }
