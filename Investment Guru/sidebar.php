@@ -2,7 +2,7 @@
     <div class="line"></div>
     <div class="sidebar-user">
         <img src="img/profile.jpg">
-        <div><label><?= $firstname ?></label></div>
+        <div><label><?= $_SESSION['FirstName'] ?></label></div>
     </div>
     <div class="line"></div>
     <ul class="nav nav-list">

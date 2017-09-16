@@ -1,4 +1,4 @@
-<?php require_once 'includes/navbar_inc.php'; ?>
+<?php require_once('includes/navbar_inc.php'); ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">

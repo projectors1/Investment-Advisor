@@ -1,34 +1,42 @@
-<?php
-    if(isset($_COOKIE["InvestCookie"])) {
-        $cookieContent = $_COOKIE['InvestCookie'];
-        $cookieArray = unserialize($cookieContent);
-        $cookiekey = $cookieArray['cookiedata'];
-        $email = $cookieArray['email'];
-        $query = "SELECT AccountID FROM useraccount WHERE Email=$email AND CookieKey=$cookiekey";
-        $result = mysqli_query($conn,$query);
-
-        if($result == 1) {
-            $data = mysqli_fetch_assoc($result);
-            $_SESSION['AccountID'] = $data['AccountID'];
-            $_SESSION['loggedIN'] = true;
-        }
+<?php       
+    if(isset($_COOKIE["InvestCookie"]) && !isset($_SESSION['loggedIN'])) {
+        getInvestCookie($conn);
     }
 
 	if (isset($_GET['logout'])) {
+        if(isset($_COOKIE["InvestCookie"])) {
+            $accountID = $_SESSION['AccountID'];
+            $query = "UPDATE useraccount SET CookieKey=NULL WHERE AccountID='$accountID'";
+            mysqli_query($conn,$query);           
+            setcookie('InvestCookie','',time() - 3600, "/", NULL);
+        }       
+        unset($_SESSION['FirstName']);
         unset($_SESSION['AccountID']);
-        session_destroy();
-        $_SESSION['loggedIN'] = false;
-        setcookie('InvestCookie','',time() - 3600, "/", NULL);
-		header("location: login.php");
-	}
-    
-    if(isset($_SESSION['loggedIN']) && $_SESSION['loggedIN'] == true) {
-        $accountID = $_SESSION['AccountID'];
+        unset($_SESSION['loggedIN']);
+        session_destroy();	
+        header('location: login.php');	
+    } 
 
-        $query = "SELECT FirstName FROM userprofile WHERE ProfileID = (SELECT ProfileID FROM useraccount WHERE AccountID = '$accountID')";
+    function getInvestCookie($conn) {
+        $cookieContent = $_COOKIE["InvestCookie"];
+        $cookieArray = unserialize($cookieContent);
+        $cookiekey = $cookieArray['cookiedata'];
+        $email = $cookieArray['email'];
+        $query = "SELECT AccountID,ProfileID FROM useraccount WHERE Email='$email' AND CookieKey='$cookiekey'";
         $result = mysqli_query($conn,$query);
-        $data = mysqli_fetch_assoc($result);
 
-        $firstname = $data['FirstName'];
+        if($result) {
+            $data = mysqli_fetch_assoc($result);
+            $accountID = $data['AccountID'];
+            $profileID = $data['ProfileID'];
+            
+            $query = "SELECT FirstName FROM userprofile WHERE ProfileID ='$profileID'";
+            $result = mysqli_query($conn,$query);
+            $data = mysqli_fetch_assoc($result);
+                    
+            $_SESSION['FirstName'] = $data['FirstName'];
+            $_SESSION['AccountID'] = $accountID;
+            $_SESSION['loggedIN'] = true;
+        }
     }
 ?>

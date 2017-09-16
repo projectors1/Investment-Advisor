@@ -38,7 +38,7 @@
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin" value="<?php echo $firstname ?>">
+                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Last name</label>

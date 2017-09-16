@@ -1,4 +1,5 @@
 <?php
+    global $conn;
     $dbServer = "localhost";
     $dbUser = "root";
     $dbPass = "";
