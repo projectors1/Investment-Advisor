@@ -1,22 +1,24 @@
 <div class="sidebar-section">
-    <div class="line"></div>
     <div class="sidebar-user">
-        <img src="img/profile.jpg">
-        <div><label><?= $_SESSION['FirstName'] ?></label></div>
+        <i class="fa fa-user-circle fa-inverse" aria-hidden="true"></i>
+        <div style="margin-top:15px;">
+            <label>Welcome,</label>
+            <label><?= $_SESSION['FirstName'] ?></label>
+        </div>
     </div>
-    <div class="line"></div>
     <ul class="nav nav-list">
+        <li class="header">Navigation Menu</li>
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'profile.php') echo 'class="active"' ?>>
-            <a href="profile.php"><i class="fa fa-user fa-fw" aria-hidden="true"></i><p>Profile</p></a>
+            <a href="profile.php"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
         </li>
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'dashboard.php') echo 'class="active"' ?>>
-            <a href="dashboard.php"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i><p>Dashboard</p></a>
+            <a href="dashboard.php"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>Dashboard</a>
         </li>
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'calculator.php') echo 'class="active"' ?>>
-            <a href="calculator.php"><i class="fa fa-calculator fa-fw" aria-hidden="true"></i><p>Calculator</p></a>
+            <a href="calculator.php"><i class="fa fa-calculator fa-fw" aria-hidden="true"></i>Calculator</a>
         </li>
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'investment.php') echo 'class="active"' ?>>
-            <a href="investment.php"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i><p>Investment</p></a>
+            <a href="investment.php"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i>Investment</a>
         </li>
     </ul>
 </div>

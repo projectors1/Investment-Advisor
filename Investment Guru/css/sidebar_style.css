@@ -17,18 +17,21 @@ body {
     display: block;
     float: left;
     background: #FFFFFF;
-    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 }
 
-.nav-list {
-    margin-top: 20px;
+.navbar {
+    box-shadow: 0 1px 5px rgba(0,0,0,.3);
 }
 
 .nav-list > li > a {
     margin: 10px 15px 0;
     padding: 10px 15px;
     border-radius: 4px;   
-    line-height: 30px;
+    line-height: 30px;   
+    font-size: 14px;
+    color: #525558;
+    font-weight: 600;
     display: block;
     cursor: pointer;
     text-transform: uppercase;
@@ -54,48 +57,37 @@ body {
     color: #a9afbb; 
 }
 
-.nav-list p {
-    margin: 0;
-    font-size: 14px;
-    color: #525558;
-    font-weight: 600;
-}
-
-.line {
-    margin: 10px 20px;
-    border-top: 1px solid #E6E6E6;
-}
-
-.sidebar-heading {
-    padding: 15px;
-    text-align: center;
-}
-
 .sidebar-user {
-    padding: 20px;
-    text-align: center;
-    display: block;
+    padding: 30px 15px;
+    position: relative;
+    border-bottom: 1px solid #E6E6E6;
+    background: url("../img/userback.png") no-repeat no-repeat;
+    background-size: 265px 150px;
+    height: 150px;
+    text-align: left;
 }
 
 .sidebar-user label {
-    margin-top: 15px;
     margin-bottom: 0px;
-    color: #525558;
-    font-size: 18px;
-    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 16px;
 }
 
-.sidebar-user img {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+.sidebar-user i {
+    font-size: 60px;
 }
 
 .nav-view {
     transform: translateX(0%) !important;
+}
+
+.header {
+    background: #EEEEEE;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    color: #525558;
 }
 
 @media (min-width:768px) {
