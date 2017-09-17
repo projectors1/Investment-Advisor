@@ -20,6 +20,7 @@
                     
             $_SESSION['FirstName'] = $data['FirstName'];
             $_SESSION['AccountID'] = $accountID;
+            $_SESSION['Email'] = $email;
             $_SESSION['loggedIN'] = true;
         }
     }

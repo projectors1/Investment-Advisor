@@ -3,10 +3,11 @@
     if(!isset($_SESSION)) { 
         session_start(); 
     } 
-
     $firstname = "";
     $email = "";
-    $_SERVER['message'] = '';
+    if(!isset($_SESSION['message'])) {      
+        $_SERVER['message'] = '';
+    }
 
     if (isset($_SESSION['loggedIN']) && $_SESSION['loggedIN'] == true) {
 		  header('location: profile.php');
@@ -23,8 +24,8 @@
             if (mysqli_query($conn,$query1)) {
                 $profile_id = mysqli_insert_id($conn);        
                 $query2 = "INSERT INTO useraccount (Email,Password,ProfileID) VALUES ('$email','$passhash','$profile_id')";
-                $result = mysqli_query($conn,$query2);
-                $account_id = mysqli_insert_id($conn);  
+                mysqli_query($conn,$query2);
+                $_SERVER['message'] = "Registration Successful";
                 header('location: login.php');
             } 
         }
@@ -59,6 +60,7 @@
                             
                     $_SESSION['FirstName'] = $data['FirstName'];
                     $_SESSION['AccountID'] = $accountID;
+                    $_SESSION['Email'] = $email;
                     $_SESSION['loggedIN'] = true;
                     header('location: profile.php');
                 }

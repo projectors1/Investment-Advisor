@@ -9,6 +9,7 @@
         unset($_SESSION['FirstName']);
         unset($_SESSION['AccountID']);
         unset($_SESSION['loggedIN']);
+        unset($_SESSION['Email']);
         session_destroy();	
         header('location: login.php');	
     } 
