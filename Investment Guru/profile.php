@@ -35,35 +35,37 @@
                                 </div>
                                 <div class="card-form">
                                     <form class="form-horizontal">
+                                        <div class="alert alert-info"><?= $_SESSION['message'] ?></div>
+
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
-                                                <label>First name</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin">
+                                                <label>First name *</label>
+                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin" value="<?php echo $firstname ?>">
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Last name</label>
-                                                <input type="text" class="form-control" placeholder="eg: Tendulkar">
+                                                <label>Last name *</label>
+                                                <input type="text" class="form-control" placeholder="eg: Tendulkar" value="<?php echo $lastname ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group col-md-12">
-                                            <label>Email</label>
-                                            <input type="email" class="form-control" placeholder="eg: example@company.com">
+                                            <label>Email *</label>
+                                            <input type="email" class="form-control" placeholder="eg: example@company.com" value="<?php echo $email ?>">
                                         </div>
 
                                         <div class="form-group col-md-12">
-                                            <label>Date of birth</label>
-                                            <input type="date" class="form-control" value="2000-01-01">  
+                                            <label>Date of birth *</label>
+                                            <input type="date" class="form-control" value="<?php echo $dob ?>">  
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-6">
-                                                <label>City</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Mumbai">
+                                                <label>City *</label>
+                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" value="<?php echo $city ?>">
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Country</label>
-                                                <input type="text" class="form-control" placeholder="eg: India">
+                                                <label>Country *</label>
+                                                <input type="text" class="form-control" placeholder="eg: India" value="<?php echo $country ?>">
                                             </div>
                                         </div>
 
