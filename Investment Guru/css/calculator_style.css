@@ -93,7 +93,6 @@ body {
     float: right;
     position: relative; 
     width: calc(100% - 265px);
-    height: 100%;
     background: #EEEEEE;
 }
 
@@ -107,7 +106,7 @@ body {
 }
 
 .nav-pills li > a {
-    padding: 10px 15px;
+    padding: 10px;
     color: #525558;
     text-transform: uppercase;
     border-radius: 0px;

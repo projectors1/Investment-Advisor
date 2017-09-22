@@ -9,7 +9,6 @@ body {
     float: right;
     position: relative; 
     width: calc(100% - 265px);
-    height: 100%;
     background: #EEEEEE;
 }
 
