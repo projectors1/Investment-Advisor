@@ -21,8 +21,9 @@
     margin-bottom: 20px;
 }
 
-.footer-logo i {
-    font-size: 130px;
+.footer-logo img {
+    height: 120px;
+    width: 120px;
 }
 
 .footer h4 {

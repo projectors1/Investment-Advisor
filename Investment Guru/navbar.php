@@ -8,7 +8,12 @@
                     <span class="sr-only">Toggle navigation</span>
                     <img src="img/grid.svg">
                 </button>               
-                <a href="index.php" class="navbar-brand" id="brand"><i class="fa fa-line-chart fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;&nbsp; INVESTMENT GURU</a>
+                <a href="index.php" class="navbar-brand" id="brand">
+                    <div class="navbar-title">
+                        <img src="img/logo.svg">
+                        <label>INVESTMENT GURU</label>
+                    </div>
+                </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>

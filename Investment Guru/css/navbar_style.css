@@ -4,8 +4,7 @@ label {
 }
 
 #brand {
-    color: #FFFFFF;
-    font-size: 20px;
+    height: 100%;
 }
 
 .btn-sign {
@@ -108,6 +107,21 @@ label {
     min-height: 55px;
 }
 
+.navbar-logo img {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+.navbar-logo label {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
 .navbar-fixed {
     position: fixed;
     right: 0;
@@ -130,6 +144,10 @@ label {
     margin-left: 0px;
     margin-bottom: 0px;
     border: none;
+}
+
+.navbar-title {
+    display: inline;
 }
 
 .nav-div {

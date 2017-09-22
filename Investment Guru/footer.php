@@ -13,7 +13,7 @@
         <div class="row footer-content">
             <div class="col-md-6">
                 <div class="footer-logo">
-                    <i class="fa fa-line-chart fa-inverse" aria-hidden="true"></i>
+                    <img src="img/logo.svg"/>
                     <h2>INVESTMENT<br>GURU</h2>
                 </div>
                 <p>Designed and Developed by Jibin, Ivan and Ben</p>
