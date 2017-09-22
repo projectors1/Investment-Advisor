@@ -1,0 +1,12 @@
+.main-section {
+    float: right;
+    position: relative; 
+    width: calc(100% - 265px);
+    height: 100%;
+    background: #EEEEEE;
+}
+
+.main-section {
+    margin-top: 55px;
+    padding-top: 20px;
+}

@@ -21,4 +21,9 @@
             <a href="investment.php"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i>Investment</a>
         </li>
     </ul>
+    <ul class="nav nav-list sidebar-settings">
+        <li <?php if (basename($_SERVER['PHP_SELF']) == 'settings.php') echo 'class="active"' ?>>
+            <a href="settings.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Settings</a>
+        </li>
+    </ul>
 </div>

@@ -12,7 +12,6 @@
     else {       
         $firstname = $lastname = $email = $dob = $city = $country = "";
         $income = $expenses = $savings = "";
-        $current_pass = $new_pass = $new_confirmpass = "";
         $accountID = $_SESSION['AccountID']; 
 
         $query = "SELECT * FROM userprofile WHERE ProfileID = (SELECT ProfileID FROM useraccount WHERE AccountID = $accountID)";
