@@ -1,13 +1,3 @@
-.row-padding {
-    padding: 0px 100px;
-}
-
-@media (max-width:767px) {
-    .row-padding {
-        padding: 0px 50px; 
-    }
-}
-
 /* Section Styles start */
 
 .contact-section h3,

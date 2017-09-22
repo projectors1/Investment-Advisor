@@ -179,6 +179,15 @@ label {
     .navbar-logo {
         border-right: none;
     }
+    
+    .navbar-logo label {
+        font-size: 16px;
+    }
+
+    .navbar-logo img {
+        height: 30px;
+        width: 30px;
+    }
 
     .navbar-toggle {
         padding-left: 5px;

@@ -41,6 +41,7 @@
                 </div>
             </div>
         </div>
+        <img src="img/graph.svg">
     </section>
 
     <section class="section description-section">
@@ -66,7 +67,7 @@
         <div class="container">
             <h3>How we work</h3>
             <h4>Just <strong>3</strong> simple steps to your goal</h4>
-            <div class="row row-padding">
+            <div class="row">
                 <div class="col-md-4">
                     <div class="card-padding">
                         <div class="card-team">

@@ -119,4 +119,13 @@
     .footer-logo i {
         font-size: 80px;
     }
+    
+    .footer-logo h2 {
+        margin-bottom: 0px;
+    }
+
+    .footer-logo img {
+        height: 60px;
+        width: 60px;
+    }
 }
