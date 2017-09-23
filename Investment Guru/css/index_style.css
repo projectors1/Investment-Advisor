@@ -29,6 +29,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1;
 }
 
 .banner-btn {
@@ -95,6 +96,7 @@ input[type=text]:focus {
 
 .top-margin {
     margin-top: 100px; 
+    z-index: 2;
 }
 
 @media (max-width:767px) {
