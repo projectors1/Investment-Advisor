@@ -3,13 +3,10 @@
     if(!isset($_SESSION)) { 
         session_start(); 
     } 
-    $_SESSION['message'] = "";
+    $_SESSION['message'] = "";   
     
-    
-    if (!isset($_SESSION['loggedIN'])) {
-		header('location: login.php');
-    }
-    else {       
+    if (isset($_SESSION['loggedIN'])) {
+
         $firstname = $lastname = $email = $dob = $city = $country = "";
         $income = $expenses = $savings = "";
         $accountID = $_SESSION['AccountID']; 
@@ -35,6 +32,8 @@
             $savings = $data['Savings']; 
         }
     }
+    else {  
+		header('location: login.php');
+    }
 
-    
 ?>

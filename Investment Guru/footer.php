@@ -16,7 +16,7 @@
                     <img src="img/logo.svg"/>
                     <h2>INVESTMENT<br>GURU</h2>
                 </div>
-                <p>Designed and Developed by Jibin, Ivan and Ben</p>
+                <p>Designed and Developed by Jibin, Ivan & Ben</p>
             </div>
 
             <div class="col-md-2">

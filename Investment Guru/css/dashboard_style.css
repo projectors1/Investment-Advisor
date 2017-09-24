@@ -3,13 +3,13 @@ body {
     font-family: "Open-sans", sans-serif;
     font-weight: 300;
     font-stretch: normal;
+    background: #EEEEEE;
 }
 
 .main-section {
     float: right;
     position: relative; 
     width: calc(100% - 265px);
-    background: #EEEEEE;
 }
 
 .main-section {
