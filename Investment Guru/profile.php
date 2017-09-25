@@ -53,7 +53,7 @@
                                         <div class="form-group">
                                             <div class="col-md-6">  
                                                 <label>Email *</label>
-                                                <input type="email" class="form-control" placeholder="eg: example@company.com" value="<?php echo $email ?>" disabled>
+                                                <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" value="<?php echo $email ?>" disabled>
                                             </div>
                                             <div class="col-md-6">                                                
                                                 <label>Date of birth *</label>

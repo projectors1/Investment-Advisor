@@ -23,9 +23,10 @@
 
     <header class="heading-section">
         <div class="jumbotron">
-            <h1 class="jumbo-head">ABOUT US</h1>
-            <p class="jumbo-sub">Our Idea & Our Team</p>
+            <h1>ABOUT US</h1>
+            <h3>Our Idea & Our Team</h3>
         </div>
+        <img src="img/group.svg">
     </header>
 
     <section class="section idea-section">
