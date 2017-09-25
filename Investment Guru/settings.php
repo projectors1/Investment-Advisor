@@ -32,12 +32,16 @@
                                 <h4 class="card-title">Change Password</h4>
                             </div>
                             <div class="card-form">
-                                <form class="form-horizontal">
+                                <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                                    <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
+                                    <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
+                                    <div class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
+
                                     <div class="form-group col-md-12">
                                         <label>Current</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                            <input type="password" class="form-control" placeholder="eg: current123" value="<?php echo $current_pass ?>">
+                                            <input name="txt_currentpass" type="password" class="form-control" placeholder="eg: current123">
                                         </div>
                                     </div>
 
@@ -45,7 +49,7 @@
                                         <label>New</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                            <input type="password" class="form-control" placeholder="eg: new123" value="<?php echo $new_pass ?>">
+                                            <input name="txt_newpass" type="password" class="form-control" placeholder="eg: new123">
                                         </div>
                                     </div>
 
@@ -53,13 +57,13 @@
                                         <label>Confirm new</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                            <input type="password" class="form-control" placeholder="eg: new123" value="<?php echo $new_confirmpass ?>">
+                                            <input name="txt_confirmnew" type="password" class="form-control" placeholder="eg: new123">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
-                                            <button name="btn_change" type="button" class="btn btn-primary btn-main">Change</button>
+                                            <button name="btn_change" type="submit" class="btn btn-primary btn-main">Change</button>
                                         </div>
                                     </div>
                                 </form>
@@ -72,7 +76,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/sidebar_script.js"></script>
+    <script src="js/control_script.js"></script>
 </body>
 
 </html>

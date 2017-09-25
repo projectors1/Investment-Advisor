@@ -26,7 +26,11 @@
 
     <section class="main-section">
         <section class="profile-section">
-                <div class="container-fluid">
+                <div class="container-fluid">                   
+                    <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
+                    <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
+                    <div class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
+                    
                     <div class="row">
                         <div class="col-md-8">
                             <div class="card">
@@ -35,16 +39,14 @@
                                 </div>
                                 <div class="card-form">
                                     <form class="form-horizontal" action="" method="POST" autocomplete="off">
-                                        <div class="alert alert-info"><?= $_SESSION['message'] ?></div>
-
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name *</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin" name="txt_firstname" value="<?php echo $firstname ?>">
+                                                <input name="txt_firstname" type="text" class="form-control margin-bottom" placeholder="eg: Sachin" value="<?php echo $firstname ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Last name *</label>
-                                                <input type="text" class="form-control" placeholder="eg: Tendulkar" name="txt_lastname" value="<?php echo $lastname ?>">
+                                                <input name="txt_lastname" type="text" class="form-control" placeholder="eg: Tendulkar" value="<?php echo $lastname ?>">
                                             </div>
                                         </div>
 
@@ -55,18 +57,18 @@
                                             </div>
                                             <div class="col-md-6">                                                
                                                 <label>Date of birth *</label>
-                                                <input type="date" class="form-control" name="txt_dob" value="<?php echo $dob ?>">  
+                                                <input name="txt_dob" type="date" class="form-control" value="<?php echo $dob ?>">  
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-6">
                                                 <label>City *</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" name="txt_city" value="<?php echo $city ?>">
+                                                <input name="txt_city" type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" value="<?php echo $city ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Country *</label>
-                                                <input type="text" class="form-control" placeholder="eg: India" name="txt_country" value="<?php echo $country ?>">
+                                                <input name="txt_country" type="text" class="form-control" placeholder="eg: India" value="<?php echo $country ?>">
                                             </div>
                                         </div>
 
@@ -91,7 +93,7 @@
                                             <label>Monthly income</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 25,000" name="txt_income" value="<?php echo $income ?>">
+                                                <input name="txt_income" type="number" class="form-control" placeholder="eg: 25,000" value="<?php echo $income ?>">
                                             </div>
                                         </div>
 
@@ -99,7 +101,7 @@
                                             <label>Expenses</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 20,000" name="txt_expenses" value="<?php echo $expenses ?>">
+                                                <input name="txt_expenses" type="number" class="form-control" placeholder="eg: 20,000" value="<?php echo $expenses ?>">
                                             </div>
                                         </div>
 
@@ -107,7 +109,7 @@
                                             <label>Savings</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 4,000" name="txt_savings" value="<?php echo $savings ?>">
+                                                <input name="txt_savings" type="number" class="form-control" placeholder="eg: 4,000" value="<?php echo $savings ?>">
                                             </div>
                                         </div>
 
@@ -129,8 +131,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/footer_script.js"></script>
-    <script src="js/sidebar_script.js"></script>
+    <script src="js/control_script.js"></script>
 </body>
 
 </html>

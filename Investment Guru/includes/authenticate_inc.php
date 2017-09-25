@@ -1,13 +1,7 @@
 <?php
     require_once 'initialize_inc.php';    
-    if(!isset($_SESSION)) { 
-        session_start(); 
-    } 
     $firstname = "";
-    $email = "";
-    if(!isset($_SESSION['message'])) {      
-        $_SERVER['message'] = '';
-    }
+    $email = "";   
 
     if (isset($_SESSION['loggedIN']) && $_SESSION['loggedIN'] == true) {
 		  header('location: profile.php');
@@ -17,15 +11,14 @@
             $firstname = mysqli_real_escape_string($conn, $_POST['txt_firstname']);
             $email = mysqli_real_escape_string($conn, $_POST['txt_email']);
             $password = mysqli_real_escape_string($conn, $_POST['txt_pass']);
-            $confirmpass = mysqli_real_escape_string($conn, $_POST['txt_confirmpass']);
             $passhash = password_hash($password,PASSWORD_DEFAULT);
 
-            $query1 = "INSERT INTO userprofile (FirstName) VALUES ('$firstname')";
-            if (mysqli_query($conn,$query1)) {
+            $query = "INSERT INTO userprofile (FirstName) VALUES ('$firstname')";
+            if (mysqli_query($conn,$query)) {
                 $profile_id = mysqli_insert_id($conn);        
-                $query2 = "INSERT INTO useraccount (Email,Password,ProfileID) VALUES ('$email','$passhash','$profile_id')";
-                mysqli_query($conn,$query2);
-                $_SERVER['message'] = "Registration Successful";
+                $query = "INSERT INTO useraccount (Email,Password,ProfileID) VALUES ('$email','$passhash','$profile_id')";
+                mysqli_query($conn,$query);
+                $_SERVER['alertSuccess'] = "Registration Successful";
                 header('location: login.php');
             } 
         }
@@ -38,20 +31,16 @@
             $result = mysqli_query($conn,$query);
 
             if(mysqli_num_rows($result) == 0) {
-                $_SERVER['message'] = 'User account does not exist'; 
+                $_SERVER['alertInfo'] = 'User account does not exist'; 
             }
             else {
-                $row = mysqli_fetch_assoc($result);
-                $accountID = $row['AccountID'];
-                $passhash = $row['Password'];
-                $profileID = $row['ProfileID'];
+                $data = mysqli_fetch_assoc($result);
+                $accountID = $data['AccountID'];
+                $passhash = $data['Password'];
+                $profileID = $data['ProfileID'];
 
-                if(!password_verify($password,$passhash)) {             
-                    $_SERVER['message'] = 'Invalid password';
-                }
-                else {
-                    if($_POST['chk_remember'])
-                    {
+                if(password_verify($password,$passhash)) {                       
+                    if($_POST['chk_remember']) {
                         setInvestCookie($conn,$email,$passhash,$accountID);
                     }
                     $query = "SELECT FirstName FROM userprofile WHERE ProfileID = '$profileID'";
@@ -62,7 +51,10 @@
                     $_SESSION['AccountID'] = $accountID;
                     $_SESSION['Email'] = $email;
                     $_SESSION['loggedIN'] = true;
-                    header('location: profile.php');
+                    header('location: profile.php');         
+                }
+                else {                   
+                    $_SERVER['alertDanger'] = 'Invalid password';
                 }
             }
         }

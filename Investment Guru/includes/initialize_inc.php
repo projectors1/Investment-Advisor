@@ -1,5 +1,14 @@
 <?php  
-    require_once 'db_inc.php';  
+    require_once 'db_inc.php';     
+    if(!isset($_SESSION)) { 
+        session_start(); 
+    } 
+    
+    if(!isset($_SERVER['alertInfo'])) {       
+        $_SERVER['alertInfo'] = "";
+        $_SERVER['alertSuccess'] = "";
+        $_SERVER['alertDanger'] = "";
+    }
     
     if(isset($_COOKIE["InvestCookie"]) && !isset($_SESSION['loggedIN'])) {
         $cookieContent = $_COOKIE["InvestCookie"];

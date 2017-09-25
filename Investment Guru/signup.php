@@ -49,26 +49,28 @@
                             </div>
 
                             <div class="card-form">
-                                <div class="alert alert-info"></div>
+                                <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
+                                <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
+                                <div class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="txt_firstname" placeholder="First Name" value="<?php echo $firstname; ?>">
+                                    <input name="txt_firstname" type="text" class="form-control" placeholder="First Name" value="<?php echo $firstname; ?>">
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input type="email" class="form-control" name="txt_email" placeholder="Email" value="<?php echo $email; ?>">
+                                    <input name="txt_email" type="email" class="form-control" placeholder="Email" value="<?php echo $email; ?>">
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="txt_pass" placeholder="Password">
+                                    <input name="txt_pass" type="password" class="form-control" placeholder="Password">
                                 </div>
 
                                 <div class="input-group form-margin">
                                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="txt_confirmpass" placeholder="Confirm Password">
+                                    <input name="txt_confirmpass" type="password" class="form-control" placeholder="Confirm Password">
                                 </div>
                             </div>
 
@@ -83,7 +85,7 @@
 
                                 <div class="form-margin">
                                     <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">  
-                                        <button type="submit" name="btn_signup" class="btn btn-main">SIGN UP</button>
+                                        <button name="btn_signup" type="submit" class="btn btn-main">SIGN UP</button>
                                     </div>
                                 </div>
 
@@ -98,7 +100,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/navbar_script.js"></script>
+    <script src="js/control_script.js"></script>
 </body>
 
 </html>

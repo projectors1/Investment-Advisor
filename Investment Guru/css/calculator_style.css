@@ -130,8 +130,6 @@ body {
     padding: 0px !important;
 }
 
-
-
 @media(max-width:767px) {
     .nav-justified > li {
         display: table-cell;

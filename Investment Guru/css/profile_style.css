@@ -31,10 +31,6 @@ body {
     margin-bottom: 0px;
 }
 
-.alert:empty {
-    display: none;
-}
-
 @media(max-width:767px) {
     .margin-bottom {
         margin-bottom: 20px;

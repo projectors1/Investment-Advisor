@@ -9,6 +9,10 @@ p,label,h1,h2,h3,h4,h5,h6 {
     color: #525558;
 }
 
+.alert:empty {
+    display: none;
+}
+
 .btn.btn-main,.btn.btn-second,.btn.btn-white,.btn.btn-transparent{
     background-color: #e74c3c;
     color: #FFFFFF;

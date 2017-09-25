@@ -215,8 +215,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN-EhvT3iNAy0-DS7SiVDz5o_K-0q1g_8&callback=myMap"></script>
-    <script src="js/navbar_script.js"></script>
-    <script src="js/footer_script.js"></script>
+    <script src="js/control_script.js"></script>
 </body>
 
 </html>
