@@ -54,7 +54,7 @@
                     {
                         setInvestCookie($conn,$email,$passhash,$accountID);
                     }
-                    $query = "SELECT FirstName FROM userprofile WHERE ProfileID ='$profileID'";
+                    $query = "SELECT FirstName FROM userprofile WHERE ProfileID = '$profileID'";
                     $result = mysqli_query($conn,$query);
                     $data = mysqli_fetch_assoc($result);
                             
@@ -72,7 +72,7 @@
         $emailhash = password_hash($email,PASSWORD_DEFAULT);
         $cookie = $emailhash . $passhash;
         $cookiekey = password_hash($cookie,PASSWORD_DEFAULT);
-        $query = "UPDATE useraccount SET CookieKey='$cookiekey' WHERE AccountID='$accountID'";
+        $query = "UPDATE useraccount SET CookieKey = '$cookiekey' WHERE AccountID = '$accountID'";
         if(mysqli_query($conn,$query)) {
             $cookieArray = array('cookiedata'=>$cookiekey,'email'=>$email);
             $cookieContent = serialize($cookieArray);

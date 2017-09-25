@@ -34,45 +34,45 @@
                                     <h4 class="card-title">Personal Info</h4>
                                 </div>
                                 <div class="card-form">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" action="" method="POST" autocomplete="off">
                                         <div class="alert alert-info"><?= $_SESSION['message'] ?></div>
 
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name *</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin" value="<?php echo $firstname ?>">
+                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Sachin" name="txt_firstname" value="<?php echo $firstname ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Last name *</label>
-                                                <input type="text" class="form-control" placeholder="eg: Tendulkar" value="<?php echo $lastname ?>">
+                                                <input type="text" class="form-control" placeholder="eg: Tendulkar" name="txt_lastname" value="<?php echo $lastname ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-6">  
                                                 <label>Email *</label>
-                                                <input type="email" class="form-control" placeholder="eg: example@company.com" value="<?php echo $email ?>">
+                                                <input type="email" class="form-control" placeholder="eg: example@company.com" value="<?php echo $email ?>" disabled>
                                             </div>
                                             <div class="col-md-6">                                                
                                                 <label>Date of birth *</label>
-                                                <input type="date" class="form-control" value="<?php echo $dob ?>">  
+                                                <input type="date" class="form-control" name="txt_dob" value="<?php echo $dob ?>">  
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-6">
                                                 <label>City *</label>
-                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" value="<?php echo $city ?>">
+                                                <input type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" name="txt_city" value="<?php echo $city ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Country *</label>
-                                                <input type="text" class="form-control" placeholder="eg: India" value="<?php echo $country ?>">
+                                                <input type="text" class="form-control" placeholder="eg: India" name="txt_country" value="<?php echo $country ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-3 col-md-offset-9 col-xs-6 col-xs-offset-6">
-                                                <button name="btn_personal" type="button" class="btn btn-primary btn-main">Save</button>
+                                                <button name="btn_personal" type="submit" class="btn btn-primary btn-main">Save</button>
                                             </div>
                                         </div>
                                     </form>
@@ -86,12 +86,12 @@
                                     <h4 class="card-title">Financial Info</h4>
                                 </div>
                                 <div class="card-form">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" action="" method="POST" autocomplete="off">
                                         <div class="form-group col-md-12">
                                             <label>Monthly income</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 25,000" value="<?php echo $income ?>">
+                                                <input type="number" class="form-control" placeholder="eg: 25,000" name="txt_income" value="<?php echo $income ?>">
                                             </div>
                                         </div>
 
@@ -99,7 +99,7 @@
                                             <label>Expenses</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 20,000" value="<?php echo $expenses ?>">
+                                                <input type="number" class="form-control" placeholder="eg: 20,000" name="txt_expenses" value="<?php echo $expenses ?>">
                                             </div>
                                         </div>
 
@@ -107,13 +107,13 @@
                                             <label>Savings</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input type="number" class="form-control" placeholder="eg: 4,000" value="<?php echo $savings ?>">
+                                                <input type="number" class="form-control" placeholder="eg: 4,000" name="txt_savings" value="<?php echo $savings ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
-                                                <button name="btn_finance" type="button" class="btn btn-primary btn-main">Save</button>
+                                                <button name="btn_finance" type="submit" class="btn btn-primary btn-main">Save</button>
                                             </div>
                                         </div>
                                     </form>
