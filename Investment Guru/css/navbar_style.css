@@ -85,7 +85,6 @@ label {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    margin: 0 5px;
     padding: 0 10px;
     text-transform: uppercase;
     transition: 0.4s;

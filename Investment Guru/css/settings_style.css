@@ -1,9 +1,15 @@
+body {
+    text-decoration: none;
+    font-family: "Open-sans", sans-serif;
+    font-weight: 300;
+    font-stretch: normal;
+    background: #f8f9fa;
+}
+
 .main-section {
     float: right;
     position: relative; 
     width: calc(100% - 265px);
-    height: 100%;
-    background: #EEEEEE;
 }
 
 .main-section {
