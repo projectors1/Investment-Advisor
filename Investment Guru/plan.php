@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="card">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" action="" method="POST" autocomplete="off">
                                 <div class="card-wizard-header text-center">
                                     <h3>Plan Your Goal</h3>
                                     <p>Follow through the steps to plan</p>
@@ -46,26 +46,26 @@
                                 </div>
 
                                 <div class="card-wizard-content">
-                                    <div class="card-tab-content" id="goal">            
+                                    <div class="card-tab-content" id="goal">
                                         <h4>Let's start with your goal</h4>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Goal name</label>
-                                                    <input type="text" class="form-control" placeholder="eg: Laptop">
+                                                    <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" value="<?php echo $goalname ?>">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 margin-bottom">
                                                 <label>Cost</label>
                                                 <div class="input-group">
                                                     <span class="input-group-addon">₹</span>
-                                                    <input type="number" class="form-control" placeholder="eg: 30,000">
+                                                    <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" value="<?php echo $goalcost ?>">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">                                                   
                                                     <label>Priority</label>
-                                                    <select class="form-control">
+                                                    <select name="sel_goalpriority" class="form-control" value="<?php echo $goalpriority ?>">
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -81,16 +81,16 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-xs-6">
                                                 <label for="chk_period" class="choice">
-                                                    <input id="chk_period" type="checkbox" name="plan" value="Period">
+                                                    <input id="chk_period" name="chk_goalperiod" type="checkbox" name="plan" value="Period">
                                                     <div class="icon">
                                                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                                     </div>
                                                 </label>
-                                                <h5>Calculate period</h5>
+                                                <h5>Calculate time</h5>
                                             </div>
                                             <div class="col-sm-6 col-xs-6">
                                                 <label class="choice" for="chk_amount">
-                                                    <input id="chk_amount" type="checkbox" name="plan" value="Amount">
+                                                    <input id="chk_amount" name="chk_goalamount" type="checkbox" name="plan" value="Amount">
                                                     <div class="icon">
                                                         <i class="fa fa-inr" aria-hidden="true"></i>
                                                     </div>
@@ -99,14 +99,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-tab-content" id="details">                                        
+                                    <div class="card-tab-content" id="details">
                                         <h4>Provide some details</h4>                                         
                                         <div class="content-period">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Saving type</label>
-                                                        <select class="form-control">
+                                                        <select name="sel_pdType" class="form-control" value="<?php $pdType ?>">
                                                             <option>Monthly</option>
                                                             <option>Quaterly</option>
                                                             <option>Half Yearly</option>
@@ -119,7 +119,7 @@
                                                         <label>Saving amount</label>
                                                         <div class="input-group">
                                                             <span class="input-group-addon">₹</span>
-                                                            <input type="number" class="form-control" placeholder="eg: 5,000">
+                                                            <input name="txt_pdAmount" type="number" class="form-control" placeholder="eg: 5,000" value="<?php $pdAmount ?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -130,7 +130,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Saving type</label>
-                                                        <select class="form-control">
+                                                        <select name="sel_amtType" class="form-control" value="<?php $amtType ?>">
                                                             <option>Monthly</option>
                                                             <option>Quaterly</option>
                                                             <option>Half Yearly</option>
@@ -143,7 +143,7 @@
                                                         <label>Total Period</label>
                                                         <div class="input-group">
                                                             <span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                                                            <input type="number" class="form-control" placeholder="eg: 2">
+                                                            <input name="txt_amtPeriod" type="number" class="form-control" placeholder="eg: 2" value="<?php $amtPeriod ?>">
                                                         </div>
                                                     </div>
                                                 </div>
