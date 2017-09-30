@@ -1,9 +1,9 @@
-<?php require('includes/calculator_inc.php')?>
+<?php require('includes/plan_inc.php') ?>
 
 <html>
 
 <head>
-    <title>Calculator</title>
+    <title>Plan</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" type="text/css" href="css/control_style.css">
-    <link rel="stylesheet" type="text/css" href="css/calculator_style.css">
+    <link rel="stylesheet" type="text/css" href="css/plan_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
     <link rel="stylesheet" type="text/css" href="css/footer_style.css">
@@ -51,12 +51,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label>Goal name</label>
+                                                    <label>Whats your goal ?</label>
                                                     <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" value="<?php echo $goalname ?>">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 margin-bottom">
-                                                <label>Cost</label>
+                                                <label>How much does it cost ?</label>
                                                 <div class="input-group">
                                                     <span class="input-group-addon">₹</span>
                                                     <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" value="<?php echo $goalcost ?>">
@@ -64,13 +64,13 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">                                                   
-                                                    <label>Priority</label>
-                                                    <select name="sel_goalpriority" class="form-control" value="<?php echo $goalpriority ?>">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
+                                                    <label>Goal priority</label>
+                                                    <select name="sel_goalpriority" class="form-control">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -80,8 +80,8 @@
                                         <h4>Choose your planning mode</h4>
                                         <div class="row">
                                             <div class="col-sm-6 col-xs-6">
-                                                <label for="chk_period" class="choice">
-                                                    <input id="chk_period" name="chk_goalperiod" type="checkbox" name="plan" value="Period">
+                                                <label class="choice" for="chk_period">
+                                                    <input id="chk_period" name="chk_plan" type="radio" value="Period">
                                                     <div class="icon">
                                                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                                     </div>
@@ -90,7 +90,7 @@
                                             </div>
                                             <div class="col-sm-6 col-xs-6">
                                                 <label class="choice" for="chk_amount">
-                                                    <input id="chk_amount" name="chk_goalamount" type="checkbox" name="plan" value="Amount">
+                                                    <input id="chk_amount" name="chk_plan" type="radio" value="Amount">
                                                     <div class="icon">
                                                         <i class="fa fa-inr" aria-hidden="true"></i>
                                                     </div>
@@ -101,53 +101,36 @@
                                     </div>
                                     <div class="card-tab-content" id="details">
                                         <h4>Provide some details</h4>                                         
-                                        <div class="content-period">
-                                            <div class="row">
+                                        <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label>Saving type</label>
-                                                        <select name="sel_pdType" class="form-control" value="<?php $pdType ?>">
-                                                            <option>Monthly</option>
-                                                            <option>Quaterly</option>
-                                                            <option>Half Yearly</option>
-                                                            <option>Yearly</option>
+                                                        <label>How will you save ?</label>
+                                                        <select name="sel_savingType" class="form-control">
+                                                            <option value="monthly">Monthly</option>
+                                                            <option value="quaterly">Quaterly</option>
+                                                            <option value="half">Half Yearly</option>
+                                                            <option value="yearly">Yearly</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 content-period">
                                                     <div class="form-group">
-                                                        <label>Saving amount</label>
+                                                        <label>Amount you can save</label>
                                                         <div class="input-group">
                                                             <span class="input-group-addon">₹</span>
                                                             <input name="txt_pdAmount" type="number" class="form-control" placeholder="eg: 5,000" value="<?php $pdAmount ?>">
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content-amount">
-                                            <div class="row">
-                                                <div class="col-md-6">
+                                                </div>                                               
+                                                <div class="col-md-6 content-amount">
                                                     <div class="form-group">
-                                                        <label>Saving type</label>
-                                                        <select name="sel_amtType" class="form-control" value="<?php $amtType ?>">
-                                                            <option>Monthly</option>
-                                                            <option>Quaterly</option>
-                                                            <option>Half Yearly</option>
-                                                            <option>Yearly</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Total Period</label>
+                                                        <label>You want to acheive it in</label>
                                                         <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                                                            <input name="txt_amtPeriod" type="number" class="form-control" placeholder="eg: 2" value="<?php $amtPeriod ?>">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                                            <input name="txt_amtPeriod" type="number" class="form-control" placeholder="eg: 2 (in months)" value="<?php $amtPeriod ?>">
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="card-tab-content" id="result">
@@ -181,7 +164,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/control_script.js"></script>
-    <script src="js/calculator_script.js"></script>
+    <script src="js/plan_script.js"></script>
 </body>
 
 </html>

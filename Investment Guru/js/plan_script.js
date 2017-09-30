@@ -60,9 +60,11 @@ $("#btn_back").click(function() {
 });
 
 $('#chk_period').change(function() {
-    $(".content-period").toggle();     
+    $(".content-period").show();
+    $(".content-amount").hide();        
 });
 
 $('#chk_amount').change(function() {
-    $(".content-amount").toggle();     
+    $(".content-period").hide();
+    $(".content-amount").show();    
 });

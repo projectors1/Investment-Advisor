@@ -75,7 +75,7 @@
                                 <img src="img/money-bag.svg">
                             </div>
                             <div class="card-content">
-                                <p>1. Invest your savings</p>                              
+                                <p>1. Plan your savings</p>                              
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                                 <img src="img/profit.svg">
                             </div>
                             <div class="card-content">
-                                <p>2. Earn from investment</p>                              
+                                <p>2. Invest your savings</p>                              
                             </div>
                         </div>
                     </div>

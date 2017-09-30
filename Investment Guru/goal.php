@@ -1,4 +1,4 @@
-<?php require('includes/dashboard_inc.php')?>
+<?php require('includes/goal_inc.php') ?>
 
 <html>
 
@@ -12,7 +12,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css">
+    <link rel="stylesheet" type="text/css" href="css/goal_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
     <link rel="stylesheet" type="text/css" href="css/footer_style.css">
