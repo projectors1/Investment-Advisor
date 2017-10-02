@@ -3,10 +3,6 @@ label {
     font-size: 14px;
 }
 
-#brand {
-    height: 100%;
-}
-
 .btn-sign {
     padding: 5px;
     border: none;
@@ -14,14 +10,14 @@ label {
     background-color: #FFFFFF;
     text-align: center;
     transition: all 0.5s;
+    border-radius: 4px;
 }
 
 #btn-signup {
     color: #e74c3c;
 }
 
-.btn-sign,
-.navbar-default .navbar-nav>li>a {
+.btn-sign {
     font-size: 14px;
 }
 
@@ -57,75 +53,59 @@ label {
 }
 
 .fa-icons {
-    vertical-align: sub;
-    font-size: 24px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.navbar {
+    padding: 5px 0px;
 }
 
 .navbar-inverse {
-    height: 55px;
     border-radius: 0px;
     background-color: #e74c3c;
     border: none;
 }
 
-.navbar-header,.navbar-collapse {
-    background-color: #e74c3c;
-}
-
 .navbar-inverse .navbar-collapse {
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand,
-.navbar-inverse .navbar-nav>li>a {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 55px;
-    margin: 0px;
+    border-color: rgba(255, 0, 0, 0.1);
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    padding: 0 10px;
     text-transform: uppercase;
     transition: 0.4s;
     font-size: 14px;
     color: #FFFFFF;
+    margin: 0px 5px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0px -3px 0px 0px #FFFFFF;
+.navbar-inverse .navbar-nav > li.active > a:focus, 
+.navbar-inverse .navbar-nav > li.active > a:hover,
+.navbar-inverse .navbar-nav>li>a:hover  {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
 
 .navbar-logo {
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    min-height: 55px;
+    width: 50px;
+    float: left;
 }
 
 .navbar-logo img {
     height: 35px;
-    width: 35px;
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-.navbar-logo label {
+.navbar-title label {
+    font-size: 22px;
     color: #FFFFFF;
-    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 0px;
-    margin-left: 5px;
+    line-height: 18px;
+    float: left;
+    padding-top: 16px;
+    height: 40px;
     cursor: pointer;
-}
-
-.navbar-fixed {
-    position: fixed;
-    right: 0;
-    z-index: 5; 
-    width: calc(100% - 260px);
 }
 
 .navbar-inverse .navbar-toggle,
@@ -137,8 +117,7 @@ label {
     background: transparent;
 }
 
-.navbar-toggle {   
-    margin-top: 10px;
+.navbar-toggle {  
     margin-right: 5px;
     margin-left: 0px;
     margin-bottom: 0px;
@@ -149,18 +128,13 @@ label {
     display: inline;
 }
 
-.nav-div {
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    height: 100%;
-}
-
 #login-nav {
     margin-right: 2px;
     color: #FFFFFF;
 }
 
 .sidebar-toggle {
-    margin-top: 5px;
+    margin-top: 2px;
     margin-right: 0px;
     margin-left: 5px;
     margin-bottom: 0px;
@@ -175,11 +149,7 @@ label {
 
 @media(max-width:767px) {
 
-    .navbar-logo {
-        border-right: none;
-    }
-    
-    .navbar-logo label {
+    .navbar-title label {
         font-size: 16px;
     }
 
@@ -188,21 +158,12 @@ label {
         width: 30px;
     }
 
+    .logo-container {
+        margin-left: 15px;
+    }
+
     .navbar-toggle {
         padding-left: 5px;
         padding-right: 10px;
-    }
-
-    .nav-div {
-        display: none;
-    }
-
-    .navbar-inverse .navbar-nav>li>a:hover,
-    .navbar-inverse .navbar-nav>.active>a,
-    .navbar-inverse .navbar-nav>.active>a,
-    .navbar-inverse .navbar-nav>.active>a:focus,
-    .navbar-inverse .navbar-nav>.active>a:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        box-shadow: inset 4px 0px 0px 0px #FFFFFF;
     }
 }
