@@ -21,72 +21,60 @@
 
     <?php require_once('navbar.php'); ?>
 
-    <section class="content-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form action="" method="POST" autocomplete="off">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Login</h4>
-                                <div class="social-login">
-                                    <a class="btn btn-icon">
-                                        <i class="fa fa-facebook-square fa-2x"></i>
-                                    </a>
-                                    <a class="btn btn-icon">
-                                        <i class="fa fa-twitter-square fa-2x"></i>
-                                    </a>
-                                    <a class="btn btn-icon">
-                                        <i class="fa fa-google-plus-square fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="division">
-                                <div class="line l"></div>
-                                <span style="font-size:18px">or</span>
-                                <div class="line r"></div>
-                            </div>
-
-                            <div class="card-form">
-                                <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
-                                <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
-                                <div class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
-
-                                <div class="input-group form-margin">
-                                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input name="txt_email" type="email" class="form-control" placeholder="Email" value="<?php echo $email ?>">
+    <div class="main-section">
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                        <form action="" method="POST" autocomplete="off">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="text-center">
+                                        <i class="fa fa-user-circle-o fa-inverse fa-5x" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="card-title">Login</h4>
                                 </div>
 
-                                <div class="input-group form-margin">
-                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input name="txt_pass" type="password" class="form-control" placeholder="Password">
-                                </div>
-                            </div>
+                                <div class="card-form">
+                                    <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
+                                    <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
+                                    <div class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
 
-                            <div class="card-button">
-                                <div class="checkbox switch-container">
-                                    <label class="col-md-2 switch">
-                                      <input type="checkbox" name="chk_remember">
-                                      <span class="slider"></span>
-                                    </label>
-                                    <label class="col-md-9 switch-label">Remember me</label>
-                                </div>
+                                    <div class="input-group form-margin">
+                                        <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" value="<?php echo $email ?>">
+                                    </div>
 
-                                <div class="form-margin">
-                                    <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">                                       
-                                        <button name="btn_login" type="submit" class="btn btn-main">LOGIN</button>
+                                    <div class="input-group form-margin">
+                                        <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password">
                                     </div>
                                 </div>
 
-                                <div class="clearfix"></div>
+                                <div class="card-button">
+                                    <div class="checkbox switch-container">
+                                        <label class="col-md-2 switch">
+                                        <input type="checkbox" name="chk_remember">
+                                        <span class="slider"></span>
+                                        </label>
+                                        <label class="col-md-9 switch-label">Remember me</label>
+                                    </div>
+
+                                    <div class="form-margin">
+                                        <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">                                       
+                                            <button name="btn_login" type="submit" class="btn btn-main">LOGIN</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

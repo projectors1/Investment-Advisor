@@ -12,11 +12,6 @@ h4 {
     color: #888888;
 }
 
-.btn-icon,
-.btn-icon:hover {
-    color: #FFFFFF;
-}
-
 .card {
     padding-bottom: 20px;
 }
@@ -28,6 +23,8 @@ h4 {
 .card-title {
     text-align: center;
     font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .card-button {
@@ -35,44 +32,17 @@ h4 {
 }
 
 .content-section {
-    padding-top: 15vh;
-}
-
-.division {
-    position: relative;
-    width: 100%;
-    float: none;
-    margin: 0 auto 0;
-    overflow: hidden;
-    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .form-margin {
     margin-top: 30px;
 }
 
-.line {
+.main-section {
+    display: table;
     position: absolute;
-    top: 10px;
-    width: 34%;
-    margin: 0px 20px;
-    border-top: 1px solid #E6E6E6;
-}
-
-.line.l {
-    left: 0;
-}
-
-.line.r {
-    right: 0;
-}
-
-.no-margin {
-    margin-top: 0px;
-}
-
-.social-login {
-    margin-top: 15px;
-    padding: 0;
-    text-align: center;
+    height: 100%;
+    width: 100%;
 }
