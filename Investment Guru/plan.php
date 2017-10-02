@@ -39,9 +39,9 @@
                                 <div class="card-wizard-navigation">
                                     <ul class="nav nav-pills nav-justified">
                                         <li class="tab_goal"><a>Goal</a></li>
-                                        <li class="tab_plan"><a>Plan</a></li>
+                                        <li class="tab_mode"><a>Mode</a></li>
                                         <li class="tab_details"><a>Details</a></li>
-                                        <li class="tab_result"><a>Result</a></li>
+                                        <li class="tab_summary"><a>Summary</a></li>
                                     </ul>
                                 </div>
 
@@ -51,7 +51,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label>Whats your goal ?</label>
+                                                    <label>What is your goal ?</label>
                                                     <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" value="<?php echo $goalname ?>">
                                                 </div>
                                             </div>
@@ -76,68 +76,113 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-tab-content" id="plan">
+                                    <div class="card-tab-content" id="mode">
                                         <h4>Choose your planning mode</h4>
                                         <div class="row">
                                             <div class="col-sm-6 col-xs-6">
                                                 <label class="choice" for="chk_period">
-                                                    <input id="chk_period" name="chk_plan" type="radio" value="Period">
+                                                    <input id="chk_period" name="chk_mode" type="radio" value="Period">
                                                     <div class="icon">
                                                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                                     </div>
                                                 </label>
-                                                <h5>Calculate time</h5>
+                                                <h5 class="cal-period">Calculate period</h5>
                                             </div>
                                             <div class="col-sm-6 col-xs-6">
-                                                <label class="choice" for="chk_amount">
-                                                    <input id="chk_amount" name="chk_plan" type="radio" value="Amount">
+                                                <label class="choice" for="chk_savings">
+                                                    <input id="chk_savings" name="chk_mode" type="radio" value="Savings" checked>
                                                     <div class="icon">
                                                         <i class="fa fa-inr" aria-hidden="true"></i>
                                                     </div>
                                                 </label>
-                                                <h5>Calculate savings</h5>
+                                                <h5 class="cal-savings">Calculate savings</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-tab-content" id="details">
                                         <h4>Provide some details</h4>                                         
                                         <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>How will you save ?</label>
-                                                        <select name="sel_savingType" class="form-control">
-                                                            <option value="monthly">Monthly</option>
-                                                            <option value="quaterly">Quaterly</option>
-                                                            <option value="half">Half Yearly</option>
-                                                            <option value="yearly">Yearly</option>
-                                                        </select>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>How will you save ?</label>
+                                                    <select name="sel_savingType" class="form-control">
+                                                        <option value="Monthly">Monthly</option>
+                                                        <option value="Quaterly">Quaterly</option>
+                                                        <option value="Half yearly">Half Yearly</option>
+                                                        <option value="Yearly">Yearly</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 content-period">
+                                                <div class="form-group">
+                                                    <label>Amount you can save</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">₹</span>
+                                                        <input name="txt_savings" type="number" class="form-control" placeholder="eg: 5,000" value="<?php $savings ?>">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6 content-period">
-                                                    <div class="form-group">
-                                                        <label>Amount you can save</label>
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">₹</span>
-                                                            <input name="txt_pdAmount" type="number" class="form-control" placeholder="eg: 5,000" value="<?php $pdAmount ?>">
-                                                        </div>
-                                                    </div>
-                                                </div>                                               
-                                                <div class="col-md-6 content-amount">
-                                                    <div class="form-group">
-                                                        <label>You want to acheive it in</label>
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-                                                            <input name="txt_amtPeriod" type="number" class="form-control" placeholder="eg: 2 (in months)" value="<?php $amtPeriod ?>">
-                                                        </div>
+                                            </div>                                               
+                                            <div class="col-md-6 content-savings">
+                                                <div class="form-group">
+                                                    <label>Expected period</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                                        <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)" value="<?php $period ?>">
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card-tab-content" id="result">
-                                            <div class="row">
-                                                <h4>You will acheive your goal in...</h4>
-
+                                    <div class="card-tab-content" id="summary">                                       
+                                        <h4>Summary</h4>
+                                        <div class="row form-group">
+                                            <div class="col-md-2">
+                                                <label>Goal name</label>
                                             </div>
+                                            <div class="col-md-3">
+                                                <input name="result_goalname" type="text" class="form-control margin-bottom" readonly>
+                                            </div>
+                                            <div class="col-md-2 col-md-offset-2">
+                                                <label>Saving type</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input name="result_savingType" type="text" class="form-control" readonly>
+                                            </div>
+                                        </div> 
+                                        <div class="row form-group">
+                                            <div class="col-md-2">
+                                                <label>Cost</label>
+                                            </div>
+                                            <div class="col-md-3 margin-bottom">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>                                                   
+                                                    <input name="result_goalcost" type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-md-offset-2">
+                                                <label>Saving amount</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>                                                                                                      
+                                                    <input name="result_savings" type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row form-group">
+                                            <div class="col-md-2">
+                                                <label>Priority</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input name="result_goalpriority" type="text" class="form-control  margin-bottom" readonly>
+                                            </div>
+                                            <div class="col-md-2 col-md-offset-2">
+                                                <label>Total period</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input name="result_period" type="text" class="form-control" readonly>
+                                            </div>
+                                        </div>                                   
                                     </div>
                                 </div>
 
@@ -145,7 +190,8 @@
                                    <div class="row">
                                         <div class="col-md-12">
                                             <button id="btn_back" type="button" class="btn btn-primary btn-second btn-wd pull-left">Back</button>                                
-                                            <button id="btn_finish" type="button" class="btn btn-primary btn-main btn-wd pull-right">Finish</button>
+                                            <button id="btn_calculate" type="button" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
+                                            <button id="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
                                             <button id="btn_next" type="button" class="btn btn-primary btn-main btn-wd pull-right">Next</button>
                                             <div class="clearfix"></div>   
                                         </div>

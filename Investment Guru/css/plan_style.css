@@ -30,8 +30,8 @@ body {
 }
 
 .card-wizard-content,.card-wizard-footer {
-    padding-left: 150px;
-    padding-right: 150px; 
+    padding-left: 15%;
+    padding-right: 15%; 
 }
 
 .card-wizard-content {
@@ -47,6 +47,7 @@ body {
 }
 
 .card-tab-content h5 {
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
 }
@@ -77,6 +78,10 @@ body {
 .choice input[type=radio]:checked + .icon {
     color: #e74c3c;
     border-color: #e74c3c;
+}
+
+.color-change {
+    color: #e74c3c;
 }
 
 .icon {
