@@ -53,7 +53,7 @@
                                         <div class="form-group">
                                             <div class="col-md-6">  
                                                 <label>Email *</label>
-                                                <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" value="<?php echo $email ?>" disabled>
+                                                <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" value="<?php echo $email ?>" readonly>
                                             </div>
                                             <div class="col-md-6">                                                
                                                 <label>Date of birth *</label>
@@ -73,7 +73,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <div class="col-md-3 col-md-offset-9 col-xs-6 col-xs-offset-6">
+                                            <div class="col-md-2 col-md-offset-10 col-xs-6 col-xs-offset-6">
                                                 <button name="btn_personal" type="submit" class="btn btn-primary btn-main">Save</button>
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
+                                            <div class="col-md-4 col-md-offset-8 col-xs-6 col-xs-offset-6">
                                                 <button name="btn_finance" type="submit" class="btn btn-primary btn-main">Save</button>
                                             </div>
                                         </div>

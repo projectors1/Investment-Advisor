@@ -75,7 +75,7 @@
                                 <img src="img/money-bag.svg">
                             </div>
                             <div class="card-content">
-                                <p>1. Plan your savings</p>                              
+                                <p>1. Plan your goals</p>                              
                             </div>
                         </div>
                     </div>

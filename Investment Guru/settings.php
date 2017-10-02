@@ -62,7 +62,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="col-md-6 col-md-offset-6 col-xs-6 col-xs-offset-6">
+                                        <div class="col-md-4 col-md-offset-8 col-xs-6 col-xs-offset-6">
                                             <button name="btn_change" type="submit" class="btn btn-primary btn-main">Change</button>
                                         </div>
                                     </div>

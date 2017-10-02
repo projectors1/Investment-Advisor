@@ -26,6 +26,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
     box-shadow: 0 3px 10px -5px #E74B3B;
     text-transform: uppercase;
     display: inline-block;
+    font-size: 12px;
 }
 
 .btn.btn-main:hover {
@@ -174,10 +175,6 @@ p,label,h1,h2,h3,h4,h5,h6 {
     text-align: left;
     margin-left: 0px;
     margin-right: 0px;
-}
-
-.form-group label {
-    font-weight: 700;
 }
 
 .gplus,.gplus:hover {
