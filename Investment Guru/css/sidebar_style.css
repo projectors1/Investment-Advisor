@@ -1,10 +1,3 @@
-body {
-    text-decoration: none;
-    font-family: "Open-sans", sans-serif;
-    font-weight: 300;
-    font-stretch: normal;
-}
-
 .sidebar-section {
     position: fixed;
     top: 0;
@@ -31,7 +24,7 @@ body {
     line-height: 30px;   
     font-size: 14px;
     color: #525558;
-    font-weight: 600;
+    font-weight: 500;
     display: block;
     cursor: pointer;
     text-transform: uppercase;
@@ -64,13 +57,14 @@ body {
     background: url("../img/userback.png") no-repeat no-repeat;
     background-size: 265px 150px;
     height: 150px;
-    text-align: left;
+    text-align: center;
 }
 
 .sidebar-user label {
     margin-bottom: 0px;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .sidebar-user i {

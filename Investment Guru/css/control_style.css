@@ -1,11 +1,7 @@
 html,body {
     text-decoration: none;
-    font-family: "Open-sans", sans-serif;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     font-stretch: normal;
-}
-
-p,label,h1,h2,h3,h4,h5,h6 {
     color: #525558;
 }
 
@@ -26,7 +22,7 @@ p,label,h1,h2,h3,h4,h5,h6 {
     box-shadow: 0 3px 10px -5px #E74B3B;
     text-transform: uppercase;
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .btn.btn-main:hover {
@@ -102,11 +98,9 @@ p,label,h1,h2,h3,h4,h5,h6 {
 .card-content {
     text-align: left;
     font-size: 16px;
-    color: #525558;
 }
 
 .card-content h4 {
-    color: #525558;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -165,7 +159,6 @@ p,label,h1,h2,h3,h4,h5,h6 {
     background-color: #FFFFFF;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
-    color: #525558;
     height: 40px;
     box-shadow: none;
 }
@@ -203,7 +196,6 @@ input[type=number]:focus,
     border: 1px solid #E6E6E6;
     border-radius: 4px;    
     font-size: 18px;
-    color: #525558;
 }
 
 .linkedin,.linkedin:hover {
