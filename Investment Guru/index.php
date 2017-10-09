@@ -171,13 +171,12 @@
                                         </select>
                                     </span>, I save <span><input class="form-control" type="text" minlength="2" size="7"></span> 
                                     <span ><select class="form-control" name="savings">
-                                        <option value="annually" selected>Annually</option>
+                                        <option value="annually" selected>Yearly</option>
                                         <option value="halfyearly">Half Yearly</option>
-                                        <option value="quaterly">Quaterly</option>
                                         <option value="monthly">Monthly</option>
                                     </select></span>,<br> I earn <span><input class="form-control" type="text" minlength="2" size="7"></span>
                                     <span><select class="form-control" name="earnings">
-                                        <option value="annually" selected>Annually</option>
+                                        <option value="annually" selected>Yearly</option>
                                         <option value="monthly">Monthly</option>
                                     </select></span>.</p>
                                 </div>

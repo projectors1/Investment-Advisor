@@ -89,9 +89,7 @@ $(document).ready(function () {
         if(mode == "Period") {    
             switch(type) {
                 case "Monthly" : value = savings;
-                                 break;
-                case "Quaterly" : value = savings/3;
-                                 break;        
+                                 break;      
                 case "Half yearly" : value = savings/6;
                                  break;
                 case "Yearly" : value = savings/12;
@@ -102,9 +100,7 @@ $(document).ready(function () {
         else {
             switch(type) {
                 case "Monthly" : value = period;
-                                 break;
-                case "Quaterly" : value = period/3;
-                                 break;        
+                                 break;      
                 case "Half yearly" : value = period/6;
                                  break;
                 case "Yearly" : value = period/12;

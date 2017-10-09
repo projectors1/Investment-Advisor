@@ -108,7 +108,6 @@
                                                     <label>How will you save ?</label>
                                                     <select name="sel_savingType" class="form-control">
                                                         <option value="Monthly">Monthly</option>
-                                                        <option value="Quaterly">Quaterly</option>
                                                         <option value="Half yearly">Half Yearly</option>
                                                         <option value="Yearly">Yearly</option>
                                                     </select>

@@ -28,6 +28,7 @@
     display: block;
     cursor: pointer;
     text-transform: uppercase;
+    transition: linear;
 }
 
 .nav-list > li > a:hover {

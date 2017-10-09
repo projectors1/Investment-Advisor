@@ -54,7 +54,7 @@
                 <div class="col-md-4">
                     <div class="card-team">
                         <div class="card-image">
-                            <img src="img/ben.jpg">
+                            <img src="img/team.jpg">
                             <span class="card-name">Ben Zachariah</span>
                         </div>
                         <div class="card-content">
@@ -75,7 +75,7 @@
                 <div class="col-md-4">
                     <div class="card-team">
                         <div class="card-image">
-                            <img src="img/ben.jpg">
+                            <img src="img/team.jpg">
                             <span class="card-name">Jibin Philipose</span>
                         </div>
                         <div class="card-content">
@@ -96,7 +96,7 @@
                 <div class="col-md-4">
                     <div class="card-team">
                         <div class="card-image">
-                            <img src="img/ben.jpg">
+                            <img src="img/team.jpg">
                             <span class="card-name">Ivan D'Souza</span>
                         </div>
                         <div class="card-content">
