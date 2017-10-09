@@ -43,22 +43,22 @@
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                        <input name="txt_firstname" type="text" class="form-control" placeholder="First Name" value="<?php echo $firstname; ?>">
+                                        <input name="txt_firstname" type="text" class="form-control" placeholder="First Name" required value="<?php echo $firstname; ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" value="<?php echo $email; ?>">
+                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" required value="<?php echo $email; ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password">
+                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password" required>
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_confirmpass" type="password" class="form-control" placeholder="Confirm Password">
+                                        <input name="txt_confirmpass" type="password" class="form-control" placeholder="Confirm Password" required>
                                     </div>
                                 </div>
 
