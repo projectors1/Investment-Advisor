@@ -110,6 +110,11 @@ html,body {
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
     margin-bottom: 20px; 
+    transition: ease .2s;
+}
+
+.card-team:hover {
+    box-shadow: 0 3px 6px 0px rgba(0,0,0,0.21);
 }
 
 .card-image {
@@ -145,9 +150,15 @@ html,body {
 }
 
 .card-bg {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #E6E6E6;
-    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-bg span {
+    border-radius: 50%;
+    border: 2px solid #e74c3c;
+    text-align: center;
+    display: inline-block;
 }
 
 .facebook,.facebook:hover {

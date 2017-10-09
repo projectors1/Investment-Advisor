@@ -39,6 +39,10 @@
     text-align: center;
 }
 
+.card-content {
+    padding: 10px;
+}
+
 .description-section img {
     width: 100%;
 }

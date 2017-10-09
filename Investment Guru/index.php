@@ -72,7 +72,7 @@
                     <div class="card-padding">
                         <div class="card-team">
                             <div class="card-bg">
-                                <img src="img/money-bag.svg">
+                                <span><img src="img/money-bag.svg"></span>
                             </div>
                             <div class="card-content">
                                 <p>1. Plan your goals</p>                              
@@ -84,7 +84,7 @@
                     <div class="card-padding">
                         <div class="card-team">
                             <div class="card-bg">
-                                <img src="img/profit.svg">
+                                <span><img src="img/profit.svg"></span>
                             </div>
                             <div class="card-content">
                                 <p>2. Invest your savings</p>                              
@@ -96,7 +96,7 @@
                     <div class="card-padding">
                         <div class="card-team">
                             <div class="card-bg">
-                                <img src="img/gift.svg">
+                                <span><img src="img/gift.svg"></span>
                             </div>
                             <div class="card-content">
                                 <p>3. Get your goal</p>                              
