@@ -6,10 +6,10 @@ $(document).ready(function () {
     $("#btn_calculate").hide();
     $("#btn_add").hide();
     $(".content-period").hide();
-    $(".content-savings").show();
+    $(".content-amount").show();
     $(".tab_goal").addClass("active");
     $("#para_period").css('color', '#e74c3c');
-    $(".cal-savings").addClass("color-change"); 
+    $(".cal-amount").addClass("color-change"); 
 
     $("#btn_next").click(function() {
         if($("#goal").is(":visible")) {
@@ -67,32 +67,32 @@ $(document).ready(function () {
 
     $('#chk_period').change(function() {
         $(".content-period").show();
-        $(".content-savings").hide();    
+        $(".content-amount").hide();    
         $(".cal-period").addClass("color-change"); 
-        $(".cal-savings").removeClass("color-change"); 
+        $(".cal-amount").removeClass("color-change"); 
     });
 
-    $('#chk_savings').change(function() {
+    $('#chk_amount').change(function() {
         $(".content-period").hide();
-        $(".content-savings").show();    
+        $(".content-amount").show();    
         $(".cal-period").removeClass("color-change"); 
-        $(".cal-savings").addClass("color-change"); 
+        $(".cal-amount").addClass("color-change"); 
     });
 
     function calculate() {
         var goalcost = parseInt($("input[name=txt_goalcost]").val());
-        var savings = parseInt($("input[name=txt_savings]").val());
+        var amount = parseInt($("input[name=txt_amount]").val());
         var period = parseInt($("input[name=txt_period]").val());
         var type = $("select[name=sel_savingType]").val();
         var mode = $("input[name=chk_mode]:checked").val();
                
         if(mode == "Period") {    
             switch(type) {
-                case "Monthly" : value = savings;
+                case "Monthly" : value = amount;
                                  break;      
-                case "Half yearly" : value = savings/6;
+                case "Half yearly" : value = amount/6;
                                  break;
-                case "Yearly" : value = savings/12;
+                case "Yearly" : value = amount/12;
                                  break;
             }       
             period = goalcost/value;           
@@ -106,14 +106,14 @@ $(document).ready(function () {
                 case "Yearly" : value = period/12;
                                  break;
             }   
-            savings = goalcost/value;           
+            amount = goalcost/value;           
         }
 
         $("input[name=result_goalname]").val($("input[name=txt_goalname]").val());
         $("input[name=result_goalcost]").val(goalcost);
         $("input[name=result_goalpriority]").val($("select[name=sel_goalpriority]").val());
         $("input[name=result_savingType]").val(type);
-        $("input[name=result_savings]").val(savings);
+        $("input[name=result_amount]").val(amount);
         $("input[name=result_period]").val(period);
     }
 });

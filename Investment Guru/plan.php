@@ -53,14 +53,14 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>What is your goal ?</label>
-                                                    <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" value="<?php echo $goalname ?>">
+                                                    <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 margin-bottom">
                                                 <label>How much does it cost ?</label>
                                                 <div class="input-group">
                                                     <span class="input-group-addon">₹</span>
-                                                    <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" value="<?php echo $goalcost ?>">
+                                                    <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -90,13 +90,13 @@
                                                 <h5 class="cal-period">Calculate period</h5>
                                             </div>
                                             <div class="col-sm-6 col-xs-6">
-                                                <label class="choice" for="chk_savings">
-                                                    <input id="chk_savings" name="chk_mode" type="radio" value="Savings" checked>
+                                                <label class="choice" for="chk_amount">
+                                                    <input id="chk_amount" name="chk_mode" type="radio" value="Amount" checked>
                                                     <div class="icon">
                                                         <i class="fa fa-inr" aria-hidden="true"></i>
                                                     </div>
                                                 </label>
-                                                <h5 class="cal-savings">Calculate savings</h5>
+                                                <h5 class="cal-amount">Calculate amount</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -118,16 +118,16 @@
                                                     <label>Amount you can save</label>
                                                     <div class="input-group">
                                                         <span class="input-group-addon">₹</span>
-                                                        <input name="txt_savings" type="number" class="form-control" placeholder="eg: 5,000" value="<?php $savings ?>">
+                                                        <input name="txt_amount" type="number" class="form-control" placeholder="eg: 5,000">
                                                     </div>
                                                 </div>
                                             </div>                                               
-                                            <div class="col-md-6 content-savings">
+                                            <div class="col-md-6 content-amount">
                                                 <div class="form-group">
                                                     <label>Expected period</label>
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-                                                        <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)" value="<?php $period ?>">
+                                                        <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)">
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,7 +165,7 @@
                                             <div class="col-md-3">
                                                 <div class="input-group">
                                                     <span class="input-group-addon">₹</span>                                                                                                      
-                                                    <input name="result_savings" type="text" class="form-control" readonly>
+                                                    <input name="result_amount" type="text" class="form-control" readonly>
                                                 </div>
                                             </div>
                                         </div> 
@@ -191,7 +191,7 @@
                                         <div class="col-md-12">
                                             <button id="btn_back" type="button" class="btn btn-primary btn-second btn-wd pull-left">Back</button>                                
                                             <button id="btn_calculate" type="button" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
-                                            <button id="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
+                                            <button id="btn_add" name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
                                             <button id="btn_next" type="button" class="btn btn-primary btn-main btn-wd pull-right">Next</button>
                                             <div class="clearfix"></div>   
                                         </div>
