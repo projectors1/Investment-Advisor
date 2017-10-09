@@ -1,43 +1,40 @@
-1> CREATE SCHEMA 'investdb' DEFAULT CHARACTER SET utf8 ;
+1> CREATE SCHEMA investdb DEFAULT CHARACTER SET utf8
 
-2> Query to create useraccount Table
+2> Query to create userprofile Table
 
-CREATE TABLE 'useraccount' (
-'AccountID' int(11) NOT NULL AUTO_INCREMENT,
-'Email' varchar(100) NOT NULL, 
-'Password' varchar(100) NOT NULL, 
-'ProfileID' int(11) DEFAULT NULL, 
-'FinanceID' int(11) DEFAULT NULL, 
-'CookieKey' varchar(200) DEFAULT NULL, 
-PRIMARY KEY ('AccountID'), 
-UNIQUE KEY 'Email_UNIQUE' ('Email'), 
-KEY 'ProfileID_idx' ('ProfileID'), 
-KEY 'ProfileKey_idx' ('ProfileID'),  
-KEY 'FinanceKey_idx' ('FinanceID'), 
-CONSTRAINT 'FinanceKey' FOREIGN KEY ('FinanceID') REFERENCES 'userfinance' ('FinanceID') ON DELETE NO ACTION ON UPDATE NO ACTION, 
-CONSTRAINT 'ProfileKey' FOREIGN KEY ('ProfileID') REFERENCES 'useraccount' ('ProfileID') ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8
-
-3> Query to create userprofile Table
-
-CREATE TABLE 'userprofile' (
-'ProfileID' int(11) NOT NULL AUTO_INCREMENT,
-'FirstName' varchar(45) NOT NULL, 
-'LastName' varchar(45) NOT NULL, 
-'DOB' date NOT NULL, 
-'City' varchar(45) NOT NULL, 
-'Country' varchar(45) NOT NULL,  
-PRIMARY KEY ('ProfileID')
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
-
-4> Query to create userfinance Table
-
-CREATE TABLE 'userfinance' (
-'FinanceID' int(11) NOT NULL AUTO_INCREMENT,
-'Income' decimal(10,2) NOT NULL,
-'Expenses' decimal(10,2) NOT NULL,
-'Savings' decimal(10,2) NOT NULL,
-PRIMARY KEY ('FinanceID')
+CREATE TABLE userprofile (
+ProfileID int(11) NOT NULL AUTO_INCREMENT,
+FirstName varchar(45) NOT NULL, 
+LastName varchar(45) NOT NULL, 
+DOB date NOT NULL, 
+City varchar(45) NOT NULL, 
+Country varchar(45) NOT NULL,  
+PRIMARY KEY (ProfileID)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
-5> 
+3> Query to create userfinance Table
+
+CREATE TABLE userfinance (
+FinanceID int(11) NOT NULL AUTO_INCREMENT,
+Income decimal(10,2) NOT NULL,
+Expenses decimal(10,2) NOT NULL,
+Savings decimal(10,2) NOT NULL,
+PRIMARY KEY (FinanceID)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+4> Query to create useraccount Table
+
+CREATE TABLE useraccount (
+  AccountID int(11) NOT NULL AUTO_INCREMENT,
+  Email varchar(100) NOT NULL,
+  Password varchar(100) NOT NULL,
+  ProfileID int(11) DEFAULT NULL,
+  FinanceID int(11) DEFAULT NULL,
+  CookieKey varchar(200) DEFAULT NULL,
+  PRIMARY KEY (AccountID),
+  UNIQUE KEY Email_UNIQUE (Email),
+  KEY FinanceKey (FinanceID),
+  KEY ProfileKey (ProfileID),
+  CONSTRAINT FinanceKey FOREIGN KEY (FinanceID) REFERENCES userfinance (FinanceID) ON DELETE SET NULL ON UPDATE NO ACTION,
+  CONSTRAINT ProfileKey FOREIGN KEY (ProfileID) REFERENCES userprofile (ProfileID) ON DELETE SET NULL ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

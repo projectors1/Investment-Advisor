@@ -1,8 +1,4 @@
 body {
-    text-decoration: none;
-    font-family: "Open-sans", sans-serif;
-    font-weight: 300;
-    font-stretch: normal;
     background: #f8f9fa;
 }
 
@@ -40,6 +36,11 @@ body {
     margin-top: 20px;
 }
 
+.card-tab-content label {
+    font-size: 16px;
+    font-weight: normal;
+}
+
 .card-tab-content h4 {
     text-align: center;
     margin-bottom: 30px;
@@ -47,7 +48,7 @@ body {
 }
 
 .card-tab-content h5 {
-    font-weight: 700;
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
 }

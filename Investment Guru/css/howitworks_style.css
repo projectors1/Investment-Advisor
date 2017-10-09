@@ -1,22 +1,17 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #e7e7e7;
-    font-family: 'Roboto', sans-serif;
-	color: #525558;
+    background-color: #f8f9fa;
 }
 
-/* The actual timeline (the vertical ruler) */
+.main-section {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
 .timeline {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-	
+    margin: 0 auto;	
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
     position: absolute;
@@ -28,22 +23,23 @@ body {
     margin-left: -3px;
 }
 
-/* Container around content */
-.container {
+/* contain around content */
+.contain {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-
+    margin-right: 0; 
+    margin-left: 0; 
 }
 
 /* The circles on the timeline */
-.container::after {
+.contain::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -12px;
     background-color: white;
     border: 4px solid #e74c3c;
     top: 15px;
@@ -51,17 +47,17 @@ body {
     z-index: 1;
 }
 
-/* Place the container to the left */
+/* Place the contain to the left */
 .left {
     left: 0;
 }
 
-/* Place the container to the right */
+/* Place the contain to the right */
 .right {
     left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
+/* Add arrows to the left contain (pointing right) */
 .left::before {
     content: " ";
     height: 0;
@@ -75,7 +71,7 @@ body {
     border-color: transparent transparent transparent white;
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Add arrows to the right contain (pointing left) */
 .right::before {
     content: " ";
     height: 0;
@@ -89,9 +85,9 @@ body {
     border-color: transparent white transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
+/* Fix the circle for contains on the right side */
 .right::after {
-    left: -16px;
+    left: -12px;
 }
 
 /* The actual content */
@@ -110,15 +106,15 @@ body {
     left: 31px;
   }
   
-  /* Full-width containers */
-  .container {
+  /* Full-width contains */
+  .contain {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
   
   /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .contain::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -130,7 +126,7 @@ body {
     left: 15px;
   }
   
-  /* Make all right containers behave like the left ones */
+  /* Make all right contains behave like the left ones */
   .right {
     left: 0%;
   }
