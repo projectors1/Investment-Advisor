@@ -1,40 +1,56 @@
-1> CREATE SCHEMA investdb DEFAULT CHARACTER SET utf8
+1> CREATE SCHEMA investdb DEFAULT CHARACTER SET utf8;
 
 2> Query to create userprofile Table
 
-CREATE TABLE userprofile (
-ProfileID int(11) NOT NULL AUTO_INCREMENT,
-FirstName varchar(45) NOT NULL, 
-LastName varchar(45) NOT NULL, 
+CREATE TABLE investdb.userprofile (
+ProfileID INT(11) NOT NULL AUTO_INCREMENT,
+FirstName VARCHAR(45) NOT NULL, 
+LastName VARCHAR(45) NOT NULL, 
 DOB date NOT NULL, 
-City varchar(45) NOT NULL, 
-Country varchar(45) NOT NULL,  
+City VARCHAR(45) NOT NULL, 
+Country VARCHAR(45) NOT NULL,  
 PRIMARY KEY (ProfileID)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 3> Query to create userfinance Table
 
-CREATE TABLE userfinance (
-FinanceID int(11) NOT NULL AUTO_INCREMENT,
-Income decimal(10,2) NOT NULL,
-Expenses decimal(10,2) NOT NULL,
-Savings decimal(10,2) NOT NULL,
+CREATE TABLE investdb.userfinance (
+FinanceID INT(11) NOT NULL AUTO_INCREMENT,
+Income DECIMAL(10,2) NOT NULL,
+Expenses DECIMAL(10,2) NOT NULL,
+Savings DECIMAL(10,2) NOT NULL,
 PRIMARY KEY (FinanceID)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 4> Query to create useraccount Table
 
-CREATE TABLE useraccount (
-  AccountID int(11) NOT NULL AUTO_INCREMENT,
-  Email varchar(100) NOT NULL,
-  Password varchar(100) NOT NULL,
-  ProfileID int(11) DEFAULT NULL,
-  FinanceID int(11) DEFAULT NULL,
-  CookieKey varchar(200) DEFAULT NULL,
+CREATE TABLE investdb.useraccount (
+  AccountID INT(11) NOT NULL AUTO_INCREMENT,
+  Email VARCHAR(100) NOT NULL,
+  Password VARCHAR(100) NOT NULL,
+  ProfileID INT(11) DEFAULT NULL,
+  FinanceID INT(11) DEFAULT NULL,
+  CookieKey VARCHAR(200) DEFAULT NULL,
   PRIMARY KEY (AccountID),
   UNIQUE KEY Email_UNIQUE (Email),
   KEY FinanceKey (FinanceID),
   KEY ProfileKey (ProfileID),
-  CONSTRAINT FinanceKey FOREIGN KEY (FinanceID) REFERENCES userfinance (FinanceID) ON DELETE SET NULL ON UPDATE NO ACTION,
-  CONSTRAINT ProfileKey FOREIGN KEY (ProfileID) REFERENCES userprofile (ProfileID) ON DELETE SET NULL ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+  CONSTRAINT FinanceKey FOREIGN KEY (FinanceID) REFERENCES investdb.userfinance (FinanceID) ON DELETE SET NULL ON UPDATE NO ACTION,
+  CONSTRAINT ProfileKey FOREIGN KEY (ProfileID) REFERENCES investdb.userprofile (ProfileID) ON DELETE SET NULL ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+3> Query to create goal Table
+
+CREATE TABLE investdb.goal (
+  GoalID INT(11) NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(45) NOT NULL,
+  Cost DECIMAL(10,2) NOT NULL,
+  Priority INT(11) NOT NULL,
+  Mode VARCHAR(45) NOT NULL,
+  Savingtype VARCHAR(45) NOT NULL,
+  Period INT(11) NOT NULL,
+  Amount DECIMAL(10,2) NOT NULL,
+  AccountID INT(11) NOT NULL,
+  PRIMARY KEY (GoalID),
+  CONSTRAINT AccountKey FOREIGN KEY (AccountID) REFERENCES investdb.useraccount (AccountID) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
