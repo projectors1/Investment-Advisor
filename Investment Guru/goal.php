@@ -39,6 +39,7 @@
                                     <table class="table table-striped table-hover">
                                         <thead>
                                             <tr>
+                                                <th>#</th>
                                                 <th>Name</th>
                                                 <th>Cost</th>
                                                 <th>Priority</th>
@@ -49,8 +50,9 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php while($row = mysqli_fetch_assoc($result)) { ?>
+                                            <?php $index=0; while($row = mysqli_fetch_assoc($result)) { $index++; ?>
                                                 <tr>
+                                                    <td><?php echo $index; ?></td>
                                                     <td><?php echo $row['Name']; ?></td>
                                                     <td><?php echo $row['Cost']; ?></td>
                                                     <td><?php echo $row['Priority']; ?></td>
