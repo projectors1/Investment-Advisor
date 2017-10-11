@@ -67,11 +67,9 @@
                                                 <div class="form-group">                                                   
                                                     <label>Goal priority</label>
                                                     <select name="sel_goalpriority" class="form-control">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
+                                                        <option value="High">High</option>
+                                                        <option value="Medium">Medium</option>
+                                                        <option value="Low">Low</option>
                                                     </select>
                                                 </div>
                                             </div>
