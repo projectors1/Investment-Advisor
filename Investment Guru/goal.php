@@ -54,11 +54,11 @@
                                                 <tr>
                                                     <td><?php echo $index; ?></td>
                                                     <td><?php echo $row['Name']; ?></td>
-                                                    <td><?php echo $row['Cost']; ?></td>
+                                                    <td><?php echo "₹ ".$row['Cost']; ?></td>
                                                     <td><?php echo $row['Priority']; ?></td>
                                                     <td><?php echo $row['Savingtype']; ?></td>
-                                                    <td><?php echo $row['Amount']; ?></td>
-                                                    <td><?php echo $row['Period']; ?></td>
+                                                    <td><?php echo "₹ ".$row['Amount']; ?></td>
+                                                    <td><?php echo $row['Period']." months"; ?></td>
                                                     <td>
                                                         <button type='button' class="btn btn-edit" onclick="edit_row('<?php echo $row['AccountID'];?>');">
                                                             <i class="fa fa-pencil" aria-hidden="true"></i>
