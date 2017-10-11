@@ -2,7 +2,7 @@
     require_once 'initialize_inc.php'; 
     
     if (isset($_SESSION['loggedIN'])) {
-        $firstname = $lastname = $email = $dob = $city = $country = "";
+        $firstname = $lastname = $email = $dob = $status = $city = $country = "";
         $income = $expenses = $savings = "";
         $accountID = $_SESSION['AccountID']; 
 
@@ -15,6 +15,7 @@
             $lastname = $data['LastName'];
             $email = $_SESSION['Email'];
             $dob = $data['DOB'];
+            $status = $data['Status'];
             $city = $data['City'];
             $country = $data['Country']; 
         }
@@ -35,8 +36,9 @@
             $dob = mysqli_real_escape_string($conn,$_POST['txt_dob']);
             $city = mysqli_real_escape_string($conn,$_POST['txt_city']);
             $country = mysqli_real_escape_string($conn,$_POST['txt_country']);
+            $status = mysqli_real_escape_string($conn,$_POST['sel_status']);
 
-            $query = "UPDATE userprofile SET FirstName = '$firstname', LastName = '$lastname', DOB = '$dob', City = '$city', Country = '$country' WHERE ProfileID = '$profileID' ";
+            $query = "UPDATE userprofile SET FirstName = '$firstname', LastName = '$lastname', DOB = '$dob', Status = '$status', City = '$city', Country = '$country' WHERE ProfileID = '$profileID' ";
             mysqli_query($conn,$query);
             $_SERVER['alertSuccess'] = "Personal details saved successfully";
         }

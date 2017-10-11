@@ -52,13 +52,21 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <div class="col-md-6">  
+                                            <div class="col-md-4">
                                                 <label>Email *</label>
                                                 <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" value="<?php echo $email ?>" readonly>
                                             </div>
-                                            <div class="col-md-6">                                                
+                                            <div class="col-md-4">                                                
                                                 <label>Date of birth *</label>
-                                                <input name="txt_dob" type="date" class="form-control" value="<?php echo $dob ?>">  
+                                                <input name="txt_dob" type="date" class="form-control margin-bottom" value="<?php echo $dob ?>">  
+                                            </div>
+                                            <div class="col-md-4">                                                
+                                                <label>Status *</label>
+                                                <select name="sel_status" class="form-control">
+                                                    <option value="Student" <?php if ($status == 'Student') echo ' selected="selected"'; ?> >Student</option>
+                                                    <option value="Employed" <?php if ($status == 'Employed') echo ' selected="selected"'; ?> >Employed</option>
+                                                    <option value="Unemployed" <?php if ($status == 'Unemployed') echo ' selected="selected"'; ?> >Unemployed</option>
+                                                </select> 
                                             </div>
                                         </div>
 
