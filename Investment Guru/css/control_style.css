@@ -9,7 +9,7 @@ html,body {
     display: none;
 }
 
-.btn.btn-main,.btn.btn-second,.btn.btn-white,.btn.btn-transparent{
+.btn.btn-main,.btn.btn-second,.btn.btn-white,.btn.btn-transparent {
     background-color: #e74c3c;
     color: #FFFFFF;
     margin: 10px 0px;
@@ -59,6 +59,30 @@ html,body {
     color: #e74c3c;
     outline: none;
     box-shadow: 0 7px 20px -5px rgba(0, 0, 0, 0.26);
+}
+
+.btn.btn-edit,.btn.btn-edit:hover {
+    outline: none;
+    border: none;
+    background-color: #4caf50;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn.btn-edit:hover {
+    box-shadow: 0 7px 20px -5px #4caf50;
+}
+
+.btn.btn-close,.btn.btn-close:hover {
+    outline: none;
+    border: none;
+    background-color: #f44336;
+    color: #FFFFFF;
+     font-size: 16px;
+}
+
+.btn.btn-close:hover {
+    box-shadow: 0 7px 20px -5px #f44336;
 }
 
 .card form [class*="col-"] {

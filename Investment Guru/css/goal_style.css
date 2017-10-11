@@ -12,6 +12,17 @@ body {
     margin-top: 55px;;
 }
 
-.dashboard-section {
-    height: 900px;
+.goal-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table>thead:first-child>tr:first-child>th {
+    color: #e74c3c;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.table>tbody>tr>td {
+    line-height: 2;
 }

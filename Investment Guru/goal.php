@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/control_style.css">
     <link rel="stylesheet" type="text/css" href="css/goal_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
@@ -25,8 +26,55 @@
     <?php require_once('sidebar.php'); ?>
 
     <section class="main-section">
-        <section class="dashboard-section">
-            
+        <section class="goal-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Your Goals</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Cost</th>
+                                                <th>Priority</th>
+                                                <th>Saving type</th>
+                                                <th>Amount</th>
+                                                <th>Total Period</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php while($row = mysqli_fetch_assoc($result)) { ?>
+                                                <tr>
+                                                    <td><?php echo $row['Name']; ?></td>
+                                                    <td><?php echo $row['Cost']; ?></td>
+                                                    <td><?php echo $row['Priority']; ?></td>
+                                                    <td><?php echo $row['Savingtype']; ?></td>
+                                                    <td><?php echo $row['Amount']; ?></td>
+                                                    <td><?php echo $row['Period']; ?></td>
+                                                    <td>
+                                                        <button type='button' class="btn btn-edit" onclick="edit_row('<?php echo $row['AccountID'];?>');">
+                                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                        </button>
+                                                        <button type='button' class="btn btn-close" onclick="delete_row('<?php echo $row['AccountID'];?>');">
+                                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>    
+                                        </tbody>
+                                    </table>
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <?php require_once('footer.php'); ?>
