@@ -10,7 +10,7 @@
         {
             $goalID = $_POST['row_id'];
             $query = "DELETE FROM goal where GoalID='$goalID'";
-             mysqli_query($conn,$query);
+            mysqli_query($conn,$query);
         }
     }
     else {

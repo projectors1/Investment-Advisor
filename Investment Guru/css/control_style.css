@@ -38,7 +38,7 @@ html,body {
     height: 40px;
     width: 100%;
     transition: ease 0.4s;
-    box-shadow: 0 3px 10px -5px #E74B3B;
+    box-shadow: 0 3px 10px -5px #e74c3c;
     text-transform: uppercase;
     display: inline-block;
     font-size: 14px;
@@ -47,7 +47,7 @@ html,body {
 .btn.btn-main:hover {
     background-color: #e74c3c;
     color: #FFFFFF;
-    box-shadow: 0 7px 20px -5px #E74B3B;
+    box-shadow: 0 7px 20px -5px #e74c3c;
     outline: none;
 }
 
@@ -124,7 +124,7 @@ html,body {
     padding: 15px;
     border-radius: 4px;
     background-color: #e74c3c;
-    box-shadow: 0 7px 10px -5px #E74B3B;
+    box-shadow: 0 7px 10px -5px #e74c3c;
 }
 
 .card-title {
@@ -205,13 +205,24 @@ html,body {
 }
 
 .dropdown-menu {
+    transition: all 150ms linear;
     width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    margin-top: -20px; 
 }
 
 .dropdown-menu>li>a {
     padding: 0px 20px;
     line-height: 2.5;
     color: #525558;
+}
+
+.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1px;
 }
 
 .facebook,.facebook:hover {
