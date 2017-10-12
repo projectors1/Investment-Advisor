@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
     <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+
+    
+    <script src="js/goal_script.js"></script>
 </head>
 
 <body>
@@ -51,7 +54,7 @@
                                         </thead>
                                         <tbody>
                                             <?php $index=0; while($row = mysqli_fetch_assoc($result)) { $index++; ?>
-                                                <tr>
+                                                <tr id="row<?php echo $row['GoalID'];?>">
                                                     <td><?php echo $index; ?></td>
                                                     <td><?php echo $row['Name']; ?></td>
                                                     <td><?php echo "₹ ".$row['Cost']; ?></td>
@@ -60,10 +63,10 @@
                                                     <td><?php echo "₹ ".$row['Amount']; ?></td>
                                                     <td><?php echo $row['Period']." months"; ?></td>
                                                     <td>
-                                                        <button type='button' class="btn btn-edit" onclick="edit_row('<?php echo $row['AccountID'];?>');">
+                                                        <button type='button' class="btn btn-edit" onclick="edit_row('<?php echo $row['GoalID'];?>');">
                                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                                         </button>
-                                                        <button type='button' class="btn btn-close" onclick="delete_row('<?php echo $row['AccountID'];?>');">
+                                                        <button type='button' class="btn btn-close" onclick="delete_row('<?php echo $row['GoalID'];?>');">
                                                             <i class="fa fa-times" aria-hidden="true"></i>
                                                         </button>
                                                     </td>
