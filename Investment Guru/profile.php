@@ -56,17 +56,23 @@
                                                 <label>Email *</label>
                                                 <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" value="<?php echo $email ?>" readonly>
                                             </div>
-                                            <div class="col-md-4">                                                
+                                            <div class="col-md-4">
                                                 <label>Date of birth *</label>
                                                 <input name="txt_dob" type="date" class="form-control margin-bottom" value="<?php echo $dob ?>">  
                                             </div>
-                                            <div class="col-md-4">                                                
+                                            <div class="col-md-4">
                                                 <label>Status *</label>
-                                                <select name="sel_status" class="form-control">
-                                                    <option value="Student" <?php if ($status == 'Student') echo ' selected="selected"'; ?> >Student</option>
-                                                    <option value="Employed" <?php if ($status == 'Employed') echo ' selected="selected"'; ?> >Employed</option>
-                                                    <option value="Unemployed" <?php if ($status == 'Unemployed') echo ' selected="selected"'; ?> >Unemployed</option>
-                                                </select> 
+                                                <div class="btn-group btn-input clearfix">
+                                                    <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                                                        <span data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Student</a></li>
+                                                        <li><a href="#">Employed</a></li>
+                                                        <li><a href="#">Unemployed</a></li>
+                                                    </ul>
+                                                    <input name="sel_status" type="hidden" id="dropdown-data"/>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -141,6 +147,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/control_script.js"></script>
+    <script src="js/dropdown_script.js"></script>
 </body>
 
 </html>

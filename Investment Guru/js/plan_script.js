@@ -80,17 +80,18 @@ $(document).ready(function () {
     });
 
     function calculate() {
+        var value;
         var goalcost = parseInt($("input[name=txt_goalcost]").val());
         var amount = parseInt($("input[name=txt_amount]").val());
         var period = parseInt($("input[name=txt_period]").val());
-        var type = $("select[name=sel_savingType]").val();
+        var type = $("input[name=sel_savingType]").val();
         var mode = $("input[name=chk_mode]:checked").val();
                
         if(mode == "Period") {    
             switch(type) {
                 case "Monthly" : value = amount;
                                  break;      
-                case "Half yearly" : value = amount/6;
+                case "Half Yearly" : value = amount/6;
                                  break;
                 case "Yearly" : value = amount/12;
                                  break;
@@ -101,19 +102,33 @@ $(document).ready(function () {
             switch(type) {
                 case "Monthly" : value = period;
                                  break;      
-                case "Half yearly" : value = period/6;
+                case "Half Yearly" : value = period/6;
                                  break;
                 case "Yearly" : value = period/12;
                                  break;
             }   
-            amount = goalcost/value;           
+            amount = parseInt(goalcost/value);           
         }
 
         $("input[name=result_goalname]").val($("input[name=txt_goalname]").val());
         $("input[name=result_goalcost]").val(goalcost);
-        $("input[name=result_goalpriority]").val($("select[name=sel_goalpriority]").val());
+        $("input[name=result_goalpriority]").val($("input[name=sel_goalpriority]").val());
         $("input[name=result_savingType]").val(type);
         $("input[name=result_amount]").val(amount);
         $("input[name=result_period]").val(period);
     }
+
+    $(document.body).on('click','.dropdown-priority li', function( event ) {
+        var $target = $(event.currentTarget);   
+        $target.closest('.btn-group').find('[data-bind="labelpriority"]' ).text($target.text()).end().children('.dropdown-toggle').dropdown('toggle');  
+        $("#dropdown-priority").val($('#toggle-priority span:visible').text()); 
+        return false; 
+    });
+
+    $(document.body).on('click','.dropdown-type li', function( event ) {
+        var $target = $(event.currentTarget);   
+        $target.closest('.btn-group').find('[data-bind="labeltype"]' ).text($target.text()).end().children('.dropdown-toggle').dropdown('toggle');  
+        $("#dropdown-type").val($('#toggle-type span:visible').text()); 
+        return false; 
+    });
 });

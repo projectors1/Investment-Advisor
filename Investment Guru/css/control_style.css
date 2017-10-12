@@ -9,6 +9,26 @@ html,body {
     display: none;
 }
 
+.btn-input {
+   display: block;
+}
+ 
+.btn-input .btn.form-control {
+    text-align: left;
+}
+ 
+.btn-input .btn.form-control .caret {
+   margin-top: -1px;
+   position: absolute;
+   right: 10px;
+   top: 50%;
+}
+
+.btn.btn-default,.btn.btn-default:hover,.btn.btn-default:focus {
+    background-color: transparent;
+    color: #525558;
+}
+
 .btn.btn-main,.btn.btn-second,.btn.btn-white,.btn.btn-transparent {
     background-color: #e74c3c;
     color: #FFFFFF;
@@ -184,6 +204,16 @@ html,body {
     display: inline-block;
 }
 
+.dropdown-menu {
+    width: 100%;
+}
+
+.dropdown-menu>li>a {
+    padding: 0px 20px;
+    line-height: 2.5;
+    color: #525558;
+}
+
 .facebook,.facebook:hover {
     color: #3b5998;
 }
@@ -195,6 +225,7 @@ html,body {
     border-radius: 4px;
     height: 40px;
     box-shadow: none;
+    color: #525558;
 }
 
 .form-horizontal .form-group {
@@ -214,10 +245,14 @@ input[type=email]:focus,
 input[type=date]:focus,
 input[type=number]:focus,
 .form-control:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.open>.dropdown-toggle.btn.btn-default:focus, 
+.open>.dropdown-toggle.btn.btn-default:hover,
+.btn.btn-group.open .dropdown-toggle {
     border: 1px solid #AAAAAA;
     border-radius: 4px;
     box-shadow: none;
+    background-color: transparent;
 }
 
 .input-group {

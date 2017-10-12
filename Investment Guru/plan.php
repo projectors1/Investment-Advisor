@@ -66,11 +66,17 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">                                                   
                                                     <label>Goal priority</label>
-                                                    <select name="sel_goalpriority" class="form-control">
-                                                        <option value="High">High</option>
-                                                        <option value="Medium">Medium</option>
-                                                        <option value="Low">Low</option>
-                                                    </select>
+                                                    <div class="btn-group btn-input clearfix">
+                                                        <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
+                                                            <span data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-priority" role="menu">
+                                                            <li><a href="#">High</a></li>
+                                                            <li><a href="#">Medium</a></li>
+                                                            <li><a href="#">Low</a></li>
+                                                        </ul>
+                                                        <input name="sel_goalpriority" type="hidden" id="dropdown-priority"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,11 +110,17 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>How will you save ?</label>
-                                                    <select name="sel_savingType" class="form-control">
-                                                        <option value="Monthly">Monthly</option>
-                                                        <option value="Half yearly">Half Yearly</option>
-                                                        <option value="Yearly">Yearly</option>
-                                                    </select>
+                                                    <div class="btn-group btn-input clearfix">
+                                                        <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="toggle-type">
+                                                            <span data-bind="labeltype">Select an option</span><span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-type" role="menu">
+                                                            <li><a href="#">Monthly</a></li>
+                                                            <li><a href="#">Half Yearly</a></li>
+                                                            <li><a href="#">Yearly</a></li>
+                                                        </ul>
+                                                        <input name="sel_savingType" type="hidden" id="dropdown-type"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 content-period">
