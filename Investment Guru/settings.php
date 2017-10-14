@@ -29,9 +29,7 @@
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4">
                         <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Change Password</h4>
-                            </div>
+                            <div class="card-header">Change Password</div>
                             <div class="card-form">
                                 <form class="form-horizontal" action="" method="POST" autocomplete="off">
                                     <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
@@ -62,7 +60,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group form-group-button">
                                         <div class="col-md-4 col-md-offset-8 col-xs-6 col-xs-offset-6">
                                             <button name="btn_change" type="submit" class="btn btn-primary btn-main">Change</button>
                                         </div>

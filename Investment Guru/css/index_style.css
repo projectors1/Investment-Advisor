@@ -39,12 +39,13 @@
     margin-top: 50px;
 }
 
-.card-title {
-    text-align: center;
+.card-team img {
+    margin-top: 0px;
+    border-radius: 0px;
 }
 
-.card-content {
-    padding: 10px;
+.card-team p {
+    padding: 0px;
 }
 
 .description-section img {
@@ -70,9 +71,8 @@
 
 .form-section h3 {
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 28px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     margin-top: 0px;
 }
 

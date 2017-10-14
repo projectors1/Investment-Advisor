@@ -53,65 +53,50 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card-team">
-                        <div class="card-image">
-                            <img src="img/team.jpg">
-                            <span class="card-name">Ben Zachariah</span>
-                        </div>
-                        <div class="card-content">
-                            <h4>Tester</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>                              
-                        </div>                       
-                        <div class="line"></div> 
+                        <img src="img/team.jpg">
+                        <h5 class="card-name">Ben Zachariah</h5>
+                        <h4>Developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p> 
                         <div class="card-buttons">                       
                             <div class="card-social">
                                 <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
                                 <a class="btn linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
                                 <a class="btn gplus"><i class="fa fa-google-plus fa-2x"></i></a>
                             </div>
-                        </div>
-                    </div>
+                        </div>                             
+                    </div> 
                 </div>
 
                 <div class="col-md-4">
                     <div class="card-team">
-                        <div class="card-image">
-                            <img src="img/team.jpg">
-                            <span class="card-name">Jibin Philipose</span>
-                        </div>
-                        <div class="card-content">
-                            <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
-                        </div>
-                        <div class="line"></div> 
+                        <img src="img/team.jpg">
+                        <h5 class="card-name">Jibin Philipose</h5>
+                        <h4>Developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>                                             
                         <div class="card-buttons">                       
                             <div class="card-social">
                                 <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
                                 <a class="btn linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
                                 <a class="btn gplus"><i class="fa fa-google-plus fa-2x"></i></a>
                             </div>
-                        </div>
-                    </div>
+                        </div>                             
+                    </div> 
                 </div>
 
                 <div class="col-md-4">
                     <div class="card-team">
-                        <div class="card-image">
-                            <img src="img/team.jpg">
-                            <span class="card-name">Ivan D'Souza</span>
-                        </div>
-                        <div class="card-content">
-                            <h4>Programmer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>
-                        </div>
-                        <div class="line"></div> 
+                        <img src="img/team.jpg">
+                        <h5 class="card-name">Ivan D'Souza</h5>
+                        <h4>Developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p> 
                         <div class="card-buttons">                       
                             <div class="card-social">
                                 <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
                                 <a class="btn linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
                                 <a class="btn gplus"><i class="fa fa-google-plus fa-2x"></i></a>
                             </div>
-                        </div>
-                    </div>
+                        </div>                             
+                    </div> 
                 </div>
             </div>
         </div>
@@ -134,9 +119,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Contact Info</h4>
-                        </div>
+                        <div class="card-header">Contact Info</div>
                         <ul class="list-group">
                             <li class="list-group-item"><i class="fa fa-map-marker fa-fw"></i>&nbsp; &nbsp; Mount Poinsur, S.V.P. Road, Borivli (West), Mumbai 400 103</li>
                             <li class="list-group-item"><i class="fa fa-phone fa-fw"></i>&nbsp; &nbsp; 022-28928585 / 28908585</li>
@@ -148,9 +131,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Contact Form</h4>
-                        </div>
+                        <div class="card-header">Contact Form</div>
                         <div class="card-form">
                             <form class="form-horizontal">
                                 <div class="form-group">
@@ -181,7 +162,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group form-group-button">
                                     <div class="col-md-3 col-md-offset-9 col-xs-6 col-xs-offset-6">
                                         <button type="button" class="btn btn-primary btn-main">SUBMIT</button>
                                     </div>

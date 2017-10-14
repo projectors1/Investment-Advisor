@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/invest_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
-    <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer-min_style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             
         </section>
 
-        <?php require_once('footer.php'); ?>
+        <?php require_once('footer-min.php'); ?>
     </section>
     
 
