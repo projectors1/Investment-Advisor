@@ -26,7 +26,107 @@
 
     <section class="main-section">
         <section class="investment-section">
-            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <table class="contain">
+                            <thead>
+                                <tr>
+                                    <th><h1>Type</h1></th>
+                                    <th><h1>Name</h1></th>
+                                    <th><h1>Minimum SIP</h1></th>
+                                    <th><h1>3 Month(RET%)</h1></th>
+                                    <th><h1>6 Month(RET%)</h1></th>
+                                    <th><h1>1 Year(RET%)</h1></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Large Cap</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/aditya-birla-sun-life-top-100-fund-direct-plan/MBS837">ABSL Top 100 - Direct (G)</a></td>
+                                    <td>2,500 &#x20b9;</td>
+                                    <td>4%</td>
+                                    <td>11.7%</td>
+                                    <td>21.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Large Cap</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/kotak-select-focus-fund-direct-plan/MKM520">Kotak Select Focus Fund - Direct (G)</a></td>
+                                    <td>3,000 &#x20b9;</td>
+                                    <td>2.8%</td>
+                                    <td>10.8%</td>
+                                    <td>22.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Small & Mid Cap</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/l-t-emerging-businesses-fund-direct-plan/MCC492"> L&T Emerging Businesses Fund-DP (G)</a></td>
+                                    <td>5,000 &#x20b9;</td>
+                                    <td>5.5%</td>
+                                    <td>18.5%</td>
+                                    <td>40.4</td>
+                                </tr>
+                                <tr>
+                                    <td>Diversified Equity</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/tata-equity-p-e-fund-direct-plan/MTA732">Tata Equity P/E Fund - Direct (G)</a></td>
+                                    <td>5,000 &#x20b9;</td>
+                                    <td>6.6%</td>
+                                    <td>13.1%</td>
+                                    <td>31.1%</td>
+                                </tr>
+                                <tr>
+                                    <td>Thematic - Infrastructure</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/idfc-infrastructure-fund-direct-plan/MAG731">IDFC Infrastructure - Direct (G)</a></td>
+                                    <td>5,000 &#x20b9;</td>
+                                    <td>7.2%</td>
+                                    <td>17.5%</td>
+                                    <td>43.7%</td>
+                                </tr>
+                                <tr>
+                                    <td>ELSS</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/tata-india-tax-savings-fund-direct-plan/MTA1114">Tata India Tax Savings Fund - Direct (G)</a> </td>
+                                    <td>500 &#x20b9;</td>
+                                    <td>4.8%</td>
+                                    <td>13.5%</td>
+                                    <td>24.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>ELSS</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/l-t-tax-advantage-fund-direct-plan/MCC258">L&T Tax Advantage -Direct (G)</a></td>
+                                    <td>500 &#x20b9;</td>
+                                    <td>4.5%</td>
+                                    <td>13.4%</td>
+                                    <td>24.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>Debt Long Term</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/uti-dynamic-bond-fund-direct-plan/MUT691"> UTI Dynamic Bond Fund - Direct (G)</a></td>
+                                    <td>10,000  &#x20b9;</td>
+                                    <td>0.8%</td>
+                                    <td>4.4%</td>
+                                    <td>9.9%</td>
+                                </tr>
+                                <tr>
+                                    <td>Debt Long Term</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/icici-prudential-long-term-plan-direct-plan/MPI1152">ICICI Pru Long Term - Direct (G)</a></td>
+                                    <td>5,000  &#x20b9;</td>
+                                    <td>0.8%</td>
+                                    <td>5.2%</td>
+                                    <td>9.1%</td>
+                                </tr>
+                                <tr>
+                                    <td>Balanced</td>
+                                    <td><a href="http://www.moneycontrol.com/mutual-funds/nav/hdfc-balanced-fund-direct-plan/MHD1173">HDFC Balanced Fund - Direct (G)</a></td>
+                                    <td>2,500  &#x20b9;</td>
+                                    <td>1.1%</td>
+                                    <td>9.2%</td>
+                                    <td>17.9%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <?php require_once('footer-min.php'); ?>
