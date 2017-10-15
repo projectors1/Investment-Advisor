@@ -51,14 +51,14 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>What is your goal ?</label>
-                                                <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop">
+                                                <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6 margin-bottom">
                                             <label>How much does it cost ?</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000">
+                                                <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -73,7 +73,7 @@
                                                         <li><a href="#">Medium</a></li>
                                                         <li><a href="#">Low</a></li>
                                                     </ul>
-                                                    <input name="sel_goalpriority" type="hidden" id="dropdown-priority"/>
+                                                    <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
                                                 </div>
                                             </div>
                                         </div>
