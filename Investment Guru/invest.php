@@ -64,7 +64,7 @@
                                     <td>5,000 &#x20b9;</td>
                                     <td>5.5%</td>
                                     <td>18.5%</td>
-                                    <td>40.4</td>
+                                    <td>40.4%</td>
                                 </tr>
                                 <tr>
                                     <td>Diversified Equity</td>
