@@ -16,6 +16,65 @@
     <link rel="stylesheet" type="text/css" href="css/control_style.css">   
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/login_style.css">
+    <script type="text/javascript">
+        function checkForm(form)
+		{
+			if(form.username.value == "") {
+			alert("Error: Username cannot be blank!");
+			form.username.focus();
+			return false;
+			}
+			re = /^\w+$/;
+			if(!re.test(form.username.value)) {
+			alert("Error: Username must contain only letters, numbers and underscores!");
+			form.username.focus();
+			return false;
+			}
+
+
+			if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+			if(form.pwd1.value.length < 8) {
+				alert("Error: Password must contain at least eight characters!");
+				form.pwd1.focus();
+				return false;
+			}
+			if(form.pwd1.value == form.username.value) {
+				alert("Error: Password must be different from Username!");
+				form.pwd1.focus();
+				return false;
+			}
+			re = /[0-9]/;
+			if(!re.test(form.pwd1.value)) {
+				alert("Error: password must contain at least one number (0-9)!");
+				form.pwd1.focus();
+				return false;
+			}
+			re = /[a-z]/;
+			if(!re.test(form.pwd1.value)) {
+				alert("Error: password must contain at least one lowercase letter (a-z)!");
+				form.pwd1.focus();
+				return false;
+			}
+			re = /[A-Z]/;
+			if(!re.test(form.pwd1.value)) {
+				alert("Error: password must contain at least one uppercase letter (A-Z)!");
+				form.pwd1.focus();
+				return false;
+			}
+			} else {
+			alert("Error: Please check that you've entered and confirmed your password!");
+			form.pwd1.focus();
+			return false;
+			}
+			var x=document.getElementById("ema").value;  
+			var atposition=x.indexOf("@");  
+			var dotposition=x.lastIndexOf(".");  
+			if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+				alert("Please enter a valid e-mail address);  
+				return false;  
+			} 
+        }
+    </script>
 </head>
 
 <body>
@@ -27,7 +86,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                        <form action="" method="POST" autocomplete="off">
+                        <form action="" method="POST" name="validate" onSubmit="return checkForm(this);" autocomplete="off">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="text-center">
@@ -35,7 +94,7 @@
                                     </div>
                                     <h4 class="card-title">Sign up</h4>
                                 </div>
-
+                                
                                 <div class="card-form">
                                     <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
                                     <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
