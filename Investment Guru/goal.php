@@ -17,9 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/goal_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
-    <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer-min_style.css">
 
-    
     <script src="js/goal_script.js"></script>
 </head>
 
@@ -34,9 +33,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Your Goals</h4>
-                            </div>
+                            <div class="card-header">Your Goals</div>
                             <div class="card-content">
                                 <div class="table-responsive">
                                     <table class="table table-hover">
@@ -82,7 +79,7 @@
             </div>
         </section>
 
-        <?php require_once('footer.php'); ?>
+        <?php require_once('footer-min.php'); ?>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

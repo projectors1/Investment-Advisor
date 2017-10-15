@@ -71,36 +71,24 @@
                 <div class="col-md-4">
                     <div class="card-padding">
                         <div class="card-team">
-                            <div class="card-bg">
-                                <span><img src="img/money-bag.svg"></span>
-                            </div>
-                            <div class="card-content">
-                                <p>1. Plan your goals</p>                              
-                            </div>
+                            <img src="img/money-bag.svg">
+                            <p>1. Plan your goals</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-padding">
                         <div class="card-team">
-                            <div class="card-bg">
-                                <span><img src="img/profit.svg"></span>
-                            </div>
-                            <div class="card-content">
-                                <p>2. Invest your savings</p>                              
-                            </div>
+                            <img src="img/profit.svg">
+                            <p>2. Invest your savings</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-padding">
                         <div class="card-team">
-                            <div class="card-bg">
-                                <span><img src="img/gift.svg"></span>
-                            </div>
-                            <div class="card-content">
-                                <p>3. Get your goal</p>                              
-                            </div>
+                            <img src="img/gift.svg">
+                            <p>3. Get your goal</p> 
                         </div>
                     </div>
                 </div>
@@ -156,9 +144,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Let's start with your basic details</h4>  
-                        </div>
+                        <div class="card-header">Let's start with your basic details</div>
                         <div class="card-form">
                             <form method="POST" action="" autocomplete="off">
                                 <div class="col-md-12">                      

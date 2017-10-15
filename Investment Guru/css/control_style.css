@@ -117,29 +117,25 @@ html,body {
 }
 
 .card-header {
-    margin-top: -20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #e74c3c;
-    box-shadow: 0 7px 10px -5px #e74c3c;
-}
-
-.card-title {
-    margin: 5px 0px;
-    color: #FFFFFF;
-    text-align: left;
+    padding: 30px 25px 10px 25px; 
+    color: #e74c3c;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .card-form,
 .card-content {
-    padding: 10px 20px;
+    padding: 25px 20px;
 }
 
 .card-content {
     text-align: left;
+    font-size: 16px;
+}
+
+.card-form label {
+    font-weight: normal;
     font-size: 16px;
 }
 
@@ -152,39 +148,38 @@ html,body {
     background-color: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-    margin-bottom: 20px; 
     transition: ease .2s;
+    border-top: 3px solid #e74c3c;
+    padding: 0px 40px 25px;
 }
 
 .card-team:hover {
     box-shadow: 0 3px 6px 0px rgba(0,0,0,0.21);
 }
 
-.card-image {
-    position: relative;
-    display: block;
+.card-team img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -25px;
 }
 
-.card-image img {
-    border-radius: 4px 4px 0 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 0;
+.card-team h5 {
+    padding-top: 30px;
+    color: #525558;
+    font-size: 24px;
 }
 
-.card-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    color: #FFFFFF;
-    font-size: 20px;
+.card-team h4 {
+    color: #888888;
+    font-size: 16px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    z-index: 2;
+}
+
+.card-team p {
+    padding: 10px 0px;
+    color: #525558;
+    font-size: 16px;
 }
 
 .card-social {
@@ -237,6 +232,11 @@ html,body {
     height: 40px;
     box-shadow: none;
     color: #525558;
+    z-index: 0 !important;
+}
+
+.form-horizontal {
+    margin-bottom: 0px;
 }
 
 .form-horizontal .form-group {
@@ -244,6 +244,10 @@ html,body {
     text-align: left;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.form-horizontal .form-group-button {
+    margin-bottom: 0px !important;
 }
 
 .gplus,.gplus:hover {
@@ -351,7 +355,7 @@ input:checked+.slider:before {
 /*end of swicth stle*/
 
 @media (max-width: 767px) {
-    .card {       
+    .card,.card-team {       
         margin-bottom: 40px;
     }
 }

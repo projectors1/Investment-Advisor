@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/profile_style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
-    <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer-min_style.css">
 </head>
 
 <body>
@@ -35,9 +35,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Personal Info</h4>
-                                </div>
+                                <div class="card-header">Personal Info</div>
                                 <div class="card-form">
                                     <form class="form-horizontal" action="" method="POST" autocomplete="off">
                                         <div class="form-group">                                           
@@ -87,7 +85,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group form-group-button">
                                             <div class="col-md-2 col-md-offset-10 col-xs-6 col-xs-offset-6">
                                                 <button name="btn_personal" type="submit" class="btn btn-primary btn-main">Save</button>
                                             </div>
@@ -99,9 +97,7 @@
 
                         <div class="col-md-4">
                             <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Financial Info</h4>
-                                </div>
+                                <div class="card-header">Financial Info</div>
                                 <div class="card-form">
                                     <form class="form-horizontal" action="" method="POST" autocomplete="off">
                                         <div class="form-group col-md-12">
@@ -128,7 +124,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group form-group-button">
                                             <div class="col-md-4 col-md-offset-8 col-xs-6 col-xs-offset-6">
                                                 <button name="btn_finance" type="submit" class="btn btn-primary btn-main">Save</button>
                                             </div>
@@ -141,7 +137,7 @@
                 </div>
         </section>
 
-        <?php require_once('footer.php'); ?>
+        <?php require_once('footer-min.php'); ?>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
