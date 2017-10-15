@@ -19,13 +19,13 @@
     <script type="text/javascript">
         function checkForm(form)
 		{
-			if(form.username.value == "") {
+			if(form.txt_firstname.value == "") {
 			alert("Error: Username cannot be blank!");
 			form.username.focus();
 			return false;
 			}
 			re = /^\w+$/;
-			if(!re.test(form.username.value)) {
+			if(!re.test(form.txt_firstname.value)) {
 			alert("Error: Username must contain only letters, numbers and underscores!");
 			form.username.focus();
 			return false;
@@ -70,7 +70,7 @@
 			var atposition=x.indexOf("@");  
 			var dotposition=x.lastIndexOf(".");  
 			if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-				alert("Please enter a valid e-mail address);  
+				alert("Please enter a valid e-mail address");  
 				return false;  
 			} 
         }
@@ -86,13 +86,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                        <form action="" method="POST" name="validate" onSubmit="return checkForm(this);" autocomplete="off">
+                        <form action="" method="POST" name="validate" onsubmit="return checkForm(this);" autocomplete="off">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="text-center">
                                         <i class="fa fa-user-circle-o fa-inverse fa-5x" aria-hidden="true"></i>
                                     </div>
-                                    <h4 class="card-title">Sign up</h4>
+                                    Sign up
                                 </div>
                                 
                                 <div class="card-form">

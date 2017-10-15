@@ -33,7 +33,7 @@
                                     <div class="text-center">
                                         <i class="fa fa-user-circle-o fa-inverse fa-5x" aria-hidden="true"></i>
                                     </div>
-                                    <h4 class="card-title">Login</h4>
+                                    Login
                                 </div>
 
                                 <div class="card-form">

@@ -17,14 +17,16 @@ h4 {
 }
 
 .card-header {
-    padding: 30px;
+    text-align: center;
 }
 
-.card-title {
-    text-align: center;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-top: 10px;
+.card-header i {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.card-form {
+    padding: 0px 20px;
 }
 
 .card-button {
