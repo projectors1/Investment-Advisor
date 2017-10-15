@@ -24,45 +24,39 @@
 			form.username.focus();
 			return false;
 			}
-<<<<<<< HEAD
 			re = /^[a-zA-Z\s]*$/;
-			if(!re.test(form.username.value)) {
-			alert("Error: Name must contain only letters and space");
-=======
-			re = /^\w+$/;
 			if(!re.test(form.txt_firstname.value)) {
 			alert("Error: Username must contain only letters, numbers and underscores!");
->>>>>>> d486fb66d62a1fc1d1a4496e37eb781fa14ae1b9
 			form.username.focus();
 			return false;
 			}
 
 
-			if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
-			if(form.pwd1.value.length < 8) {
+			if(form.txt_pass.value != "" && form.txt_pass.value == form.pwd2.value) {
+			if(form.txt_pass.value.length < 8) {
 				alert("Error: Password must contain at least eight characters!");
 				form.pwd1.focus();
 				return false;
 			}
-			if(form.pwd1.value == form.username.value) {
+			if(form.txt_pass.value == form.txt_firstname.value) {
 				alert("Error: Password must be different from Username!");
-				form.pwd1.focus();
+				form.txt_pass.focus();
 				return false;
 			}
 			re = /[0-9]/;
-			if(!re.test(form.pwd1.value)) {
+			if(!re.test(form.txt_pass.value)) {
 				alert("Error: password must contain at least one number (0-9)!");
 				form.pwd1.focus();
 				return false;
 			}
 			re = /[a-z]/;
-			if(!re.test(form.pwd1.value)) {
+			if(!re.test(form.txt_pass.value)) {
 				alert("Error: password must contain at least one lowercase letter (a-z)!");
 				form.pwd1.focus();
 				return false;
 			}
 			re = /[A-Z]/;
-			if(!re.test(form.pwd1.value)) {
+			if(!re.test(form.txt_pass.value)) {
 				alert("Error: password must contain at least one uppercase letter (A-Z)!");
 				form.pwd1.focus();
 				return false;
@@ -72,14 +66,6 @@
 			form.pwd1.focus();
 			return false;
 			}
-
-			var x=document.getElementById("ema").value;  
-			var atposition=x.indexOf("@");  
-			var dotposition=x.lastIndexOf(".");  
-			if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-				alert("Please enter a valid e-mail address");  
-				return false;  
-			} 
 
             function checkAge(dob) {
         	var y = new Date();
@@ -108,11 +94,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-<<<<<<< HEAD
-                        <form action="#" method="POST" name="form" onSubmit="return checkForm(this);" autocomplete="off">
-=======
                         <form action="" method="POST" name="validate" onsubmit="return checkForm(this);" autocomplete="off">
->>>>>>> d486fb66d62a1fc1d1a4496e37eb781fa14ae1b9
                             <div class="card">
                                 <div class="card-header">
                                     <div class="text-center">
@@ -128,22 +110,22 @@
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                        <input name="txt_firstname" type="text" class="form-control" name="username" placeholder="First Name" maxlength="15" onblur="" required value="<?php echo $firstname; ?>">
+                                        <input name="txt_firstname" type="text" class="form-control" placeholder="First Name" maxlength="15" onblur="" required value="<?php echo $firstname; ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <input name="txt_email" type="email" class="form-control" id="ema" placeholder="Email" maxlength="38" required value="<?php echo $email; ?>">
+                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" maxlength="38" required value="<?php echo $email; ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_pass" type="password" class="form-control" name="pwd1" placeholder="Password" minlength="8" required>
+                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password" minlength="8" required>
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_confirmpass" type="password" class="form-control" name="pwd2" placeholder="Confirm Password" minlength="8" required>
+                                        <input name="txt_confirmpass" type="password" class="form-control" placeholder="Confirm Password" minlength="8" required>
                                     </div>
                                 </div>
 
