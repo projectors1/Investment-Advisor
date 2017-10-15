@@ -24,9 +24,9 @@
 			form.username.focus();
 			return false;
 			}
-			re = /^\w+$/;
+			re = /^[a-zA-Z\s]*$/;
 			if(!re.test(form.username.value)) {
-			alert("Error: Username must contain only letters, numbers and underscores!");
+			alert("Error: Name must contain only letters and space");
 			form.username.focus();
 			return false;
 			}
@@ -66,6 +66,7 @@
 			form.pwd1.focus();
 			return false;
 			}
+
 			var x=document.getElementById("ema").value;  
 			var atposition=x.indexOf("@");  
 			var dotposition=x.lastIndexOf(".");  
@@ -73,6 +74,21 @@
 				alert("Please enter a valid e-mail address);  
 				return false;  
 			} 
+
+            function checkAge(dob) {
+        	var y = new Date();
+        	var z = y.getFullYear();
+        	var mydate = document.getElementById(dob).value;
+        	var c = new Date(mydate);
+        	var cr = c.getFullYear();
+        	var r = cr - y;
+
+        	if (mydate == "" || mydate == null){
+        		alert("Please Enter your Birth date");
+        	}
+        	else if (r < 18){
+        		alert("you're not above 18");
+        	}
         }
     </script>
 </head>
@@ -86,7 +102,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                        <form action="" method="POST" name="validate" onSubmit="return checkForm(this);" autocomplete="off">
+                        <form action="#" method="POST" name="form" onSubmit="return checkForm(this);" autocomplete="off">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="text-center">
@@ -102,22 +118,22 @@
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                        <input name="txt_firstname" type="text" class="form-control" placeholder="First Name" required value="<?php echo $firstname; ?>">
+                                        <input name="txt_firstname" type="text" class="form-control" name="username" placeholder="First Name" maxlength="15" onblur="" required value="<?php echo $firstname; ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" required value="<?php echo $email; ?>">
+                                        <input name="txt_email" type="email" class="form-control" id="ema" placeholder="Email" maxlength="38" required value="<?php echo $email; ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password" required>
+                                        <input name="txt_pass" type="password" class="form-control" name="pwd1" placeholder="Password" minlength="8" required>
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_confirmpass" type="password" class="form-control" placeholder="Confirm Password" required>
+                                        <input name="txt_confirmpass" type="password" class="form-control" name="pwd2" placeholder="Confirm Password" minlength="8" required>
                                     </div>
                                 </div>
 
@@ -132,7 +148,7 @@
 
                                     <div class="form-margin">
                                         <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">  
-                                            <button name="btn_signup" type="submit" class="btn btn-main">SIGN UP</button>
+                                            <button name="btn_signup" type="Submit" class="btn btn-main">SIGN UP!</button>
                                         </div>
                                     </div>
 
