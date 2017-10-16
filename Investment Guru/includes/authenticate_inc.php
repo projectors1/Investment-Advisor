@@ -18,7 +18,6 @@
                 $profile_id = mysqli_insert_id($conn);        
                 $query = "INSERT INTO useraccount (Email,Password,ProfileID) VALUES ('$email','$passhash','$profile_id')";
                 mysqli_query($conn,$query);
-                $_SERVER['alertSuccess'] = "Registration Successful";
                 header('location: login.php');
             } 
         }
@@ -31,7 +30,7 @@
             $result = mysqli_query($conn,$query);
 
             if(mysqli_num_rows($result) == 0) {
-                $_SERVER['alertInfo'] = 'User account does not exist'; 
+                $_SERVER['alertDanger'] = 'User account does not exist'; 
             }
             else {
                 $data = mysqli_fetch_assoc($result);

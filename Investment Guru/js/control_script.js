@@ -1,5 +1,4 @@
-$(document).ready(function () {
-    
+$(document).ready(function () {  
     $("a[href='#top']").click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
@@ -14,4 +13,5 @@ $(document).ready(function () {
         $('.sidebar-section').toggleClass('nav-view');
         $('.main-section').fadeTo( "fast",$('.main-section').css("opacity") == "1" ? "0.8" : "1");
     });
+
 });
