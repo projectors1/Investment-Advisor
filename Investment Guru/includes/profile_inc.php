@@ -1,5 +1,6 @@
 <?php
     require_once 'initialize_inc.php'; 
+    require_once 'message_inc.php';
     
     if (isset($_SESSION['loggedIN'])) {
         $firstname = $lastname = $email = $dob = $status = $city = $country = "";
@@ -41,6 +42,7 @@
             $query = "UPDATE userprofile SET FirstName = '$firstname', LastName = '$lastname', DOB = '$dob', Status = '$status', City = '$city', Country = '$country' WHERE ProfileID = '$profileID' ";
             mysqli_query($conn,$query);
             $_SERVER['alertSuccess'] = "Personal details saved successfully";
+            hideSuccess();
         }
 
         if(isset($_POST['btn_finance'])) {
@@ -61,6 +63,7 @@
                 mysqli_query($conn,$query);
             }
             $_SERVER['alertSuccess'] = "Financial details saved successfully";
+            hideSuccess();
         }
     }
     else {  

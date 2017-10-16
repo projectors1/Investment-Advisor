@@ -28,9 +28,8 @@
     <section class="main-section">
         <section class="profile-section">
                 <div class="container-fluid">                   
-                    <div class="alert alert-info" role="alert"><?= $_SERVER['alertInfo'] ?></div>
-                    <div class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
-                    <div class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
+                    <div id="alert_success" class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
+                    <div id="alert_danger" class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
                     
                     <div class="row">
                         <div class="col-md-8">
@@ -144,6 +143,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/control_script.js"></script>
     <script src="js/dropdown_script.js"></script>
+    <script src="js/validate_script.js"></script>
 </body>
 
 </html>

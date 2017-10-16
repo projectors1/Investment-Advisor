@@ -1,5 +1,6 @@
 <?php
-    require_once 'initialize_inc.php';    
+    require_once 'initialize_inc.php'; 
+    require 'message_inc.php';      
     $firstname = "";
     $email = "";   
 
@@ -31,6 +32,7 @@
 
             if(mysqli_num_rows($result) == 0) {
                 $_SERVER['alertDanger'] = 'User account does not exist'; 
+                hideDanger();
             }
             else {
                 $data = mysqli_fetch_assoc($result);
@@ -54,6 +56,7 @@
                 }
                 else {                   
                     $_SERVER['alertDanger'] = 'Invalid password';
+                    hideDanger();
                 }
             }
         }

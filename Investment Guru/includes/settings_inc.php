@@ -1,5 +1,6 @@
 <?php 
     require_once 'initialize_inc.php';
+    require_once 'message_inc.php'; 
 
     if (isset($_SESSION['loggedIN'])) {         
         $accountID = $_SESSION['AccountID'];
@@ -18,9 +19,11 @@
                 $query = "UPDATE useraccount SET Password = '$newpasshash' WHERE AccountID = '$accountID'";
                 mysqli_query($conn,$query);
                 $_SERVER['alertSuccess'] = "Password changed successfully";
+                hideSuccess();
             }
             else {                        
                 $_SERVER['alertDanger'] = 'Invalid current password';
+                hideDanger();
             }
         }
     }

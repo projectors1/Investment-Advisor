@@ -33,8 +33,8 @@
                     <li <?php if (basename($_SERVER['PHP_SELF']) == 'profile.php' || basename($_SERVER['PHP_SELF']) == 'goal.php' || basename($_SERVER['PHP_SELF']) == 'plan.php' || basename($_SERVER['PHP_SELF']) == 'invest.php' || basename($_SERVER['PHP_SELF']) == 'settings.php') echo 'class="active"' ?>><a href="profile.php"><i class="fa fa-home fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></li>
                     <li><a href="login.php?logout='1'"><i class="fa fa-power-off fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Logout</a></li>  
                 <?php } else { ?>
-                    <li <?php if (basename($_SERVER['PHP_SELF']) == 'login.php') echo 'class="active"' ?>><a href="login.php" id="login-nav"><i class="fa fa-sign-in fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Login</a></li>
-                    <li><a href="signup.php" type="button" class="btn btn-primary btn-sign" id="btn-signup"><span><i class="fa fa-user-circle-o fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Sign Up</span></a></li>                 
+                    <li <?php if (basename($_SERVER['PHP_SELF']) == 'login.php') echo 'class="active"' ?>><a href="login.php"><i class="fa fa-sign-in fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Login</a></li>
+                    <li class="active"><a href="signup.php"><i class="fa fa-user-circle-o fa-icons" aria-hidden="true"></i>&nbsp;&nbsp;Sign Up</a></li>                 
                 <?php } ?>  
             </ul> 
         </div>

@@ -6,7 +6,7 @@ html,body {
 }
 
 .alert:empty {
-    display: none;
+    display: none !important;
 }
 
 .btn-input {
