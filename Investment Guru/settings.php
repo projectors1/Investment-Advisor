@@ -31,7 +31,7 @@
                         <div class="card">
                             <div class="card-header">Change Password</div>
                             <div class="card-form">
-                                <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                                <form class="form-horizontal" action="" method="POST"  onsubmit="return checkNewPass(this);" autocomplete="off">
                                     <div id="alert_success" class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
                                     <div id="alert_danger" class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
 
@@ -39,7 +39,7 @@
                                         <label>Current</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                            <input name="txt_currentpass" type="password" class="form-control" placeholder="eg: current123">
+                                            <input name="txt_currentpass" type="password" class="form-control" placeholder="eg: current123" required>
                                         </div>
                                     </div>
 
@@ -47,7 +47,7 @@
                                         <label>New</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                            <input name="txt_newpass" type="password" class="form-control" placeholder="eg: new123">
+                                            <input name="txt_newpass" type="password" class="form-control" placeholder="eg: new123" required>
                                         </div>
                                     </div>
 
@@ -55,7 +55,7 @@
                                         <label>Confirm new</label>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                            <input name="txt_confirmnew" type="password" class="form-control" placeholder="eg: new123">
+                                            <input name="txt_confirmnew" type="password" class="form-control" placeholder="eg: new123" required>
                                         </div>
                                     </div>
 
