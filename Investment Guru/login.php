@@ -42,12 +42,12 @@
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" value="<?php echo $email ?>">
+                                        <input name="txt_email" type="email" class="form-control" placeholder="Email" required value="<?php echo $email ?>">
                                     </div>
 
                                     <div class="input-group form-margin">
                                         <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password">
+                                        <input name="txt_pass" type="password" class="form-control" placeholder="Password" required>
                                     </div>
                                 </div>
 
