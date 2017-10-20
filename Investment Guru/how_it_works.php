@@ -27,25 +27,25 @@
 			<div class="timeline">
 				<div class="contain left">
 					<div class="content">
-						<h2>Step 1:</h2>
+						<h2>Step 1</h2>
 						<p>The login and registration process.If you are a new user, you will have to create an account to us the application.To create an account, fill in the details in the form the appears by clicking the sign up tab. If you are already a registered user, login into your account by entering your username and password at the login tab.</p>
 					</div>
 				</div>
 				<div class="contain right">
 					<div class="content">
-						<h2>Step 2:</h2>
+						<h2>Step 2</h2>
 						<p>Once you have logged in, You are required to enter your personal and financial details which are essential for the application. Without these information, we wont be able to provide you with an accurate result.</p>
 					</div>
 				</div>
 				<div class="contain left">
 					<div class="content">
-						<h2>Step 3:</h2>
+						<h2>Step 3</h2>
 						<p>Now you are to enter your required goal and also specify the time by which you want to achieve this goal.</p>
 					</div>
 				</div>
 				<div class="contain right">
 					<div class="content">
-						<h2>Step 4:</h2>
+						<h2>Step 4</h2>
 						<p>As a result, you will be given the amount which has to be saved in order to acheive your goal within your required time. An option of Mutual funds will also be given to you so that you can earn while you save. We will provide you with a list of available mutual funds with their return rate, so you can decide whether you want to invest in mutual funds and if so, which will be the most suitable </p>
 					</div>
 				</div>

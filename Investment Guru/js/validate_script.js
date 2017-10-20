@@ -7,7 +7,7 @@ function hidedanger() {
     }, 5000);
 }
 
-function checkNewPass(this){
+function checkNewPass(form){
     if(form.txt_newpass.value != "" && form.txt_newpass.value == form.txt_confirmnew.value) {
         if(form.txt_currentpass.value == form.txt_newpass.value) {
             $("#alert_danger").html("Password must not be same as the current password");

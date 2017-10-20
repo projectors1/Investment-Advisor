@@ -60,7 +60,7 @@
                                             <div class="col-md-4">
                                                 <label>Status *</label>
                                                 <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
                                                         <span data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
                                                     </button>
                                                     <ul class="dropdown-menu" role="menu">
