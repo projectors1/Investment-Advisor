@@ -1,6 +1,6 @@
 <?php
     require_once 'initialize_inc.php'; 
-    require 'message_inc.php';      
+    require_once 'message_inc.php';      
     $firstname = "";
     $email = "";   
 
@@ -52,7 +52,7 @@
                     $_SESSION['AccountID'] = $accountID;
                     $_SESSION['Email'] = $email;
                     $_SESSION['loggedIN'] = true;
-                    header('location: profile.php');         
+                    header('location: dashboard.php');         
                 }
                 else {                   
                     $_SERVER['alertDanger'] = 'Invalid password';
