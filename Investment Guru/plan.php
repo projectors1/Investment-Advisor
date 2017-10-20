@@ -38,7 +38,6 @@
                             <div class="card-wizard-navigation">
                                 <ul class="nav nav-pills nav-justified">
                                     <li class="tab_goal"><a>Goal</a></li>
-                                    <li class="tab_mode"><a>Mode</a></li>
                                     <li class="tab_details"><a>Details</a></li>
                                     <li class="tab_summary"><a>Summary</a></li>
                                 </ul>
@@ -63,80 +62,30 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Goal priority</label>
+                                                <label>How will you save ?</label>
                                                 <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
-                                                        <span data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
+                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
+                                                        <span data-bind="label">Select an option</span><span class="caret"></span>
                                                     </button>
-                                                    <ul class="dropdown-menu dropdown-priority" role="menu">
-                                                        <li><a href="#">High</a></li>
-                                                        <li><a href="#">Medium</a></li>
-                                                        <li><a href="#">Low</a></li>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Monthly</a></li>
+                                                        <li><a href="#">Half Yearly</a></li>
+                                                        <li><a href="#">Yearly</a></li>
                                                     </ul>
-                                                    <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
+                                                    <input name="sel_savingType" type="hidden" id="dropdown-data"/>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div class="card-tab-content" id="mode">
-                                    <h4>Choose your planning mode</h4>
-                                    <div class="row">
-                                        <div class="col-sm-6 col-xs-6">
-                                            <label class="choice" for="chk_period">
-                                                <input id="chk_period" name="chk_mode" type="radio" value="Period">
-                                                <div class="icon">
-                                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                                </div>
-                                            </label>
-                                            <h5 class="cal-period">Calculate period</h5>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-6">
-                                            <label class="choice" for="chk_amount">
-                                                <input id="chk_amount" name="chk_mode" type="radio" value="Amount" checked>
-                                                <div class="icon">
-                                                    <i class="fa fa-inr" aria-hidden="true"></i>
-                                                </div>
-                                            </label>
-                                            <h5 class="cal-amount">Calculate amount</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-tab-content" id="details">
                                     <h4>Provide some details</h4>                                         
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>How will you save ?</label>
-                                                <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="toggle-type">
-                                                        <span data-bind="labeltype">Select an option</span><span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu dropdown-type" role="menu">
-                                                        <li><a href="#">Monthly</a></li>
-                                                        <li><a href="#">Half Yearly</a></li>
-                                                        <li><a href="#">Yearly</a></li>
-                                                    </ul>
-                                                    <input name="sel_savingType" type="hidden" id="dropdown-type"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 content-period">
-                                            <div class="form-group">
-                                                <label>Amount you can save</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">₹</span>
-                                                    <input name="txt_amount" type="number" class="form-control" placeholder="eg: 5,000">
-                                                </div>
-                                            </div>
-                                        </div>                                               
-                                        <div class="col-md-6 content-amount">
-                                            <div class="form-group">
-                                                <label>Expected period</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-                                                    <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)">
-                                                </div>
+                                    <div class="row">    
+                                        <div class="form-group">
+                                            <label>Expected period</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                                <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)">
                                             </div>
                                         </div>
                                     </div>
@@ -178,12 +127,6 @@
                                         </div>
                                     </div> 
                                     <div class="row form-group">
-                                        <div class="col-md-2">
-                                            <label>Priority</label>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <input name="result_goalpriority" type="text" class="form-control  margin-bottom" readonly>
-                                        </div>
                                         <div class="col-md-2 col-md-offset-2">
                                             <label>Total period</label>
                                         </div>
@@ -197,7 +140,7 @@
                             <div class="card-wizard-footer">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button id="btn_back" type="button" class="btn btn-primary btn-second btn-wd pull-left">Back</button>                                
+                                        <button id="btn_back" type="button" class="btn btn-primary btn-default btn-wd pull-left">Back</button>                                
                                         <button id="btn_calculate" type="button" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
                                         <button id="btn_add" name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
                                         <button id="btn_next" type="button" class="btn btn-primary btn-main btn-wd pull-right">Next</button>
@@ -218,6 +161,7 @@
     <script src="js/control_script.js"></script>
     <script src="js/plan_script.js"></script>
     <script src="js/validate_script.js"></script>
+    <script src="js/dropdown_script.js"></script>
 </body>
 
 </html>
