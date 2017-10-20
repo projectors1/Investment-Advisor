@@ -24,12 +24,12 @@ html,body {
    top: 50%;
 }
 
-.btn.btn-default,.btn.btn-default:hover,.btn.btn-default:focus {
+.btn.btn-transparent,.btn.btn-transparent:hover,.btn.btn-transparent:focus {
     background-color: transparent;
     color: #525558;
 }
 
-.btn.btn-main,.btn.btn-second,.btn.btn-white,.btn.btn-transparent {
+.btn.btn-main,.btn.btn-default,.btn.btn-white {
     background-color: #e74c3c;
     color: #FFFFFF;
     border: none;
@@ -51,13 +51,13 @@ html,body {
     outline: none;
 }
 
-.btn.btn-second {
+.btn.btn-default {
     background-color: #999999;
     outline: #999999;
     box-shadow: 0 3px 10px -5px #999999;
 }
 
-.btn.btn-second:hover {
+.btn.btn-default:hover {
     background-color: #999999;
     color: #FFFFFF;
     box-shadow: 0 7px 20px -5px #999999;
@@ -83,25 +83,19 @@ html,body {
 .btn.btn-edit,.btn.btn-edit:hover {
     outline: none;
     border: none;
-    background-color: #4caf50;
-    color: #FFFFFF;
-    font-size: 16px;
-}
-
-.btn.btn-edit:hover {
-    box-shadow: 0 7px 20px -5px #4caf50;
+    background-color: transparent;
+    color: #4caf50;
+    font-size: 24px;  
+    float: right;
 }
 
 .btn.btn-close,.btn.btn-close:hover {
     outline: none;
     border: none;
-    background-color: #f44336;
-    color: #FFFFFF;
-     font-size: 16px;
-}
-
-.btn.btn-close:hover {
-    box-shadow: 0 7px 20px -5px #f44336;
+    background-color: transparent;
+    color: #f44336;
+    font-size: 24px;    
+    float: right;
 }
 
 .card form [class*="col-"] {

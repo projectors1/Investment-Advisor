@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/sidebar_style.css">
     <link rel="stylesheet" type="text/css" href="css/footer-min_style.css">
 
-    <script src="js/goal_script.js"></script>
+
 </head>
 
 <body>
@@ -31,47 +31,125 @@
         <section class="goal-section">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">Your Goals</div>
-                            <div class="card-content">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Name</th>
-                                                <th>Cost</th>
-                                                <th>Priority</th>
-                                                <th>Saving type</th>
-                                                <th>Amount</th>
-                                                <th>Total Period</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php $index=0; while($row = mysqli_fetch_assoc($result)) { $index++; ?>
-                                                <tr id="row<?php echo $row['GoalID'];?>">
-                                                    <td><?php echo $index; ?></td>
-                                                    <td><?php echo $row['Name']; ?></td>
-                                                    <td><?php echo "₹ ".$row['Cost']; ?></td>
-                                                    <td><?php echo $row['Priority']; ?></td>
-                                                    <td><?php echo $row['Savingtype']; ?></td>
-                                                    <td><?php echo "₹ ".$row['Amount']; ?></td>
-                                                    <td><?php echo $row['Period']." months"; ?></td>
-                                                    <td>
-                                                        <button type='button' class="btn btn-edit" onclick="edit_row('<?php echo $row['GoalID'];?>');">
-                                                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                        </button>
-                                                        <button type='button' class="btn btn-close" onclick="delete_row('<?php echo $row['GoalID'];?>');">
-                                                            <i class="fa fa-times" aria-hidden="true"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            <?php } ?>    
-                                        </tbody>
-                                    </table>
-                                </div>                              
+                    <?php while($row = mysqli_fetch_assoc($result)) { ?>
+                        <div class="col-md-4" id="goal<?php echo $row['GoalID'];?>">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <div class="row">
+                                        <div class="col-md-7 col-xs-7">                                                                    
+                                            <?php echo $row['Name']; ?>
+                                        </div>
+                                        <div class="col-md-5 col-xs-5">                                            
+                                            <button type='button' class="btn btn-close" data-toggle="modal" data-target="#modalDelete" data-id="<?php echo $row['GoalID'];?>">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </button>
+                                            <button type='button' class="btn btn-edit" data-toggle="modal" data-target="#modalEdit" data-id="<?php echo $row['GoalID'];?>">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12 margin-top">
+                                            <span class="label label-success"><?php echo $row['Savingtype']; ?></span>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="card-content">
+                                    <div class="form-group col-md-12">
+                                        <label class="title">Cost</label>
+                                        <label class="value"><?php echo "₹ ".$row['Cost']; ?></label>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="title">Total Period</label>
+                                        <label class="value"><?php echo $row['Period']." months"; ?></label>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="title">Amount</label>
+                                        <label class="value"><?php echo "₹ ".$row['Amount']; ?></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+
+                    <div class="modal fade" id="modalDelete" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Delete Goal</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Confirm delete goal ?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="btn_delete" type='button' class="btn btn-main" data-dismiss="modal">Delete</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalEdit" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Edit Goal</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Goal name</label>
+                                                <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Goal cost</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">₹</span>
+                                                <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Saving type</label>
+                                                <div class="btn-group btn-input clearfix">
+                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
+                                                        <span id="savingtype" data-bind="label">Select an option</span><span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Monthly</a></li>
+                                                        <li><a href="#">Half Yearly</a></li>
+                                                        <li><a href="#">Yearly</a></li>
+                                                    </ul>
+                                                    <input name="sel_savingType" type="hidden" id="dropdown-data"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Period</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                                    <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Amount</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                                    <input name="txt_amount" type="number" class="form-control" placeholder="eg: ₹ 3000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="btn_update" type='button' class="btn btn-main" data-dismiss="modal">Update</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,6 +164,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/control_script.js"></script>
     <script src="js/validate_script.js"></script>
+    <script src="js/goal_script.js"></script>
+    <script src="js/dropdown_script.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,31 @@ body {
     background: #f8f9fa;
 }
 
+.btn.btn-main, .btn.btn-default {
+    width: auto;
+}
+
+.card-header {
+    font-size: 32px;
+}
+
+.card-content {
+    display: flow-root;
+    padding: 20px 10px;
+}
+
+.goal-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: calc(100vh - 150px);
+}
+
+.label {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 6px;
+}
+
 .main-section {
     float: right;
     position: relative; 
@@ -12,18 +37,28 @@ body {
     margin-top: 55px;;
 }
 
-.goal-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-height: calc(100vh - 150px);
+.modal-content {
+    border: none;
+    border-radius: 4px;
 }
 
-.table>thead:first-child>tr:first-child>th {
-    color: #e74c3c;
-    font-weight: normal;
+.margin-top {
+    margin-top: 10px;
+}
+
+.period,.amount {
     font-size: 20px;
 }
 
-.table>tbody>tr>td {
-    line-height: 2.5;
+.title {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.value {
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
 }
