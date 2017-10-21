@@ -61,11 +61,7 @@
                                                 <label>Status *</label>
                                                 <div class="btn-group btn-input clearfix">
                                                     <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
-<<<<<<< HEAD
-                                                        <span id="e_status" data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
-=======
-                                                        <span name="status" data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
->>>>>>> 5a8fe0a4be1b9e767e0cf09d28179b1f4d60ebdb
+                                                        <span id="e_status" data-bind="label"><?php echo $status ?></span> <span class="caret"></span>                                 
                                                     </button>
                                                     <ul class="dropdown-menu" role="menu">
                                                         <li><a href="#">Student</a></li>
