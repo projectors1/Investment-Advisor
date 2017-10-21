@@ -36,7 +36,7 @@
                             <div class="card">
                                 <div class="card-header">Personal Info</div>
                                 <div class="card-form">
-                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkDetails(this);" autocomplete="off">
+                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkPersonal(this);" autocomplete="off">
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name *</label>
@@ -98,7 +98,7 @@
                             <div class="card">
                                 <div class="card-header">Financial Info</div>
                                 <div class="card-form">
-                                    <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkFinance(this);" autocomplete="off">
                                         <div class="form-group col-md-12">
                                             <label>Monthly income</label>
                                             <div class="input-group">

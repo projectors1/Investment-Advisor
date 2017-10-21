@@ -42,7 +42,7 @@ function checkNewPass(form){
 }
 
 
-function checkDetails(form) {
+function checkPersonal(form) {
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_firstname.value)) {
         $("#alert_danger").html("First name must contain only letters");
@@ -76,7 +76,10 @@ function checkDetails(form) {
         hidedanger();
         return false;
     }
+}
 
+
+function checkFinance(form) {
     re = /[0-9]/;
     if(!re.test(form.txt_income.value)) {
         $("#alert_danger").html("Income should contain only numbers");
