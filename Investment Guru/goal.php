@@ -142,7 +142,6 @@
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-type" role="menu">
                                                         <li><a href="#">Monthly</a></li>
-                                                        <li><a href="#">Half Yearly</a></li>
                                                         <li><a href="#">Yearly</a></li>
                                                     </ul>
                                                     <input name="sel_savingType" type="hidden" id="dropdown-type"/>
