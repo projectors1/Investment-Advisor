@@ -41,7 +41,7 @@ function checkNewPass(form){
 	}
 }
 
-
+//Profile Validation
 function checkDetails(form) {
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_firstname.value)) {
