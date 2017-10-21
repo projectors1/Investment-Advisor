@@ -36,7 +36,7 @@
                             <div class="card">
                                 <div class="card-header"> 
                                     <div class="row">
-                                        <div class="col-md-7 col-xs-7">                                                                    
+                                        <div class="col-md-7 col-xs-7 name">                                                                    
                                             <?php echo $row['Name']; ?>
                                         </div>
                                         <div class="col-md-5 col-xs-5">                                            
@@ -48,22 +48,22 @@
                                             </button>
                                         </div>
                                         <div class="col-md-12 col-xs-12 margin-top">
-                                            <span class="label label-success"><?php echo $row['Savingtype']; ?></span>
+                                            <span class="label label-success type"><?php echo $row['Savingtype']; ?></span>
                                         </div>
                                     </div> 
                                 </div>
                                 <div class="card-content">
                                     <div class="form-group col-md-12">
                                         <label class="title">Cost</label>
-                                        <label class="value"><?php echo "₹ ".$row['Cost']; ?></label>
+                                        <label class="value cost"><?php echo "₹ ".$row['Cost']; ?></label>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="title">Total Period</label>
-                                        <label class="value"><?php echo $row['Period']." months"; ?></label>
+                                        <label class="value period"><?php echo $row['Period']." months"; ?></label>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="title">Amount</label>
-                                        <label class="value"><?php echo "₹ ".$row['Amount']; ?></label>
+                                        <label class="value amount"><?php echo "₹ ".$row['Amount']; ?></label>
                                     </div>
                                 </div>
                             </div>

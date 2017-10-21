@@ -48,8 +48,8 @@ $(document).ready(function () {
 
     function calculate() {
         var value;
-        var goalcost = parseInt($("input[name=txt_goalcost]").val());
-        var amount = parseInt($("input[name=txt_amount]").val());
+        var goalcost = parseFloat($("input[name=txt_goalcost]").val());
+        var amount = parseFloat($("input[name=txt_amount]").val());
         var period = parseInt($("input[name=txt_period]").val());
         var type = $("input[name=sel_savingType]").val();
                
@@ -64,9 +64,9 @@ $(document).ready(function () {
         amount = parseInt(goalcost/value);           
 
         $("input[name=result_goalname]").val($("input[name=txt_goalname]").val());
-        $("input[name=result_goalcost]").val(goalcost);
+        $("input[name=result_goalcost]").val(goalcost.toFixed(2));
         $("input[name=result_savingType]").val(type);
-        $("input[name=result_amount]").val(amount);
+        $("input[name=result_amount]").val(amount.toFixed(2));
         $("input[name=result_period]").val(period);
     }
 });

@@ -22,7 +22,7 @@ $(document).ready(function() {
                 $("#savingtype").html(data.Savingtype);
                 $("input[name=txt_period]").val(data.Period);
                 $("input[name=txt_amount]").val(data.Amount);
-                $('#btn_update').attr("onclick","update_goal("+goalId+","+data.Name+","+data.Cost+","+data.Savingtype+","+data.Period+","+data.Amount+")");
+                $('#btn_update').attr("onclick","update_goal("+goalId+")");
             } 
         });
     });
@@ -47,9 +47,14 @@ function delete_goal(id)
     });
 }
 
-function update_goal(id,name,cost,type,period,amount)
+function update_goal(id)
 {
-    var card = $("#goal"+id);
+    var name = $("input[name=txt_goalname]").val();
+    var cost = parseFloat($("input[name=txt_goalcost]").val());
+    var type = $("#savingtype").html();
+    var period = parseInt($("input[name=txt_period]").val());
+    var amount = parseFloat($("input[name=txt_amount]").val());
+
     $.ajax({
         type: 'POST',
         url: '../includes/goal_inc.php',
@@ -63,8 +68,12 @@ function update_goal(id,name,cost,type,period,amount)
             goal_amount:amount,
         },
         cache: false,
-        success:function(result){
-            
+        success:function(result) {
+            $("#goal"+id+" .name").html(name);
+            $("#goal"+id+" .type").html(type);
+            $("#goal"+id+" .cost").html("₹ "+cost.toFixed(2));
+            $("#goal"+id+" .period").html(period+" months");
+            $("#goal"+id+" .amount").html("₹ "+amount.toFixed(2));
         }
     });
 }
