@@ -121,6 +121,21 @@ function checkFinance(form) {
     }
 }
 
+//Plan Validation
+function checkPlanDetails(form) {
+    re = /^\w+$/;
+    if(!re.test(form.txt_goalname.value)) {
+        $("#alert_danger").html("Goal Name must contain only letters,numbers and underscores");
+        hidedanger();
+        return false;
+    }
+    
+    if(parseInt(form.txt_goalcost.value) <= 0) {
+        $("#alert_danger").html("Cost should not be zero or less than zero");
+        hidedanger();
+        return false;
+    }
+}
 
 //SignUp Validation
 function checkSignup(form) {
