@@ -36,7 +36,7 @@
                             <div class="card">
                                 <div class="card-header">Personal Info</div>
                                 <div class="card-form">
-                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkDetails(this);" autocomplete="off">
+                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkPersonal(this);" autocomplete="off">
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name *</label>
@@ -61,7 +61,11 @@
                                                 <label>Status *</label>
                                                 <div class="btn-group btn-input clearfix">
                                                     <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
+<<<<<<< HEAD
                                                         <span id="e_status" data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
+=======
+                                                        <span name="status" data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
+>>>>>>> 5a8fe0a4be1b9e767e0cf09d28179b1f4d60ebdb
                                                     </button>
                                                     <ul class="dropdown-menu" role="menu">
                                                         <li><a href="#">Student</a></li>
@@ -98,7 +102,7 @@
                             <div class="card">
                                 <div class="card-header">Financial Info</div>
                                 <div class="card-form">
-                                    <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkFinance(this);" autocomplete="off">
                                         <div class="form-group col-md-12">
                                             <label>Monthly income</label>
                                             <div class="input-group">

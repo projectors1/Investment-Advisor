@@ -41,18 +41,23 @@ function checkNewPass(form){
 	}
 }
 
+<<<<<<< HEAD
 //Profile Validation
 function checkDetails(form) {
+=======
+
+function checkPersonal(form) {
+>>>>>>> 5a8fe0a4be1b9e767e0cf09d28179b1f4d60ebdb
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_firstname.value)) {
-        $("#alert_danger").html("Name must contain only letters");
+        $("#alert_danger").html("First name must contain only letters");
         hidedanger();
         return false;
     }
     
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_lastname.value)) {
-        $("#alert_danger").html("Name must contain only letters");
+        $("#alert_danger").html("Last name must contain only letters");
         hidedanger();
         return false;
     }
@@ -66,47 +71,56 @@ function checkDetails(form) {
 
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_city.value)) {
-        $("#alert_danger").html("Name must contain only letters");
+        $("#alert_danger").html("City must contain only letters");
         hidedanger();
         return false;
     }
 
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_country.value)) {
-        $("#alert_danger").html("Name must contain only letters");
+        $("#alert_danger").html("Country must contain only letters");
         hidedanger();
         return false;
     }
+}
 
+
+function checkFinance(form) {
     re = /[0-9]/;
     if(!re.test(form.txt_income.value)) {
-        $("#alert_danger").html("Should contain only numbers");
+        $("#alert_danger").html("Income should contain only numbers");
         hidedanger();
         return false;
     }
 
-    if(form.txt_income.value == 0||00||000||0000||00000) {
-        $("#alert_danger").html("Income hould not contain the value 0");
+    if(parseInt(form.txt_income.value) <= 0) {
+        $("#alert_danger").html("Income should not be zero or less than zero");
         hidedanger();
         return false;
     }
 
     re = /[0-9]/;
     if(!re.test(form.txt_expenses.value)) {
-        $("#alert_danger").html("Should contain only numbers");
+        $("#alert_danger").html("Expenses should contain only numbers");
+        hidedanger();
+        return false;
+    }
+
+    if(parseInt(form.txt_expenses.value) <= 0) {
+        $("#alert_danger").html("Expenses should not be zero or less than zero");
         hidedanger();
         return false;
     }
 
     re = /[0-9]/;
     if(!re.test(form.txt_savings.value)) {
-        $("#alert_danger").html("should contain only numbers");
+        $("#alert_danger").html("Savings should contain only numbers");
         hidedanger();
         return false;
     }
 
-    if(form.txt_savings.value == 0||00||000||0000||00000) {
-        $("#alert_danger").html("Savings should not contain the value 0");
+    if(parseInt(form.txt_savings.value) <= 0) {
+        $("#alert_danger").html("Savings should not be zero or less than zero");
         hidedanger();
         return false;
     }
