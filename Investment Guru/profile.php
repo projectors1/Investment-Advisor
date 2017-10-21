@@ -36,39 +36,43 @@
                             <div class="card">
                                 <div class="card-header">Personal Info</div>
                                 <div class="card-form">
-                                    <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                                    <form class="form-horizontal" action="" method="POST" onsubmit="return checkDetails(this);" autocomplete="off">
                                         <div class="form-group">                                           
                                             <div class="col-md-6">
                                                 <label>First name *</label>
-                                                <input name="txt_firstname" type="text" class="form-control margin-bottom" placeholder="eg: Sachin" value="<?php echo $firstname ?>">
+                                                <input name="txt_firstname" type="text" class="form-control margin-bottom" placeholder="eg: Sachin" required value="<?php echo $firstname ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Last name *</label>
-                                                <input name="txt_lastname" type="text" class="form-control" placeholder="eg: Tendulkar" value="<?php echo $lastname ?>">
+                                                <input name="txt_lastname" type="text" class="form-control" placeholder="eg: Tendulkar" required value="<?php echo $lastname ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-md-4">
                                                 <label>Email *</label>
-                                                <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" value="<?php echo $email ?>" readonly>
+                                                <input type="email" class="form-control margin-bottom" placeholder="eg: example@company.com" required value="<?php echo $email ?>" readonly>
                                             </div>
                                             <div class="col-md-4">
                                                 <label>Date of birth *</label>
-                                                <input name="txt_dob" type="date" class="form-control margin-bottom" value="<?php echo $dob ?>">  
+                                                <input name="txt_dob" type="date" class="form-control margin-bottom" required value="<?php echo $dob ?>">  
                                             </div>
                                             <div class="col-md-4">
                                                 <label>Status *</label>
                                                 <div class="btn-group btn-input clearfix">
                                                     <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
+<<<<<<< HEAD
                                                         <span data-bind="label"><?php echo $status ?></span><span class="caret"></span>
+=======
+                                                        <span name="status" data-bind="label"><?php echo $status ?></span> <span class="caret"></span>
+>>>>>>> d936c6a25f67e222f914bf5027887c49ab13aa75
                                                     </button>
                                                     <ul class="dropdown-menu" role="menu">
                                                         <li><a href="#">Student</a></li>
                                                         <li><a href="#">Employed</a></li>
                                                         <li><a href="#">Unemployed</a></li>
                                                     </ul>
-                                                    <input name="sel_status" type="hidden" id="dropdown-data"/>
+                                                    <input name="sel_status" type="hidden" id="dropdown-data" required/>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,11 +80,11 @@
                                         <div class="form-group">
                                             <div class="col-md-6">
                                                 <label>City *</label>
-                                                <input name="txt_city" type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" value="<?php echo $city ?>">
+                                                <input name="txt_city" type="text" class="form-control margin-bottom" placeholder="eg: Mumbai" required value="<?php echo $city ?>">
                                             </div>
                                             <div class="col-md-6">
                                                 <label>Country *</label>
-                                                <input name="txt_country" type="text" class="form-control" placeholder="eg: India" value="<?php echo $country ?>">
+                                                <input name="txt_country" type="text" class="form-control" placeholder="eg: India" required value="<?php echo $country ?>">
                                             </div>
                                         </div>
 
@@ -103,7 +107,7 @@
                                             <label>Monthly income</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input name="txt_income" type="number" class="form-control" placeholder="eg: 25,000" value="<?php echo $income ?>">
+                                                <input name="txt_income" type="number" class="form-control" placeholder="eg: 25,000" required value="<?php echo $income ?>">
                                             </div>
                                         </div>
 
@@ -111,7 +115,7 @@
                                             <label>Expenses</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input name="txt_expenses" type="number" class="form-control" placeholder="eg: 20,000" value="<?php echo $expenses ?>">
+                                                <input name="txt_expenses" type="number" class="form-control" placeholder="eg: 20,000" required  value="<?php echo $expenses ?>">
                                             </div>
                                         </div>
 
@@ -119,7 +123,7 @@
                                             <label>Savings</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
-                                                <input name="txt_savings" type="number" class="form-control" placeholder="eg: 4,000" value="<?php echo $savings ?>">
+                                                <input name="txt_savings" type="number" class="form-control" placeholder="eg: 4,000" required value="<?php echo $savings ?>">
                                             </div>
                                         </div>
 
