@@ -1,49 +1,43 @@
 $(document).ready(function () {    
-    $("#summary").hide();
-    $("#details").hide();
+    $("#result").hide();
     $("#btn_back").hide();
-    $("#btn_calculate").hide();
+    $("#btn_calculate").show();
     $("#btn_add").hide();
     $(".tab_goal").addClass("active");
 
-    $("#btn_next").click(function() {
-        $("#goal").hide();
-        $("#details").show();
-        $(".tab_goal").removeClass("active");
-        $(".tab_details").addClass("active");
-        $("#btn_next").hide();
-         $("#btn_back").show();  
-        $("#btn_calculate").show();       
-    });
-
     $("#btn_back").click(function() {
-        if($("#summary").is(":visible")) {
-            $("#summary").hide();
-            $("#details").show();
-            $(".tab_summary").removeClass("active");
-            $(".tab_details").addClass("active");
-            $("#btn_calculate").show();
-            $("#btn_add").hide();
-        }
-        else if($("#details").is(":visible")) {
-            $("#details").hide();
-            $("#goal").show();
-            $(".tab_details").removeClass("active");
-            $(".tab_goal").addClass("active");
-            $("#btn_back").hide();  
-            $("#btn_next").show();
-            $("#btn_calculate").hide();
-        }
+        $("#result").hide();
+        $("#goal").show();
+        $(".tab_result").removeClass("active");
+        $(".tab_goal").addClass("active");
+        $("#btn_back").hide(); 
+        $("#btn_add").hide();
+        $("#btn_calculate").show();
     });
 
     $("#btn_calculate").click(function() {
-        $("#details").hide();
-        $("#summary").show();
-        $(".tab_details").removeClass("active");
-        $(".tab_summary").addClass("active");
-        $("#btn_calculate").hide();
+        $("#result").show();
+        $("#goal").hide();
+        $(".tab_result").addClass("active");;
+        $(".tab_goal").removeClass("active");
+        $("#btn_back").show(); 
         $("#btn_add").show();
+        $("#btn_calculate").hide();
         calculate();
+    });
+
+    $(document.body).on('click','.dropdown-priority li', function( event ) {
+        var $target = $(event.currentTarget);   
+        $target.closest('.btn-group').find('[data-bind="labelpriority"]' ).text($target.text()).end().children('.dropdown-toggle').dropdown('toggle');  
+        $("#dropdown-priority").val($('#toggle-priority span:visible').text()); 
+        return false; 
+    });
+
+    $(document.body).on('click','.dropdown-type li', function( event ) {
+        var $target = $(event.currentTarget);   
+        $target.closest('.btn-group').find('[data-bind="labeltype"]' ).text($target.text()).end().children('.dropdown-toggle').dropdown('toggle');  
+        $("#dropdown-type").val($('#toggle-type span:visible').text()); 
+        return false; 
     });
 
     function calculate() {
@@ -65,6 +59,7 @@ $(document).ready(function () {
 
         $("input[name=result_goalname]").val($("input[name=txt_goalname]").val());
         $("input[name=result_goalcost]").val(goalcost.toFixed(2));
+        $("input[name=result_goalpriority]").val($("input[name=sel_goalpriority]").val());
         $("input[name=result_savingType]").val(type);
         $("input[name=result_amount]").val(amount.toFixed(2));
         $("input[name=result_period]").val(period);

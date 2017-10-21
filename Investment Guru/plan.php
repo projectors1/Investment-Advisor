@@ -38,8 +38,7 @@
                             <div class="card-wizard-navigation">
                                 <ul class="nav nav-pills nav-justified">
                                     <li class="tab_goal"><a>Goal</a></li>
-                                    <li class="tab_details"><a>Details</a></li>
-                                    <li class="tab_summary"><a>Summary</a></li>
+                                    <li class="tab_result"><a>Result</a></li>
                                 </ul>
                             </div>
 
@@ -47,7 +46,7 @@
                                 <div class="card-tab-content" id="goal">
                                     <h4>Let's start with your goal</h4>
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>What is your goal ?</label>
                                                 <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" required>
@@ -60,38 +59,44 @@
                                                 <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Goal priority</label>
+                                                <div class="btn-group btn-input clearfix">
+                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
+                                                        <span data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-priority" role="menu">
+                                                        <li><a href="#">High</a></li>
+                                                        <li><a href="#">Medium</a></li>
+                                                        <li><a href="#">Low</a></li>
+                                                    </ul>
+                                                    <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 margin-bottom">
                                             <div class="form-group">
                                                 <label>How will you save ?</label>
                                                 <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
-                                                        <span data-bind="label">Select an option</span><span class="caret"></span>
+                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-type">
+                                                        <span data-bind="labeltype">Select an option</span><span class="caret"></span>
                                                     </button>
-                                                    <ul class="dropdown-menu" role="menu">
+                                                    <ul class="dropdown-menu dropdown-type" role="menu">
                                                         <li><a href="#">Monthly</a></li>
                                                         <li><a href="#">Half Yearly</a></li>
                                                         <li><a href="#">Yearly</a></li>
                                                     </ul>
-                                                    <input name="sel_savingType" type="hidden" id="dropdown-data"/>
+                                                    <input name="sel_savingType" type="hidden" id="dropdown-type"/>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-tab-content" id="details">
-                                    <h4>Provide some details</h4>                                         
-                                    <div class="row">    
-                                        <div class="form-group">
-                                            <label>Expected period</label>
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-                                                <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-tab-content" id="summary">                                       
-                                    <h4>Summary</h4>
+                                <div class="card-tab-content" id="result">                                       
+                                    <h4>Result</h4>
                                     <div class="row form-group">
                                         <div class="col-md-2">
                                             <label>Goal name</label>
@@ -127,6 +132,12 @@
                                         </div>
                                     </div> 
                                     <div class="row form-group">
+                                        <div class="col-md-2">
+                                            <label>Priority</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input name="result_goalpriority" type="text" class="form-control  margin-bottom" readonly>
+                                        </div>
                                         <div class="col-md-2 col-md-offset-2">
                                             <label>Total period</label>
                                         </div>
@@ -143,7 +154,6 @@
                                         <button id="btn_back" type="button" class="btn btn-primary btn-default btn-wd pull-left">Back</button>                                
                                         <button id="btn_calculate" type="button" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
                                         <button id="btn_add" name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
-                                        <button id="btn_next" type="button" class="btn btn-primary btn-main btn-wd pull-right">Next</button>
                                         <div class="clearfix"></div>   
                                     </div>
                                 </div>
@@ -161,7 +171,6 @@
     <script src="js/control_script.js"></script>
     <script src="js/plan_script.js"></script>
     <script src="js/validate_script.js"></script>
-    <script src="js/dropdown_script.js"></script>
 </body>
 
 </html>
