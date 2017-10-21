@@ -107,7 +107,7 @@ h2 a {
   color: #403E10;
   font-weight: bold;
   
-  box-shadow: rgb(133, 80, 30) -1px 1px, rgb(133, 80, 30) -2px 2px, rgb(133, 80, 30) -3px 3px, rgb(133, 80, 30) -4px 4px, #7F7C21 -5px 5px, rgb(133, 80, 30) -6px 6px;
+  box-shadow: #e74c3c -1px 1px, #e74c3c -2px 2px, #e74c3c -3px 3px, #e74c3c -4px 4px, #e74c3c -5px 5px, #e74c3c -6px 6px;
   transform: translate3d(6px, -6px, 0);
   
   transition-delay: 0s;
