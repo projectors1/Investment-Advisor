@@ -57,7 +57,8 @@ function checkDetails(form) {
         return false;
     }
     
-    if(form.status.value!=Student||Employed||Unemployed) {
+    var getStatus = document.getElementById("e_status").value;
+    if(getStatus!=Student||Employed||Unemployed) {
         $("#alert_danger").html("Status must be chosen");
         hidedanger();
         return false;
