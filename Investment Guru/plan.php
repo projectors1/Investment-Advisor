@@ -151,7 +151,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <button id="btn_back" type="button" class="btn btn-primary btn-default btn-wd pull-left">Back</button>                                
-                                        <button id="btn_calculate" type="button" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
+                                        <button id="btn_calculate" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
                                         <button id="btn_add" name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
                                         <div class="clearfix"></div>   
                                     </div>
