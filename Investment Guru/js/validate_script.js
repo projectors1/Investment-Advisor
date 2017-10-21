@@ -41,13 +41,8 @@ function checkNewPass(form){
 	}
 }
 
-<<<<<<< HEAD
 //Profile Validation
-function checkDetails(form) {
-=======
-
 function checkPersonal(form) {
->>>>>>> 5a8fe0a4be1b9e767e0cf09d28179b1f4d60ebdb
     re = /^[a-zA-Z\s]*$/;
 	if(!re.test(form.txt_firstname.value)) {
         $("#alert_danger").html("First name must contain only letters");
@@ -84,7 +79,7 @@ function checkPersonal(form) {
     }
 }
 
-
+//Profile Validation
 function checkFinance(form) {
     re = /[0-9]/;
     if(!re.test(form.txt_income.value)) {
