@@ -28,14 +28,13 @@
             $goalID = $_POST['goal_id'];
             $name = $_POST['goal_name'];
             $cost = $_POST['goal_cost'];
+            $priority = $_POST['goal_priority'];
             $type = $_POST['goal_type'];
             $period = $_POST['goal_period'];
             $amount = $_POST['goal_amount'];
-            $query = "UPDATE goal SET Name = '$name', Cost = '$cost', Savingtype = '$type', Period = '$period', Amount = '$amount' WHERE GoalID = '$goalID'";
+            $query = "UPDATE goal SET Name = '$name', Cost = '$cost', Priority = '$priority', Savingtype = '$type', Period = '$period', Amount = '$amount' WHERE GoalID = '$goalID'";
             mysqli_query($conn,$query);
         }
-
-
     }
     else {
 		    header('location: login.php');

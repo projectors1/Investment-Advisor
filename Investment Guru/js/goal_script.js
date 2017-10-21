@@ -19,12 +19,27 @@ $(document).ready(function() {
             {
                 $("input[name=txt_goalname]").val(data.Name);
                 $("input[name=txt_goalcost]").val(data.Cost);
-                $("#savingtype").html(data.Savingtype);
+                $("#priority").html(data.Priority);
+                $("#type").html(data.Savingtype);
                 $("input[name=txt_period]").val(data.Period);
                 $("input[name=txt_amount]").val(data.Amount);
                 $('#btn_update').attr("onclick","update_goal("+goalId+")");
             } 
         });
+    });
+ 
+    $(document.body).on('click','.dropdown-priority li', function( event ) {
+        var $target = $(event.currentTarget);   
+        $target.closest('.btn-group').find('[data-bind="labelpriority"]' ).text($target.text()).end().children('.dropdown-toggle').dropdown('toggle');  
+        $("#dropdown-priority").val($('#toggle-priority span:visible').text()); 
+        return false; 
+    });
+
+    $(document.body).on('click','.dropdown-type li', function( event ) {
+        var $target = $(event.currentTarget);   
+        $target.closest('.btn-group').find('[data-bind="labeltype"]' ).text($target.text()).end().children('.dropdown-toggle').dropdown('toggle');  
+        $("#dropdown-type").val($('#toggle-type span:visible').text()); 
+        return false; 
     });
 });
 
@@ -40,7 +55,7 @@ function delete_goal(id)
         },
         cache: false,
         success:function(result){
-            card.fadeOut(500, function(){
+            card.slideOut(500, function(){
                $(this).remove();
             });
         }
@@ -51,7 +66,8 @@ function update_goal(id)
 {
     var name = $("input[name=txt_goalname]").val();
     var cost = parseFloat($("input[name=txt_goalcost]").val());
-    var type = $("#savingtype").html();
+    var priority = $("#priority").html();
+    var type = $("#type").html();
     var period = parseInt($("input[name=txt_period]").val());
     var amount = parseFloat($("input[name=txt_amount]").val());
 
@@ -63,6 +79,7 @@ function update_goal(id)
             goal_id:id,
             goal_name:name,
             goal_cost:cost,
+            goal_priority:priority,
             goal_type:type,
             goal_period:period,
             goal_amount:amount,
@@ -70,6 +87,7 @@ function update_goal(id)
         cache: false,
         success:function(result) {
             $("#goal"+id+" .name").html(name);
+            $("#goal"+id+" .priority").html(priority);
             $("#goal"+id+" .type").html(type);
             $("#goal"+id+" .cost").html("₹ "+cost.toFixed(2));
             $("#goal"+id+" .period").html(period+" months");
