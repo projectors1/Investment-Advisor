@@ -41,23 +41,26 @@ $(document).ready(function () {
     });
 
     function calculate() {
-        var value;
+        var amount = 0,period = 0;
         var cost = parseInt($("input[name=txt_goalcost]").val());    
         var type = $("input[name=sel_savingType]").val();
-        var priority = $("input[name=sel_priority]").val();
+        var priority = $("input[name=sel_goalpriority]").val();
         
-        $.ajax ({
+        $.ajax({
             type: 'POST',
             url: '../includes/plan_inc.php',
             data: {
                 calculate_goal:'calculate_goal',
-                goal_cost:cost,
                 goal_priority:priority,
             },
             cache: false,
-            success:function(data) {
-                amount = data.Amount;
-                period = data.Period;
+            dataType: 'json',
+            success: function(data) {
+                amount = parseInt(data);
+                period = Math.round(cost / amount);
+ 
+                $("input[name=result_amount]").val(amount);
+                $("input[name=result_period]").val(period+" months");
             }
         });      
 
@@ -65,7 +68,5 @@ $(document).ready(function () {
         $("input[name=result_goalcost]").val(cost);
         $("input[name=result_goalpriority]").val($("input[name=sel_goalpriority]").val());
         $("input[name=result_savingType]").val(type);
-        $("input[name=result_amount]").val(amount);
-        $("input[name=result_period]").val(period);
     }
 });

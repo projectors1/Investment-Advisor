@@ -133,7 +133,7 @@
                                             <input name="result_goalpriority" type="text" class="form-control  margin-bottom" readonly>
                                         </div>
                                         <div class="col-md-2 col-md-offset-2">
-                                            <label>Total period</label>
+                                            <label>Estimated completion in</label>
                                         </div>
                                         <div class="col-md-3">
                                             <input name="result_period" type="text" class="form-control" readonly>

@@ -7,7 +7,6 @@
         if(isset($_POST['calculate_goal'])) {         
             $accountID = $_SESSION['AccountID'];
             $priority = $_POST['goal_priority'];
-            $cost = $_POST['goal_cost'];
 
             $query = "SELECT Savings FROM userfinance WHERE FinanceID = (SELECT FinanceID FROM useraccount WHERE AccountID = '$accountID')";
             $result = mysqli_query($conn,$query);
@@ -17,32 +16,50 @@
             $query = "SELECT COUNT(GoalID) FROM goal WHERE AccountID = '$accountID' AND Priority = 'High'";
             $result = mysqli_query($conn,$query);
             $data = mysqli_fetch_assoc($result);
-            $totalhigh = (int)$data['Count(GoalID)'];
+            $totalhigh = (int)$data['COUNT(GoalID)'];
 
             $query = "SELECT COUNT(GoalID) FROM goal WHERE AccountID = '$accountID' AND Priority = 'Mid'";
             $result = mysqli_query($conn,$query);
             $data = mysqli_fetch_assoc($result);
-            $totalmid = (int)$data['Count(GoalID)'];
+            $totalmid = (int)$data['COUNT(GoalID)'];
 
             $query = "SELECT COUNT(GoalID) FROM goal WHERE AccountID = '$accountID' AND Priority = 'Low'";
             $result = mysqli_query($conn,$query);
             $data = mysqli_fetch_assoc($result);
-            $totallow = (int)$data['Count(GoalID)'];
-
-            $totalgoal = $totalhigh + $totalmid + $totallow;
+            $totallow = (int)$data['COUNT(GoalID)'];
 
             if($priority == 'High') {
-                if($totalgoal == $totalhigh)
+                if($totalmid == 0 && $totallow == 0)
                     $amount = $savings;
                 else
                     $amount = (70/100) * $savings;
             }
             else if($priority == 'Mid') {  
-                
+                 if($totalhigh == 0 && $totallow == 0)
+                    $amount = $savings;
+                else if($totalhigh > 0 && $totallow == 0)
+                    $amount = (30/100) * $savings;
+                else if($totalhigh == 0 && $totallow > 0)
+                    $amount = (70/100) * $savings;
+                else if($totalhigh > 0 && $totallow > 0) {
+                    $amount = (70/100) * $savings;
+                    $amount = $savings - $amount;
+                    $amount = (70/100) * $amount;
+                }
             }
             else {
-
+                if($totalhigh == 0 && $totalmid == 0)
+                    $amount = $savings;
+                else if($totalhigh > 0 && $totalmid == 0 || $totalhigh == 0 && $totalmid > 0)
+                    $amount = (30/100) * $savings;
+                else if($totalhigh > 0 && $totalmid > 0) {
+                    $amount = (70/100) * $savings;
+                    $amount = $savings - $amount;
+                    $amount = (30/100) * $amount;
+                }
             }   
+
+            echo json_encode($amount);
         }
 
         if(isset($_POST['btn_add'])) {
