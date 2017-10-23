@@ -43,8 +43,7 @@ $(document).ready(function() {
     });
 });
 
-function delete_goal(id)
-{
+function delete_goal(id) {
     var card = $("#goal"+id);
     $.ajax({
         type: 'POST',
@@ -55,23 +54,22 @@ function delete_goal(id)
         },
         cache: false,
         success:function(result){
-            card.slideOut(500, function(){
+            card.fadeOut(500, function(){
                $(this).remove();
             });
         }
     });
 }
 
-function update_goal(id)
-{
+function update_goal(id) {
     var name = $("input[name=txt_goalname]").val();
-    var cost = parseFloat($("input[name=txt_goalcost]").val());
+    var cost = parseInt($("input[name=txt_goalcost]").val());
     var priority = $("#priority").html();
     var type = $("#type").html();
     var period = parseInt($("input[name=txt_period]").val());
-    var amount = parseFloat($("input[name=txt_amount]").val());
+    var amount = parseInt($("input[name=txt_amount]").val());
 
-    $.ajax({
+    $.ajax ({
         type: 'POST',
         url: '../includes/goal_inc.php',
         data: {
@@ -89,9 +87,9 @@ function update_goal(id)
             $("#goal"+id+" .name").html(name);
             $("#goal"+id+" .priority").html(priority);
             $("#goal"+id+" .type").html(type);
-            $("#goal"+id+" .cost").html("₹ "+cost.toFixed(2));
+            $("#goal"+id+" .cost").html("₹ "+cost);
             $("#goal"+id+" .period").html(period+" months");
-            $("#goal"+id+" .amount").html("₹ "+amount.toFixed(2));
+            $("#goal"+id+" .amount").html("₹ "+amount);
         }
     });
 }

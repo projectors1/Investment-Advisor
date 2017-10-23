@@ -3,8 +3,47 @@
     require_once 'message_inc.php'; 
     
     if (isset($_SESSION['loggedIN'])) {
-        $goalname = $goalcost = $goalpriority = "";
-        $savingType = $amount = $period = "";
+
+        if(isset($_POST['calculate_goal'])) {         
+            $accountID = $_SESSION['AccountID'];
+            $priority = $_POST['goal_priority'];
+            $cost = $_POST['goal_cost'];
+
+            $query = "SELECT Savings FROM userfinance WHERE FinanceID = (SELECT FinanceID FROM useraccount WHERE AccountID = '$accountID')";
+            $result = mysqli_query($conn,$query);
+            $data = mysqli_fetch_assoc($result);
+            $savings = (int)$data['Savings'];
+
+            $query = "SELECT COUNT(GoalID) FROM goal WHERE AccountID = '$accountID' AND Priority = 'High'";
+            $result = mysqli_query($conn,$query);
+            $data = mysqli_fetch_assoc($result);
+            $totalhigh = (int)$data['Count(GoalID)'];
+
+            $query = "SELECT COUNT(GoalID) FROM goal WHERE AccountID = '$accountID' AND Priority = 'Mid'";
+            $result = mysqli_query($conn,$query);
+            $data = mysqli_fetch_assoc($result);
+            $totalmid = (int)$data['Count(GoalID)'];
+
+            $query = "SELECT COUNT(GoalID) FROM goal WHERE AccountID = '$accountID' AND Priority = 'Low'";
+            $result = mysqli_query($conn,$query);
+            $data = mysqli_fetch_assoc($result);
+            $totallow = (int)$data['Count(GoalID)'];
+
+            $totalgoal = $totalhigh + $totalmid + $totallow;
+
+            if($priority == 'High') {
+                if($totalgoal == $totalhigh)
+                    $amount = $savings;
+                else
+                    $amount = (70/100) * $savings;
+            }
+            else if($priority == 'Mid') {  
+                
+            }
+            else {
+
+            }   
+        }
 
         if(isset($_POST['btn_add'])) {
             $goalname = mysqli_real_escape_string($conn,$_POST['result_goalname']);

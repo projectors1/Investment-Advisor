@@ -42,26 +42,30 @@ $(document).ready(function () {
 
     function calculate() {
         var value;
-        var goalcost = parseFloat($("input[name=txt_goalcost]").val());
-        var amount = parseFloat($("input[name=txt_amount]").val());
-        var period = parseInt($("input[name=txt_period]").val());
+        var cost = parseInt($("input[name=txt_goalcost]").val());    
         var type = $("input[name=sel_savingType]").val();
-               
-        switch(type) {
-            case "Monthly" : value = period;
-                                 break;      
-            case "Half Yearly" : value = period/6;
-                                 break;
-            case "Yearly" : value = period/12;
-                                 break;
-        }   
-        amount = parseInt(goalcost/value);           
+        var priority = $("input[name=sel_priority]").val();
+        
+        $.ajax ({
+            type: 'POST',
+            url: '../includes/plan_inc.php',
+            data: {
+                calculate_goal:'calculate_goal',
+                goal_cost:cost,
+                goal_priority:priority,
+            },
+            cache: false,
+            success:function(data) {
+                amount = data.Amount;
+                period = data.Period;
+            }
+        });      
 
         $("input[name=result_goalname]").val($("input[name=txt_goalname]").val());
-        $("input[name=result_goalcost]").val(goalcost.toFixed(2));
+        $("input[name=result_goalcost]").val(cost);
         $("input[name=result_goalpriority]").val($("input[name=sel_goalpriority]").val());
         $("input[name=result_savingType]").val(type);
-        $("input[name=result_amount]").val(amount.toFixed(2));
+        $("input[name=result_amount]").val(amount);
         $("input[name=result_period]").val(period);
     }
 });

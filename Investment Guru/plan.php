@@ -29,7 +29,7 @@
         <section class="calculator-section">
             <div class="container-fluid">
                     <div class="card">
-                        <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                        <form class="form-horizontal" action="" method="POST" onsubmit="return checkcheckPlanDetails(this);" autocomplete="off">
                             <div class="card-wizard-header text-center">
                                 <h3>Plan Your Goal</h3>
                                 <p>Follow through the steps to plan</p>
@@ -45,14 +45,12 @@
                             <div class="card-wizard-content">
                                 <div class="card-tab-content" id="goal">
                                     <h4>Let's start with your goal</h4>
-                                    <div class="row">
+                                    <div class="form-group">
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>What is your goal ?</label>
-                                                <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" required>
-                                            </div>
+                                            <label>What is your goal ?</label>
+                                            <input name="txt_goalname" type="text" class="form-control margin-bottom" placeholder="eg: Laptop" required>
                                         </div>
-                                        <div class="col-md-6 margin-bottom">
+                                        <div class="col-md-6">
                                             <label>How much does it cost ?</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">₹</span>
@@ -60,43 +58,40 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+
+                                    <div class="form-group">
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Goal priority</label>
-                                                <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
-                                                        <span data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu dropdown-priority" role="menu">
-                                                        <li><a href="#">High</a></li>
-                                                        <li><a href="#">Medium</a></li>
-                                                        <li><a href="#">Low</a></li>
-                                                    </ul>
-                                                    <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
-                                                </div>
+                                            <label>Goal priority</label>
+                                            <div class="btn-group btn-input clearfix margin-bottom">
+                                                <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
+                                                    <span data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-priority" role="menu">
+                                                    <li><a href="#">High</a></li>
+                                                    <li><a href="#">Mid</a></li>
+                                                    <li><a href="#">Low</a></li>
+                                                </ul>
+                                                <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
                                             </div>
                                         </div>
-                                        <div class="col-md-6 margin-bottom">
-                                            <div class="form-group">
-                                                <label>How will you save ?</label>
-                                                <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-type">
-                                                        <span data-bind="labeltype">Select an option</span><span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu dropdown-type" role="menu">
-                                                        <li><a href="#">Monthly</a></li>
-                                                        <li><a href="#">Yearly</a></li>
-                                                    </ul>
-                                                    <input name="sel_savingType" type="hidden" id="dropdown-type"/>
-                                                </div>
+                                        <div class="col-md-6">
+                                            <label>How will you save ?</label>
+                                            <div class="btn-group btn-input clearfix">
+                                                <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-type">
+                                                    <span data-bind="labeltype">Select an option</span><span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-type" role="menu">
+                                                    <li><a href="#">Monthly</a></li>
+                                                    <li><a href="#">Yearly</a></li>
+                                                </ul>
+                                                <input name="sel_savingType" type="hidden" id="dropdown-type"/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-tab-content" id="result">                                       
                                     <h4>Result</h4>
-                                    <div class="row form-group">
+                                    <div class="form-group">
                                         <div class="col-md-2">
                                             <label>Goal name</label>
                                         </div>
@@ -110,7 +105,7 @@
                                             <input name="result_savingType" type="text" class="form-control" readonly>
                                         </div>
                                     </div> 
-                                    <div class="row form-group">
+                                    <div class="form-group">
                                         <div class="col-md-2">
                                             <label>Cost</label>
                                         </div>
@@ -130,7 +125,7 @@
                                             </div>
                                         </div>
                                     </div> 
-                                    <div class="row form-group">
+                                    <div class="form-group">
                                         <div class="col-md-2">
                                             <label>Priority</label>
                                         </div>
@@ -148,13 +143,10 @@
                             </div>
 
                             <div class="card-wizard-footer">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <button id="btn_back" type="button" class="btn btn-primary btn-default btn-wd pull-left">Back</button>                                
-                                        <button id="btn_calculate" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
-                                        <button id="btn_add" name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
-                                        <div class="clearfix"></div>   
-                                    </div>
+                                <div class="col-md-12">
+                                    <button id="btn_back" type="button" class="btn btn-primary btn-default btn-wd pull-left">Back</button>                                
+                                    <button id="btn_calculate" type="button" class="btn btn-primary btn-main btn-wd pull-right">Calculate</button>
+                                    <button id="btn_add" name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
                                 </div>
                             </div>
                         </form>

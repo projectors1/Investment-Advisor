@@ -57,6 +57,7 @@ body {
 .card-wizard-footer {
     padding-bottom: 30px;
     line-height: 30px;
+    display: flow-root;
 }
 
 .main-section {

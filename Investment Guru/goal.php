@@ -50,10 +50,10 @@
                                         <div class="col-md-12 col-xs-12 margin-top">
                                             <?php if($row['Priority'] == "High") { ?>
                                                 <span class="label label-danger priority"><?php echo $row['Priority']; ?></span>
-                                            <?php } else if($row['Priority'] == "Medium") { ?>
-                                                <span class="label label-warning priority"><?php echo $row['Priority']; ?></span>
-                                            <?php } else if($row['Priority'] == "Low") { ?>
+                                            <?php } else if($row['Priority'] == "Mid") { ?>
                                                 <span class="label label-info priority"><?php echo $row['Priority']; ?></span>
+                                            <?php } else if($row['Priority'] == "Low") { ?>
+                                                <span class="label label-warning priority"><?php echo $row['Priority']; ?></span>
                                             <?php } ?>
                                             <span class="label label-success type"><?php echo $row['Savingtype']; ?></span>
                                         </div>
@@ -111,10 +111,12 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <label>Goal cost</label>
-                                            <div class="input-group">
-                                                <span class="input-group-addon">₹</span>
-                                                <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
+                                            <div class="form-group">    
+                                                <label>Goal cost</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">₹</span>
+                                                    <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -126,7 +128,7 @@
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-priority" role="menu">
                                                         <li><a href="#">High</a></li>
-                                                        <li><a href="#">Medium</a></li>
+                                                        <li><a href="#">Mid</a></li>
                                                         <li><a href="#">Low</a></li>
                                                     </ul>
                                                     <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
