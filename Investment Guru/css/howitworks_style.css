@@ -95,8 +95,8 @@ body {
     padding: 20px 30px;
     background-color: white;
     position: relative;
-    border-radius: 6px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+    box-shadow: 5px 3px 10px 2px #e74c3c;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

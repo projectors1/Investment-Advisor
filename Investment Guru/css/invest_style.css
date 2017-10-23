@@ -17,8 +17,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  line-height: 1.42em;
-  color:#A7A1AE;
+  color:#f8f9fa;
   background-color:white;
 }
 
@@ -104,8 +103,6 @@ h2 a {
 
 .contain td:hover {
   background-color: #e74c3c;
-  color: #403E10;
-  font-weight: bold;
   
   box-shadow: #e74c3c -1px 1px, #e74c3c -2px 2px, #e74c3c -3px 3px, #e74c3c -4px 4px, #e74c3c -5px 5px, #e74c3c -6px 6px;
   transform: translate3d(6px, -6px, 0);

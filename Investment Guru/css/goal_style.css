@@ -6,6 +6,10 @@ body {
     width: auto;
 }
 
+.card:hover {
+    box-shadow: 0 3px 6px 0px rgba(0,0,0,0.21);
+}
+
 .card-header {
     font-size: 32px;
 }

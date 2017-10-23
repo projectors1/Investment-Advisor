@@ -40,10 +40,10 @@
                                             <?php echo $row['Name']; ?>
                                         </div>
                                         <div class="col-md-5 col-xs-5">                                            
-                                            <button type='button' class="btn btn-close" data-toggle="modal" data-target="#modalDelete" data-id="<?php echo $row['GoalID'];?>">
+                                            <button type='button' class="btn btn-signs" data-toggle="modal" data-target="#modalDelete" data-id="<?php echo $row['GoalID'];?>">
                                                 <i class="fa fa-trash" aria-hidden="true"></i>
                                             </button>
-                                            <button type='button' class="btn btn-edit" data-toggle="modal" data-target="#modalEdit" data-id="<?php echo $row['GoalID'];?>">
+                                            <button type='button' class="btn btn-signs" data-toggle="modal" data-target="#modalEdit" data-id="<?php echo $row['GoalID'];?>">
                                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -65,7 +65,7 @@
                                         <label class="value cost"><?php echo "₹ ".$row['Cost']; ?></label>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label class="title">Total Period</label>
+                                        <label class="title">Estimated Period</label>
                                         <label class="value period"><?php echo $row['Period']." months"; ?></label>
                                     </div>
                                     <div class="form-group col-md-6">
@@ -155,7 +155,7 @@
                                                 <label>Period</label>
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-                                                    <input name="txt_period" type="number" class="form-control" placeholder="eg: 2 (in months)">
+                                                    <input name="txt_period" type="number" class="form-control" readonly>
                                                 </div>
                                             </div>
                                         </div>
@@ -164,7 +164,7 @@
                                                 <label>Amount</label>
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i></span>
-                                                    <input name="txt_amount" type="number" class="form-control" placeholder="eg: ₹ 3000">
+                                                    <input name="txt_amount" type="number" class="form-control" readonly>
                                                 </div>
                                             </div>
                                         </div>

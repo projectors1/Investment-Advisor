@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                <button type="button" class="btn btn-primary btn-main" onclick="location.href='how_it_works.php'">LEARN MORE</button>
+                <button type="button" class="btn btn-primary btn-main button-margin" onclick="location.href='how_it_works.php'">LEARN MORE</button>
             </div>
         </div>
     </section>
