@@ -14,7 +14,7 @@
             <div class="col-md-6">
                 <div class="footer-logo">
                     <img src="img/logo.svg"/>
-                    <h2>INVESTMENT<br>GURU</h2>
+                    <h2>GOAL<br>TRACKER</h2>
                 </div>
                 <p>Designed and Developed by Jibin, Ivan & Ben</p>
             </div>
