@@ -94,6 +94,8 @@ h2 a {
 
 .contain td:first-child { color: #e74c3c; }
 
+.contain td:first-child:hover { color: white; }
+
 .contain tr:hover {
    background-color: #464A52;
 -webkit-box-shadow: 0 6px 6px -6px #0E1119;
@@ -103,7 +105,6 @@ h2 a {
 
 .contain td:hover {
   background-color: #e74c3c;
-  
   box-shadow: #e74c3c -1px 1px, #e74c3c -2px 2px, #e74c3c -3px 3px, #e74c3c -4px 4px, #e74c3c -5px 5px, #e74c3c -6px 6px;
   transform: translate3d(6px, -6px, 0);
   
