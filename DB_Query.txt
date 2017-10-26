@@ -47,7 +47,6 @@ CREATE TABLE investdb.goal (
   Name VARCHAR(45) NOT NULL,
   Cost DECIMAL(10,2) NOT NULL,
   Priority VARCHAR(45) NOT NULL,
-  Savingtype VARCHAR(45) NOT NULL,
   Period INT(11) NOT NULL,
   Amount DECIMAL(10,2) NOT NULL,
   AccountID INT(11) NOT NULL,
