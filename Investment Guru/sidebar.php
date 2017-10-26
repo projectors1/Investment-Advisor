@@ -14,14 +14,11 @@
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'profile.php') echo 'class="active"' ?>>
             <a href="profile.php"><i class="fa fa-address-card fa-fw" aria-hidden="true"></i>Profile</a>
         </li>
-        <li <?php if (basename($_SERVER['PHP_SELF']) == 'plan.php') echo 'class="active"' ?>>
-            <a href="plan.php"><i class="fa fa-calculator fa-fw" aria-hidden="true"></i>Plan</a>
+        <li <?php if (basename($_SERVER['PHP_SELF']) == 'goal.php') echo 'class="active"' ?>>
+            <a href="goal.php"><i class="fa fa-gift fa-fw" aria-hidden="true"></i>Goal</a>
         </li>
         <li <?php if (basename($_SERVER['PHP_SELF']) == 'invest.php') echo 'class="active"' ?>>
             <a href="invest.php"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i>Invest</a>
-        </li>
-        <li <?php if (basename($_SERVER['PHP_SELF']) == 'goal.php') echo 'class="active"' ?>>
-            <a href="goal.php"><i class="fa fa-gift fa-fw" aria-hidden="true"></i>Goal</a>
         </li>
     </ul>
     <ul class="nav nav-list sidebar-settings">
