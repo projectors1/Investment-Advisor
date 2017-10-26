@@ -137,46 +137,6 @@
             </div>
         </div>
     </section>
-    
-    <section class="section bg-off form-section" id="form-section">
-        <div class="container">
-            <h3>Get Started</h3>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="card">
-                        <div class="card-header">Let's start with your basic details</div>
-                        <div class="card-form">
-                            <form method="POST" action="" autocomplete="off">
-                                <div class="col-md-12">                      
-                                    <p>I am <span><input class="form-control" type="text" minlength="2" maxlength="30" placeholder="Your Name"></span>, <span><input class="form-control" type="text" placeholder="Age" minlength="1" maxlength="3" size="2"></span> years old.<br> I am currently 
-                                    <span>
-                                        <select class="form-control" name="status">
-                                            <option value="employed">Working</option>
-                                            <option value="student">A Student</option>
-                                            <option value="jobless">Unemployed</option>   
-                                        </select>
-                                    </span>, I save <span><input class="form-control" type="text" minlength="2" size="7"></span> 
-                                    <span ><select class="form-control" name="savings">
-                                        <option value="annually" selected>Yearly</option>
-                                        <option value="halfyearly">Half Yearly</option>
-                                        <option value="monthly">Monthly</option>
-                                    </select></span>,<br> I earn <span><input class="form-control" type="text" minlength="2" size="7"></span>
-                                    <span><select class="form-control" name="earnings">
-                                        <option value="annually" selected>Yearly</option>
-                                        <option value="monthly">Monthly</option>
-                                    </select></span>.</p>
-                                </div>
-                                <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                                    <button type="button" class="btn btn-primary btn-main">Continue</button>
-                                </div>
-                            </form>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
   
     <?php require_once('footer.php'); ?>
 
