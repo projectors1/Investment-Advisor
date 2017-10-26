@@ -56,7 +56,7 @@
                         <img src="img/team.jpg">
                         <h5 class="card-name">Ben Zachariah</h5>
                         <h4>Developer</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p> 
+                        <p>Class: TE CMPN B<br>Batch: B1<br>Roll.no: 02<br>PID: 162262</p> 
                         <div class="card-buttons">                       
                             <div class="card-social">
                                 <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
@@ -72,7 +72,7 @@
                         <img src="img/team.jpg">
                         <h5 class="card-name">Jibin Philipose</h5>
                         <h4>Developer</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p>                                             
+                        <p>Class: TE CMPN B<br>Batch: B1<br>Roll.no: 11<br>PID: 162261</p>                                             
                         <div class="card-buttons">                       
                             <div class="card-social">
                                 <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
@@ -88,7 +88,7 @@
                         <img src="img/team.jpg">
                         <h5 class="card-name">Ivan D'Souza</h5>
                         <h4>Developer</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia magnam quae.</p> 
+                        <p>Class: TE CMPN B<br>Batch: B1<br>Roll.no: 08<br>PID: 162268</p> 
                         <div class="card-buttons">                       
                             <div class="card-social">
                                 <a class="btn facebook"><i class="fa fa-facebook fa-2x"></i></a>
