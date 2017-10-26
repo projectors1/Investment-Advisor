@@ -30,6 +30,55 @@
     <section class="main-section">
         <section class="goal-section">
             <div class="container-fluid">
+                <div id="alert_success" class="alert alert-success" role="alert"><?= $_SERVER['alertSuccess'] ?></div>
+                <div id="alert_danger" class="alert alert-danger" role="alert"><?= $_SERVER['alertDanger'] ?></div>
+                
+                <div class="card">
+                    <div class="card-header">New goal</div>
+                    <div class="card-form">
+                        <form class="form-horizontal" action="" method="POST" onsubmit="return checkPlanDetails(this);" autocomplete="off">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label>What is your goal ?</label>
+                                    <input name="txt_goalname" type="text" class="form-control margin-bottom" placeholder="eg: Laptop" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-6">
+                                    <label>How much does it cost ?</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">₹</span>
+                                        <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Goal priority</label>
+                                    <div class="btn-group btn-input clearfix margin-bottom">
+                                        <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown">
+                                            <span data-bind="label">Select goal priority</span><span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">High</a></li>
+                                            <li><a href="#">Mid</a></li>
+                                            <li><a href="#">Low</a></li>
+                                        </ul>
+                                        <input name="sel_goalpriority" type="hidden" id="dropdown-data" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group-button">
+                                    <div class="col-md-12">
+                                    <button name="btn_add" type="submit" class="btn btn-primary btn-main btn-wd pull-right">Add goal</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
                 <div class="row">
                     <?php while($row = mysqli_fetch_assoc($result)) { ?>
                         <div class="col-md-4" id="goal<?php echo $row['GoalID'];?>">
@@ -47,7 +96,7 @@
                                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                                             </button>
                                         </div>
-                                        <div class="col-md-12 col-xs-12 margin-top">
+                                        <div class="col-md-12 col-xs-12">
                                             <?php if($row['Priority'] == "High") { ?>
                                                 <span class="label label-danger priority"><?php echo $row['Priority']; ?></span>
                                             <?php } else if($row['Priority'] == "Mid") { ?>
@@ -55,7 +104,7 @@
                                             <?php } else if($row['Priority'] == "Low") { ?>
                                                 <span class="label label-warning priority"><?php echo $row['Priority']; ?></span>
                                             <?php } ?>
-                                            <span class="label label-success type"><?php echo $row['Savingtype']; ?></span>
+                                            <span class="label label-success type">Monthly</span>
                                         </div>
                                     </div> 
                                 </div>
@@ -88,8 +137,11 @@
                                     <p>Confirm delete goal ?</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button id="btn_delete" type='button' class="btn btn-main" data-dismiss="modal">Delete</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <form class="form-horizontal" action="" method="POST">
+                                        <input name="txt_deletegoalID" type="text" value="" hidden>
+                                        <button name="btn_delete" type="submit" class="btn btn-main">Delete</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>       
+                                    </form> 
                                 </div>
                             </div>
                         </div>
@@ -98,82 +150,52 @@
                     <div class="modal fade" id="modalEdit" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Edit Goal</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Goal name</label>
-                                                <input name="txt_goalname" type="text" class="form-control" placeholder="eg: Laptop" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">    
-                                                <label>Goal cost</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">₹</span>
-                                                    <input name="txt_goalcost" type="number" class="form-control" placeholder="eg: 30,000" required>
+                                <form class="form-horizontal" action="" method="POST">               
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Edit Goal</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Goal name</label>
+                                                    <input name="txt_updategoalname" type="text" class="form-control" placeholder="eg: Laptop" value="" required>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                           <div class="form-group">
-                                                <label>Goal priority</label>
-                                                <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
-                                                        <span id="priority" data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu dropdown-priority" role="menu">
-                                                        <li><a href="#">High</a></li>
-                                                        <li><a href="#">Mid</a></li>
-                                                        <li><a href="#">Low</a></li>
-                                                    </ul>
-                                                    <input name="sel_goalpriority" type="hidden" id="dropdown-priority">
-                                                </div>
-                                            </div>     
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Saving type</label>
-                                                <div class="btn-group btn-input clearfix">
-                                                    <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-type">
-                                                        <span id="type" data-bind="labeltype">Select an option</span><span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu dropdown-type" role="menu">
-                                                        <li><a href="#">Monthly</a></li>
-                                                        <li><a href="#">Yearly</a></li>
-                                                    </ul>
-                                                    <input name="sel_savingType" type="hidden" id="dropdown-type"/>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Goal cost</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">₹</span>
+                                                        <input name="txt_updategoalcost" type="number" class="form-control" placeholder="eg: 30,000" value="0" required>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>                                       
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Period</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-                                                    <input name="txt_period" type="number" class="form-control" readonly>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Amount</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i></span>
-                                                    <input name="txt_amount" type="number" class="form-control" readonly>
-                                                </div>
-                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Goal priority</label>
+                                                     <div class="btn-group btn-input clearfix margin-bottom">
+                                                        <button type="button" class="btn btn-transparent dropdown-toggle form-control" data-toggle="dropdown" id="toggle-priority">
+                                                            <span id="priority" data-bind="labelpriority">Select goal priority</span><span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-priority" role="menu">
+                                                            <li><a href="#">High</a></li>
+                                                            <li><a href="#">Mid</a></li>
+                                                            <li><a href="#">Low</a></li>
+                                                        </ul>
+                                                        <input name="sel_updategoalpriority" type="text" id="dropdown-priority" hidden>
+                                                    </div>
+                                                </div>     
+                                            </div>    
                                         </div>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button id="btn_update" type='button' class="btn btn-main" data-dismiss="modal">Update</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                </div>
+                                    <div class="modal-footer">
+                                        <input name="txt_updategoalID" type="text" value="" hidden>        
+                                        <button name="btn_update" type='submit' class="btn btn-main">Update</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </form> 
                             </div>
                         </div>
                     </div>
@@ -189,6 +211,7 @@
     <script src="js/control_script.js"></script>
     <script src="js/validate_script.js"></script>
     <script src="js/goal_script.js"></script>
+     <script src="js/dropdown_script.js"></script>
 </body>
 
 </html>
