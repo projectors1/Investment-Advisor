@@ -29,7 +29,7 @@ html,body {
     color: #525558;
 }
 
-.btn.btn-main,.btn.btn-default,.btn.btn-white {
+.btn.btn-main,.btn.btn-default,.btn.btn-white,.btn.btn-success {
     background-color: #e74c3c;
     color: #FFFFFF;
     border: none;
@@ -61,6 +61,19 @@ html,body {
     background-color: #999999;
     color: #FFFFFF;
     box-shadow: 0 7px 20px -5px #999999;
+    outline: none;
+}
+
+.btn.btn-success {
+    background-color: #4caf50;
+    outline: #4caf50;
+    box-shadow: 0 3px 10px -5px #4caf50;
+}
+
+.btn.btn-success:hover {
+    background-color: #4caf50;
+    color: #4caf50;
+    box-shadow: 0 7px 20px -5px #4caf50;
     outline: none;
 }
 
